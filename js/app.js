@@ -28,6 +28,24 @@ document.addEventListener('DOMContentLoaded', () => {
   let activeCategory = 'all';
   let searchQuery = '';
 
+  const courseArticleMap = {
+    'nhay-hien-dai-thieu-nhi': 'lop-hoc/nhay-hien-dai-thieu-nhi/',
+    'yoga-tri-lieu': 'lop-hoc/yoga-tri-lieu/',
+    'ban-cung': 'lop-hoc/ban-cung/',
+    'boxing-kids-nguoi-lon': 'lop-hoc/boxing-kids-nguoi-lon/',
+    'yoga-song-khoe-1': 'lop-hoc/yoga-song-khoe-1/',
+    'lan-su-rong': 'lop-hoc/lan-su-rong/',
+    'mua-dan-vu': 'lop-hoc/mua-dan-vu/',
+    'yoga-song-khoe-2': 'lop-hoc/yoga-song-khoe-2/',
+    'taekwondo': 'lop-hoc/taekwondo/',
+    'yoga-an-do': 'lop-hoc/yoga-an-do/',
+    'dance-kids-ballet-kids': 'lop-hoc/dance-kids-ballet-kids/',
+    'bong-ro': 'lop-hoc/bong-ro/',
+    'patin': 'lop-hoc/patin/',
+    'cau-long': 'lop-hoc/cau-long/',
+    'bong-da': 'lop-hoc/bong-da/'
+  };
+
   // Filter courses logic
   function getFilteredCourses() {
     return data.courses.filter(course => {
@@ -82,8 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     coursesGrid.innerHTML = filtered.map(course => {
-      const zaloMsg = encodeURIComponent(`Xin chào Cung Văn Hóa Lao Động Cơ Sở Bình Trưng, tôi muốn đăng ký tư vấn lớp: ${course.name} (${course.schedule})`);
-      const zaloLink = `https://zalo.me/${data.facility.zalo}?text=${zaloMsg}`;
+      const instructorPhone = course.phone ? course.phone.replace(/\D/g, '') : data.facility.zalo;
+      const zaloMsg = encodeURIComponent(`Xin chào ${course.instructor}, tôi muốn đăng ký tư vấn lớp: ${course.name} (${course.schedule})`);
+      const zaloLink = `https://zalo.me/${instructorPhone}?text=${zaloMsg}`;
 
       let badgeHtml = '';
       if (course.fee === 0) {
@@ -94,10 +113,12 @@ document.addEventListener('DOMContentLoaded', () => {
         badgeHtml = `<span class="bg-blue-900/85 backdrop-blur-sm text-white text-[11px] font-semibold px-2.5 py-1 rounded-full">${course.categoryName}</span>`;
       }
 
+      const articleUrl = courseArticleMap[course.id] || '#';
+
       return `
-        <div class="course-card flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:border-blue-400">
-          <!-- Thumbnail & Badges -->
-          <div class="relative overflow-hidden group cursor-pointer" onclick="openCourseModal('${course.id}')">
+        <div class="course-card flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-200/80 shadow-sm hover:border-blue-400 hover:shadow-md transition">
+          <!-- Thumbnail & Badges - Click to Article -->
+          <a href="${articleUrl}" class="relative overflow-hidden group block cursor-pointer" title="Đọc bài viết chi tiết ${course.name}">
             <img src="${course.coverImage}" alt="${course.name}" 
                  class="w-full aspect-card object-cover group-hover:scale-105 transition duration-500"
                  loading="lazy"
@@ -108,7 +129,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="absolute bottom-3 right-3 bg-slate-900/90 backdrop-blur-md text-amber-300 font-black text-xs sm:text-sm px-3 py-1 rounded-xl border border-amber-400/30 shadow-lg">
               ${course.feeFormatted}
             </div>
-          </div>
+          </a>
 
           <!-- Body -->
           <div class="p-5 flex-1 flex flex-col justify-between">
@@ -117,8 +138,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <span class="text-[11px] text-blue-700 font-bold uppercase tracking-wider">${course.categoryName}</span>
                 <span class="text-[11px] text-slate-400 font-medium">${course.duration}</span>
               </div>
-              <h3 class="font-extrabold text-slate-900 text-lg leading-snug hover:text-blue-600 transition cursor-pointer" onclick="openCourseModal('${course.id}')">
-                ${course.name}
+              <h3 class="font-extrabold text-slate-900 text-lg leading-snug hover:text-blue-600 transition">
+                <a href="${articleUrl}" class="hover:underline flex items-start justify-between group gap-2" title="Đọc bài viết chi tiết ${course.name}">
+                  <span>${course.name}</span>
+                  <i data-lucide="arrow-up-right" class="w-4 h-4 text-slate-400 group-hover:text-blue-600 shrink-0 mt-1 transition"></i>
+                </a>
               </h3>
               <p class="text-xs text-slate-600 font-semibold mt-1 flex items-center gap-1.5">
                 <i data-lucide="user-check" class="w-3.5 h-3.5 text-blue-600"></i> ${course.instructor}
@@ -142,15 +166,21 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
 
             <!-- Actions -->
-            <div class="mt-5 pt-3.5 border-t border-slate-100 grid grid-cols-2 gap-2">
-              <button onclick="openCourseModal('${course.id}')" 
-                      class="w-full py-2.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition">
-                <i data-lucide="eye" class="w-3.5 h-3.5 text-slate-500"></i> Chi tiết
-              </button>
-              <a href="${zaloLink}" target="_blank" rel="noopener noreferrer"
-                 class="w-full py-2.5 px-3 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-extrabold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition">
-                <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Tư vấn Zalo
+            <div class="mt-5 pt-3.5 border-t border-slate-100 flex flex-col gap-2">
+              <a href="${articleUrl}" 
+                 class="w-full py-2.5 px-3 bg-amber-50 hover:bg-amber-100 text-amber-900 border border-amber-300/90 font-extrabold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition transform hover:-translate-y-0.5">
+                <i data-lucide="book-open" class="w-3.5 h-3.5 text-amber-600"></i> Đọc bài viết giới thiệu chi tiết &rarr;
               </a>
+              <div class="grid grid-cols-2 gap-2">
+                <button onclick="openCourseModal('${course.id}')" 
+                        class="w-full py-2.5 px-3 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs rounded-xl flex items-center justify-center gap-1.5 transition">
+                  <i data-lucide="eye" class="w-3.5 h-3.5 text-slate-500"></i> Xem nhanh
+                </button>
+                <a href="${zaloLink}" target="_blank" rel="noopener noreferrer"
+                   class="w-full py-2.5 px-3 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-extrabold text-xs rounded-xl flex items-center justify-center gap-1.5 shadow-sm transition">
+                  <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Tư vấn Zalo
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -205,8 +235,11 @@ document.addEventListener('DOMContentLoaded', () => {
                     <span class="text-[11px] font-bold text-blue-700 uppercase">${course.categoryName}</span>
                     <span class="text-xs font-extrabold text-emerald-600">${course.feeFormatted}</span>
                   </div>
-                  <h5 class="font-bold text-slate-900 text-sm mt-1 hover:text-blue-600 transition cursor-pointer" onclick="openCourseModal('${course.id}')">
-                    ${course.name}
+                  <h5 class="font-bold text-slate-900 text-sm mt-1 hover:text-blue-600 transition">
+                    <a href="${courseArticleMap[course.id] || '#'}" class="hover:underline flex items-center justify-between gap-1.5" title="Đọc bài viết chi tiết ${course.name}">
+                      <span>${course.name}</span>
+                      <i data-lucide="arrow-up-right" class="w-3.5 h-3.5 text-slate-400 shrink-0"></i>
+                    </a>
                   </h5>
                   <div class="mt-2.5 space-y-1 text-xs text-slate-600">
                     <div class="flex items-center gap-1.5 font-semibold text-slate-800">
@@ -222,10 +255,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
 
                 <div class="mt-3.5 pt-2.5 border-t border-slate-200/60 flex items-center justify-between">
-                  <span class="text-[11px] text-slate-500 truncate max-w-[140px]">${course.location}</span>
-                  <button onclick="openCourseModal('${course.id}')" class="text-xs font-bold text-blue-600 hover:text-blue-800 transition">
-                    Chi tiết &rarr;
+                  <button onclick="openCourseModal('${course.id}')" class="text-xs font-semibold text-slate-500 hover:text-slate-800 transition flex items-center gap-1">
+                    <i data-lucide="eye" class="w-3.5 h-3.5"></i> Xem nhanh
                   </button>
+                  <a href="${courseArticleMap[course.id] || '#'}" class="text-xs font-extrabold text-blue-600 hover:text-blue-800 transition flex items-center gap-1">
+                    Bài viết chi tiết &rarr;
+                  </a>
                 </div>
               </div>
             `).join('')}
@@ -338,8 +373,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const course = data.courses.find(c => c.id === courseId);
     if (!course || !modal || !modalContent) return;
 
-    const zaloMsg = encodeURIComponent(`Chào Cung Văn Hóa Lao Động Cơ Sở Bình Trưng, tôi muốn đăng ký xếp lớp môn ${course.name}. Xin tư vấn giúp tôi!`);
-    const zaloLink = `https://zalo.me/${data.facility.zalo}?text=${zaloMsg}`;
+    const instructorPhone = course.phone ? course.phone.replace(/\D/g, '') : data.facility.zalo;
+    const zaloMsg = encodeURIComponent(`Chào ${course.instructor}, tôi muốn đăng ký xếp lớp môn ${course.name}. Xin tư vấn giúp tôi!`);
+    const zaloLink = `https://zalo.me/${instructorPhone}?text=${zaloMsg}`;
 
     // Active main image
     let currentMainImg = course.coverImage;
@@ -425,15 +461,33 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
         </div>
 
+        ${courseArticleMap[course.id] ? `
+          <!-- Article Link Highlight -->
+          <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200/90 rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold shrink-0 shadow-sm">
+                <i data-lucide="book-open" class="w-5 h-5"></i>
+              </div>
+              <div class="text-left">
+                <div class="text-sm font-extrabold text-slate-900">Bài viết chi tiết & kinh nghiệm học</div>
+                <div class="text-xs text-slate-600 mt-0.5">Khám phá câu chuyện học viên, hướng dẫn và hình ảnh lớp học</div>
+              </div>
+            </div>
+            <a href="${courseArticleMap[course.id]}" class="w-full sm:w-auto px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white font-extrabold text-xs rounded-xl shadow-md transition text-center shrink-0">
+              Đọc bài viết →
+            </a>
+          </div>
+        ` : ''}
+
         <!-- Action Buttons -->
         <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row gap-3">
           <a href="${zaloLink}" target="_blank" rel="noopener noreferrer"
              class="flex-1 py-3 px-5 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-extrabold text-sm rounded-xl text-center flex items-center justify-center gap-2 shadow-md transition">
-            <i data-lucide="message-circle" class="w-4 h-4"></i> Đăng Ký Xếp Lớp Qua Zalo
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Nhắn Zalo ${course.instructor}
           </a>
-          <a href="tel:${data.facility.hotline}"
+          <a href="tel:${instructorPhone}"
              class="py-3 px-5 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-sm rounded-xl text-center flex items-center justify-center gap-2 shadow-md transition">
-            <i data-lucide="phone-call" class="w-4 h-4"></i> Gọi Hotline ${data.facility.hotlineDisplay}
+            <i data-lucide="phone-call" class="w-4 h-4"></i> Gọi ${course.instructor}: ${course.phone}
           </a>
         </div>
       </div>
