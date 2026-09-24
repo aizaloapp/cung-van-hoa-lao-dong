@@ -23,7 +23,7 @@
 
 Công trình được đầu tư đồng bộ với tổng mức đầu tư gần 50 tỷ đồng trên quỹ đất rộng lớn tại trục đường huyết mạch Nguyễn Duy Trinh:
 1. **Khối nhà chính 5 tầng kiên cố:**
-   - **Tầng trệt:** Sảnh đón tiếp rộng rãi, phòng hành chính, góc thông tin pháp luật và **Điểm dừng chân miễn phí cho tài xế xe ôm công nghệ / người lao động** (trang bị máy lạnh, máy nước nóng lạnh, trạm sạc điện thoại, Wi-Fi và ghế nghỉ trưa).
+   - **Tầng trệt:** Sảnh đón tiếp rộng rãi, bàn thông tin tư vấn & ghi danh học viên, khu vực hành chính một cửa và không gian sinh hoạt đa năng phục vụ cộng đồng.
    - **Tầng lửng & Lầu 1:** Khu vực văn phòng làm việc, Không gian Văn hóa Hồ Chí Minh, các phòng sinh hoạt chuyên đề và phòng tập Yoga.
    - **Lầu 2 & Lầu 3:** Hệ thống 02 hội trường hiện đại:
      - **Hội trường lớn (500 chỗ ngồi):** Sàn trải thảm, ghế nệm đỏ xếp tầng, sân khấu biểu diễn âm thanh ánh sáng chuyên nghiệp (phục vụ đại hội, hội nghị, liên hoan văn nghệ).
