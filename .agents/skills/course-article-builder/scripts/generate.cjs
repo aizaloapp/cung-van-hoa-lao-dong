@@ -952,7 +952,15 @@ function generateCourseArticle(courseId) {
     '{{FAQ_ACCORDIONS}}': faqAccordions,
     '{{ASIDE_BORDER_COLOR}}': meta.asideBorderColor,
     '{{FEE_PRIMARY}}': course.feeFormatted,
-    '{{FEE_NOTE}}': course.fee ? 'Mức học phí an sinh công đoàn' : 'Miễn phí hoàn toàn học phí',
+    '{{FEE_NOTE}}': course.fee === 0 
+      ? 'Chính sách an sinh: Miễn 100% học phí'
+      : (course.fee === null 
+          ? (course.id === 'dance-kids-ballet-kids' 
+              ? 'Nhiều gói học phí linh hoạt theo số buổi' 
+              : (course.id === 'cau-long' 
+                  ? 'Ưu đãi đặt sân cố định cho hội nhóm' 
+                  : 'Ưu đãi giao lưu phong trào cơ quan'))
+          : 'Mức học phí an sinh công đoàn'),
     '{{SCHEDULE_TEXT}}': course.schedule,
     '{{SCHEDULE_SUB}}': `${course.frequency} • ${course.duration}`,
     '{{LOCATION_TEXT}}': course.location,
