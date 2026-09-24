@@ -1,0 +1,106 @@
+/* Custom CSS - Cung Văn Hóa Lao Động Cơ Sở Bình Trưng */
+
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #0b5ed7;
+  --primary-dark: #0a4aa8;
+  --accent: #dc2626;
+  --success: #059669;
+  --surface: #ffffff;
+  --bg-soft: #f8fafc;
+}
+
+body {
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Card Hover Elevation */
+.course-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+}
+
+/* Pulse animation for Live Hotline */
+@keyframes pulse-subtle {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
+
+/* Badge Glow */
+.badge-hot {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35);
+}
+
+.badge-union {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  box-shadow: 0 2px 8px rgba(2, 132, 199, 0.35);
+}
+
+.badge-free {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
+}
+
+/* Modal Backdrop Animation */
+.modal-backdrop {
+  transition: opacity 0.25s ease-in-out;
+}
+
+.modal-content-box {
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease-in-out;
+}
+
+/* Image aspect ratio helper */
+.aspect-card {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+/* Custom Scrollbar for Gallery & Filter */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Mobile Action Bar Padding offset */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 74px;
+  }
+}
