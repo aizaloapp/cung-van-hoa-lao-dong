@@ -2,6 +2,10 @@
 .env*
 *.local
 secrets.json
+*.xlsx
+*.xls
+*.doc
+*.docx
 
 # Operating System files
 Thumbs.db

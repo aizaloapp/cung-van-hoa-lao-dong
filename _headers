@@ -1,0 +1,30 @@
+# Security and Performance Headers for Cloudflare Pages
+
+# Default headers for all routes
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+
+# Cache control for HTML documents (always revalidate)
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Cache control for static assets (images, css, js, json)
+/Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/css/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/js/*
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/data/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Prevent indexing and discourage public browsing of internal workspace documentation
+/*.md
+  X-Robots-Tag: noindex, nofollow, noarchive
+  Cache-Control: no-store, max-age=0
