@@ -106,3 +106,28 @@ Người dùng chỉ cần yêu cầu:
 - *"Tạo bài viết cho lớp Taekwondo"* ➔ Chạy skill với `course_id: taekwondo`.
 - *"Tạo bài viết cho lớp Nhảy hiện đại"* ➔ Chạy skill với `course_id: nhay-hien-dai-thieu-nhi`.
 - *"Tạo bài viết cho tất cả các lớp còn lại"* ➔ Lần lượt chạy quy trình theo bảng mapping.
+
+---
+
+## 5. Quy Chuẩn Thiết Kế Mobile & Tính Toàn Vẹn Dữ Liệu (Mobile UX & Data Invariants)
+
+Khi xây dựng hoặc chỉnh sửa trang chi tiết lớp học (`/lop-hoc/[slug]/`), Agent bắt buộc tuân thủ:
+
+### 1. Quy chuẩn Responsive & Phân bổ CTA:
+- **Khối Aside Card:** BẮT BUỘC dùng `lg:sticky lg:top-24`. Tuyệt đối không dùng `sticky` trần trụi trên mobile để tránh đè lấn với Header cố định.
+- **Phân bổ nút bấm (CTA Hierarchy):**
+  - *Header CTA:* Ẩn trên mobile (`hidden sm:flex`).
+  - *Sticky Bottom Bar:* Chuyên trách toàn bộ tương tác Zalo, Gọi điện, Chỉ đường trên di động.
+  - *Card Aside CTA:* Bổ sung nút chia sẻ tương tác `[Rủ bạn cùng học]` tận dụng Native Web Share API (`navigator.share`).
+- **Khoảng đệm chân trang (Safe Bottom Padding):** Thẻ `<footer>` bắt buộc có `pb-28 md:pb-12` để thanh Sticky Bottom Bar không che khuất chữ bản quyền và địa chỉ.
+
+### 2. Tính toàn vẹn dữ liệu học phí (Fee Logic Invariant):
+Tuyệt đối không dùng toán tử bậc hai (`course.fee ? ... : ...`) để suy đoán học phí. Bắt buộc phân định 3 trường hợp:
+- `course.fee === 0`: Nhãn `"Chính sách an sinh: Miễn 100% học phí"`.
+- `course.fee === null`: Nhãn `"Nhiều gói học phí linh hoạt theo số buổi"` hoặc `"Ưu đãi đặt sân cố định / Giao lưu cơ quan"`.
+- `course.fee > 0`: Nhãn `"Mức học phí an sinh công đoàn"`.
+
+### 3. Vùng chạm & Điều hướng (Navigation & Touch Targets):
+- Breadcrumb trên mobile phải giữ chữ "Trang chủ" kèm padding bấm thoải mái (`py-1 px-1.5`).
+- Bổ sung nút quay lại nhanh `‹ Tất cả lớp` ở góc phải breadcrumb để người dùng dễ khám phá các môn khác.
+
