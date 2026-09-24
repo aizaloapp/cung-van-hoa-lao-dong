@@ -12,6 +12,190 @@ const templateHtml = fs.readFileSync(TEMPLATE_PATH, 'utf-8');
 
 // Additional Rich Metadata for all 11 new courses
 const courseMetadata = {
+  'ban-cung': {
+    badgeIcon: 'target',
+    badgeThemeClass: 'bg-amber-100 text-amber-800 border-amber-200',
+    themeGradient: 'from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700',
+    asideBorderColor: 'border-blue-600/30',
+    instructorShortName: 'Thầy Tiếp',
+    instructorAvatarBg: 'bg-amber-100 border-amber-300',
+    instructorAvatarText: 'text-amber-600',
+    instructorRole: 'Chủ Nhiệm CLB Bắn Cung',
+    instructorBio: 'Huấn luyện viên bắn cung chuyên nghiệp, giàu kinh nghiệm hướng dẫn người mới bắt đầu. Thầy Tiếp chú trọng từng tư thế đứng, cách đặt tay và điều hòa nhịp thở giúp học viên bắn trúng bia ngay từ buổi đầu tiên.',
+    heroCaption: 'Hình ảnh thực tế buổi huấn luyện tại sân bắn cung ngoài trời Cơ Sở Bình Trưng',
+    storyIcon: 'sparkles',
+    storyIconColor: 'text-amber-500',
+    storyTitle: 'Khoảnh Khắc Kéo Dây Cung: Khi Mọi Ồn Ào Đều Lùi Lại',
+    storyParagraphs: `
+      <p>
+        Có một cảm giác rất đặc biệt mà những người từng đứng trên đường bắn cung đều trải qua: Khi đôi tay nâng cung lên, một tay giữ chắc thân cung, một tay khẽ kéo căng dây về phía góc hàm, hơi thở tự nhiên chậm lại. Trong vài giây ngắn ngủi ấy, mọi deadline công việc, áp lực thi cử hay tiếng còi xe bên ngoài bỗng tan biến hoàn toàn. Toàn bộ thế giới thu nhỏ lại chỉ còn đường ngắm thẳng tắp và hồng tâm màu vàng phía trước.
+      </p>
+      <p>
+        Bắn cung không đơn thuần là một môn thể thao vận động cơ bắp, mà là bộ môn của <strong>sự tĩnh lặng và kỷ luật nội tâm</strong>. Mỗi mũi tên bắn đi là một bài học về sự điềm tĩnh: nếu tâm bạn dao động hoặc hấp tấp, mũi tên sẽ lệch hướng; chỉ khi bạn hít sâu, buông lỏng và dồn trọn tâm trí, tiếng "vút... pặp!" đanh gọn găm trúng bia sẽ mang lại niềm hân hoan khó tả.
+      </p>
+    `,
+    benefitBgGradient: 'from-blue-50 to-sky-50',
+    benefitBorderColor: 'border-blue-100',
+    benefit1Title: 'Chỉnh Cột Sống & Mở Vai',
+    benefit1Desc: 'Động tác kéo căng cung giúp mở rộng lồng ngực, kéo giãn cơ lưng trên, khắc phục hiệu quả tật gù lưng và mỏi cổ do ngồi máy tính nhiều.',
+    benefit2Title: 'Rèn Luyện Thị Lực & Tập Trung',
+    benefit2Desc: 'Giúp mắt linh hoạt điều tiết tiêu cự xa gần, đặc biệt hữu ích cho học sinh và người làm văn phòng thường xuyên dán mắt vào màn hình.',
+    benefit3Title: 'Xả Stress Cực Kỳ Hiệu Quả',
+    benefit3Desc: 'Tiếng tên găm chắc nịch vào tâm bia giải phóng hoàn toàn năng lượng tiêu cực, mang lại sự sảng khoái và tự tin cho người bắn.',
+    faqs: [
+      {
+        q: 'Chưa từng cầm cung bao giờ có bắn trúng bia được không?',
+        a: 'Hoàn toàn được! Giáo trình tại CLB được thiết kế từ cự ly gần (5m - 7m) với cung trợ lực nhẹ tay. Huấn luyện viên sẽ nắn từng tư thế đứng chữ T, cách khóa ngón tay và điểm đặt cung dưới cằm. 99% học viên đều bắn găm bia ngay trong buổi đầu tiên.'
+      },
+      {
+        q: 'Khi đến học tôi cần tự chuẩn bị những gì?',
+        a: 'Bạn không cần mua sắm đồ dùng đắt tiền. Toàn bộ cung, tên, giáp bảo hộ cánh tay và bảo hộ ngực đều được CLB trang bị sẵn miễn phí trong suốt khóa học. Bạn chỉ cần mặc quần áo thoải mái và mang giày thể thao.'
+      },
+      {
+        q: 'Lịch học linh hoạt như thế nào nếu tôi bận ca kíp?',
+        a: 'Sân mở cửa liên tục từ 15:00 đến 21:00 từ Thứ 2 đến Chủ Nhật. Khóa học tiêu chuẩn gồm 3 buổi/tuần, học viên có thể chủ động đăng ký ca tập phù hợp với lịch làm việc hoặc hoán đổi ca khi có việc bận đột xuất.'
+      }
+    ]
+  },
+
+  'boxing-kids-nguoi-lon': {
+    badgeIcon: 'flame',
+    badgeThemeClass: 'bg-red-100 text-red-800 border-red-200',
+    themeGradient: 'from-red-600 to-rose-600 hover:from-red-700 hover:to-rose-700',
+    asideBorderColor: 'border-red-500/30',
+    instructorShortName: 'Thầy Việt',
+    instructorAvatarBg: 'bg-red-100 border-red-300',
+    instructorAvatarText: 'text-red-600',
+    instructorRole: 'Chủ Nhiệm CLB Boxing',
+    instructorBio: 'Huấn luyện viên Boxing giàu kinh nghiệm, chuyên đào tạo từ phong trào đến thi đấu cho cả trẻ em và người lớn. Thầy Việt luôn chú trọng kỹ thuật di chuyển bộ chân, đòn đấm chuẩn xác và sự an toàn tuyệt đối cho học viên.',
+    heroCaption: 'Buổi tập Boxing hăng say tại sân khuôn viên Cơ Sở Bình Trưng',
+    storyIcon: 'zap',
+    storyIconColor: 'text-red-600',
+    storyTitle: 'Cú Đấm Thép & Ý Chí Kiên Cường: Vượt Lên Giới Hạn Của Bản Thân',
+    storyParagraphs: `
+      <p>
+        Tiếng găng đấm bồm bộp vào bao cát, tiếng thở dốc theo từng nhịp di chuyển né đòn (slip and roll), những giọt mồ hôi rơi xuống sàn tập... Boxing không phải là môn thể thao bạo lực, mà là một vũ điệu của tốc độ, phản xạ và sự dẻo dai.
+      </p>
+      <p>
+        Tại CLB Boxing Cung Văn Hóa Lao Động Cơ Sở Bình Trưng của Thầy Nguyễn Thanh Việt, mỗi buổi tập kéo dài 90 phút là một buổi đốt calo toàn diện. Trẻ em học được sự can đảm, không lùi bước trước áp lực; người lớn giải tỏa sạch sẽ mọi bức bối, ức chế sau ngày làm việc mệt mỏi.
+      </p>
+    `,
+    benefitBgGradient: 'from-red-50 to-rose-50',
+    benefitBorderColor: 'border-red-100',
+    benefit1Title: 'Đốt Cháy Mỡ Thừa & Tăng Thể Lực',
+    benefit1Desc: 'Mỗi buổi tập đốt cháy từ 600 - 800 calo, giúp săn chắc cơ bắp toàn thân và tăng cường sức bền tim mạch vượt bậc.',
+    benefit2Title: 'Phản Xạ Tự Vệ Thực Chiến',
+    benefit2Desc: 'Hình thành phản xạ quan sát, né đòn và phản công linh hoạt, bảo vệ bản thân an toàn trong mọi tình huống.',
+    benefit3Title: 'Xả Stress Cực Mạnh',
+    benefit3Desc: 'Trút bỏ hoàn toàn áp lực công việc và học tập qua từng cú tung đòn chuẩn xác vào bao cát.',
+    faqs: [
+      {
+        q: 'Lớp học có phân chia theo độ tuổi và trình độ không?',
+        a: 'Có. CLB phân tách rõ ràng ca tập cho các bé thiếu nhi (Kids từ 4 - 12 tuổi) và ca tập dành cho thanh thiếu niên, người trưởng thành. Học viên mới vào sẽ được học riêng kỹ thuật di chuyển và tung đòn cơ bản trước khi ghép lớp.'
+      },
+      {
+        q: 'Con gái hoặc phụ nữ có tập môn này được không?',
+        a: 'Rất khuyến khích! Ngày nay có rất nhiều bạn nữ và chị em phụ nữ lựa chọn Boxing để giảm mỡ bụng, rèn luyện đôi chân săn chắc và trang bị kỹ năng tự vệ sống còn khi ra đường vào buổi tối.'
+      },
+      {
+        q: 'Người lớn tập Boxing có sợ bị đau hoặc chấn thương mặt không?',
+        a: 'Không. Đối với người mới và học viên phong trào, quá trình tập chủ yếu là đánh bao cát, tập đích đấm (pad work) cùng huấn luyện viên và rèn luyện thể lực tim mạch (Cardio). Bạn chỉ tham gia đối kháng (sparring) khi đã nắm vững kỹ thuật và có đầy đủ mũ bảo hiểm, bảo hộ hàm.'
+      }
+    ]
+  },
+
+  'yoga-tri-lieu': {
+    badgeIcon: 'heart-pulse',
+    badgeThemeClass: 'bg-emerald-100 text-emerald-800 border-emerald-200',
+    themeGradient: 'from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700',
+    asideBorderColor: 'border-emerald-500/30',
+    instructorShortName: 'Cô Liên',
+    instructorAvatarBg: 'bg-emerald-100 border-emerald-300',
+    instructorAvatarText: 'text-emerald-600',
+    instructorRole: 'Chủ Nhiệm Lớp Yoga Trị Liệu',
+    instructorBio: 'Giáo viên Yoga trị liệu giàu kinh nghiệm, nắm vững cấu trúc giải phẫu học cơ - xương - khớp. Cô Liên luôn tận tình chỉnh sửa từng góc đặt chân, tư thế thở cho từng học viên, giúp người lớn tuổi cảm thấy hoàn toàn an tâm và thư thái.',
+    heroCaption: 'Không gian lớp Yoga Trị Liệu ấm cúng, thư thái tại phòng CN8 Lầu 2',
+    storyIcon: 'sparkles',
+    storyIconColor: 'text-emerald-600',
+    storyTitle: 'Lắng Nghe Cơ Thể: Chữa Lành Từng Đốt Sống Sau Những Năm Tháng Làm Việc Vất Vả',
+    storyParagraphs: `
+      <p>
+        Những cơn đau mỏi vai gáy âm ỉ sau nhiều giờ ngồi máy tính, những cơn nhức lưng buốt nhói mỗi khi cúi xuống bưng đồ nặng... Đó là những tín hiệu mà cơ thể đang cầu cứu bạn. Tại CLB Yoga Trị Liệu (Phòng CN8 Lầu 2) của Cô Nguyễn Thị Liên, chúng tôi mang đến một giải pháp phục hồi tự nhiên, không dùng thuốc.
+      </p>
+      <p>
+        Khác với Yoga uốn dẻo thông thường, Yoga Trị Liệu tập trung vào việc căn chỉnh trục cột sống về trạng thái sinh lý tự nhiên, giải phóng các dây thần kinh bị chèn ép và tăng tuần hoàn máu nuôi dưỡng đĩa đệm. Học viên được tự do chọn tham gia bất kỳ ca nào trong 4 ca mỗi ngày mà không sợ mất buổi.
+      </p>
+    `,
+    benefitBgGradient: 'from-emerald-50 to-teal-50',
+    benefitBorderColor: 'border-emerald-100',
+    benefit1Title: 'Giải Phóng Chèn Ép Dây Thần Kinh',
+    benefit1Desc: 'Các bài tập kéo giãn nhẹ nhàng với dụng cụ hỗ trợ giúp giải tỏa áp lực đè nặng lên đĩa đệm cổ và thắt lưng.',
+    benefit2Title: 'Tăng Độ Dẻo Khớp & Tuần Hoàn',
+    benefit2Desc: 'Tăng tiết dịch bôi trơn ổ khớp gối, khớp háng và vai, đẩy lùi tình trạng khô khớp, lục cục khi vận động.',
+    benefit3Title: '4 Khung Giờ Linh Hoạt Mỗi Ngày',
+    benefit3Desc: 'Mở liên tục 4 ca (05:00, 07:30, 14:30, 18:30), học viên bận rộn ca kíp có thể tự do hoán đổi ca tập trong ngày.',
+    faqs: [
+      {
+        q: 'Người bị đau khớp, thoái hóa hoặc cơ cứng có tập được không?',
+        a: 'Hoàn toàn được! Yoga trị liệu khác biệt hoàn toàn với Yoga biểu diễn uốn dẻo. Các bài tập được tinh chỉnh tập trung vào kéo giãn nhẹ nhàng từng nhóm cơ, giải tỏa áp lực đè nén lên đĩa đệm và hỗ trợ phục hồi khớp với sự trợ giúp của gạch tập, dây đai chuyên dụng.'
+      },
+      {
+        q: 'Tôi làm ca kíp có thể linh hoạt đổi ca tập trong ngày không?',
+        a: 'Hoàn toàn linh hoạt! CLB mở liên tục 4 ca mỗi ngày (05:00 - 06:30, 07:30 - 09:00, 14:30 - 16:00 và 18:30 - 20:00). Học viên có thể chủ động tham gia bất kỳ ca nào phù hợp với lịch làm việc và gia đình trong ngày mà không mất buổi.'
+      },
+      {
+        q: 'Đến lớp tôi cần tự chuẩn bị thảm tập không?',
+        a: 'Tại phòng tập CN8 Lầu 2 đã có sẵn thảm tập sạch sẽ, gạch yoga, dây đai kháng lực. Học viên chỉ cần mặc trang phục co giãn, thoáng mát và mang theo khăn lau mồ hôi cùng bình nước cá nhân.'
+      }
+    ]
+  },
+
+  'cau-long': {
+    badgeIcon: 'activity',
+    badgeThemeClass: 'bg-blue-100 text-blue-800 border-blue-200',
+    themeGradient: 'from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700',
+    asideBorderColor: 'border-blue-600/30',
+    instructorShortName: 'Anh Hòa',
+    instructorAvatarBg: 'bg-blue-100 border-blue-300',
+    instructorAvatarText: 'text-blue-600',
+    instructorRole: 'Chủ Nhiệm CLB Cầu Lông',
+    instructorBio: 'Phụ trách điều phối đặt sân, tổ chức các giải đấu giao lưu đoàn viên công đoàn và trực tiếp giảng dạy các lớp bổ túc kỹ thuật từ căn bản đến nâng cao. Nhiệt tình, thân thiện và chu đáo với mọi hội nhóm.',
+    heroCaption: 'Cụm nhà tập luyện 6 sân cầu lông thảm PVC tiêu chuẩn tại Cơ Sở Bình Trưng',
+    storyIcon: 'zap',
+    storyIconColor: 'text-blue-600',
+    storyTitle: 'Tiếng Vợt Xé Gió: Sân Chơi Cầu Lông Đẳng Cấp Ngay Tại 245 Nguyễn Duy Trinh',
+    storyParagraphs: `
+      <p>
+        Tiếng đập cầu "chát!" dứt khoát vang lên, những bước di chuyển thoăn thoắt trên mặt thảm PVC xanh ngắt và những pha cứu cầu ngoạn mục sát lưới... Cụm 6 sân cầu lông tại Cung Văn Hóa Lao Động Cơ Sở Bình Trưng luôn là điểm hẹn thể thao sôi động nhất khu vực từ sáng sớm tinh mơ đến tối muộn.
+      </p>
+      <p>
+        Hệ thống đèn LED chống lóa chuyên dụng, độ bám sân cao cấp và trần nhà cao thoáng đãng mang lại trải nghiệm thi đấu hoàn hảo cho cả vận động viên phong trào lẫn hội nhóm doanh nghiệp giao lưu gắn kết.
+      </p>
+    `,
+    benefitBgGradient: 'from-blue-50 to-sky-50',
+    benefitBorderColor: 'border-blue-100',
+    benefit1Title: 'Cụm 6 Sân Thảm PVC Chống Trơn',
+    benefit1Desc: 'Mặt sàn êm ái, độ đàn hồi cao, giảm tối đa lực phản chấn lên khớp gối và cổ chân khi bật nhảy đập cầu.',
+    benefit2Title: 'Mở Cửa 06:00 - 22:00 Suốt Tuần',
+    benefit2Desc: 'Khung giờ hoạt động xuyên suốt kể cả ngày Lễ, Tết, đáp ứng trọn vẹn nhu cầu tập luyện của mọi ca làm việc.',
+    benefit3Title: 'Chính Sách Ưu Đãi Công Đoàn',
+    benefit3Desc: 'Mức giá thuê sân cố định theo tháng và lớp kèm kỹ thuật ưu đãi nhất dành cho đoàn viên và doanh nghiệp.',
+    faqs: [
+      {
+        q: 'Sân có nhận đặt lịch cố định theo tháng cho hội nhóm, công ty không?',
+        a: 'Có! Cụm 6 sân cầu lông ưu tiên ký hợp đồng giữ sân cố định theo tuần, theo tháng cho các cơ quan, đoàn thể, câu lạc bộ phong trào với mức giá ưu đãi công đoàn cạnh tranh nhất khu vực Bình Trưng.'
+      },
+      {
+        q: 'Tại đây có lớp dạy kèm cầu lông cho người mới bắt đầu hoặc trẻ em không?',
+        a: 'Có! Huấn luyện viên Đỗ Thanh Hòa trực tiếp đứng lớp các khóa bổ túc kỹ thuật từ vỡ lòng đến nâng cao: chuẩn hóa kỹ thuật cầm vợt, di chuyển bộ chân (footwork), đập cầu, bỏ nhỏ và chiến thuật đánh đôi hiệu quả.'
+      },
+      {
+        q: 'Cơ sở có bãi đỗ xe và phòng thay đồ không?',
+        a: 'Khuôn viên 245 Nguyễn Duy Trinh sở hữu bãi đỗ xe máy và ô tô rộng rãi, an ninh 24/7. Cụm sân có đầy đủ quầy nước giải khát, hệ thống quạt mát công nghiệp và khu vệ sinh, phòng thay đồ riêng biệt sạch sẽ.'
+      }
+    ]
+  },
+
   'taekwondo': {
     badgeIcon: 'shield',
     badgeThemeClass: 'bg-red-100 text-red-800 border-red-200',
