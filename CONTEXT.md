@@ -9,7 +9,7 @@
 - **Tên đầy đủ:** Cung Văn Hóa Lao Động Thành phố Hồ Chí Minh — Cơ Sở Bình Trưng
 - **Tên viết tắt / Tên thường gọi:** CVHLĐ Cơ Sở Bình Trưng
 - **Đơn vị chủ quản:** Cung Văn Hóa Lao Động TP. Hồ Chí Minh
-- **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (nay là P. Bình Trưng), TP. Thủ Đức, TP. Hồ Chí Minh
+- **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (nay là P. Bình Trưng), TP. Hồ Chí Minh
 - **Đường đi (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage Facebook:** [https://www.facebook.com/cosobinhtrungcvhld](https://www.facebook.com/cosobinhtrungcvhld) (Tên Page: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
 - **Hotline / Zalo tư vấn & ghi danh:** `0934 733 527`

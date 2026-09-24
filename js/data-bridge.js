@@ -7,7 +7,7 @@ window.CVHLD_DATA = {
   facility: {
     name: "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
     shortName: "CVHLĐ Cơ Sở Bình Trưng",
-    address: "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (nay là P. Bình Trưng), TP. Thủ Đức, TP. Hồ Chí Minh",
+    address: "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (nay là P. Bình Trưng), TP. Hồ Chí Minh",
     hotline: "0934733527",
     hotlineDisplay: "0934 733 527",
     zalo: "0934733527",

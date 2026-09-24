@@ -8,7 +8,7 @@
 
 - **Đơn vị chủ quản:** Cung Văn Hóa Lao Động TP. Hồ Chí Minh.
 - **Tên cơ sở:** Cơ Sở Bình Trưng (viết tắt: **CVHLĐ Bình Trưng**).
-- **Sứ mệnh:** Xây dựng trung tâm văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh xã hội hiện đại, thân thiện, phục vụ trực tiếp người lao động, đoàn viên công đoàn, thanh thiếu nhi và cộng đồng dân cư khu vực Bình Trưng / TP. Thủ Đức.
+- **Sứ mệnh:** Xây dựng trung tâm văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh xã hội hiện đại, thân thiện, phục vụ trực tiếp người lao động, đoàn viên công đoàn, thanh thiếu nhi và cộng đồng dân cư khu vực Bình Trưng, TP. Hồ Chí Minh.
 - **Nhiệm vụ của Agent:** 
   1. Hỗ trợ xây dựng các giải pháp số (Website, Landing Page, ứng dụng tra cứu).
   2. Sản xuất nội dung truyền thông tuyển sinh (Fanpage, Zalo OA, thông báo).
@@ -21,7 +21,7 @@
 Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi câu trả lời và sản phẩm số:
 
 1. **Thông tin liên hệ duy nhất & chính thống:**
-   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (hoặc P. Bình Trưng), TP. Thủ Đức, TP. Hồ Chí Minh.
+   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (hoặc P. Bình Trưng), TP. Hồ Chí Minh.
    - **Hotline / Zalo tư vấn & ghi danh:** `0934 733 527`.
    - **Bản đồ chỉ đường (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
    - **Kênh Fanpage Facebook:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)

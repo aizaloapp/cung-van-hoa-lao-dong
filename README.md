@@ -1,12 +1,12 @@
 # Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng
 
-Chào mừng bạn đến với kho lưu trữ dự án số hóa và truyền thông của **Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng** (Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây / P. Bình Trưng, TP. Thủ Đức).
+Chào mừng bạn đến với kho lưu trữ dự án số hóa và truyền thông của **Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng** (Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây / P. Bình Trưng, TP. Hồ Chí Minh).
 
 ---
 
 ## 📌 Thông Tin Liên Hệ & Kênh Chính Thức
 
-- **Địa chỉ:** 245 Nguyễn Duy Trinh, P. Bình Trưng Tây, TP. Thủ Đức, TP.HCM
+- **Địa chỉ:** 245 Nguyễn Duy Trinh, P. Bình Trưng Tây, TP. Hồ Chí Minh
 - **Hotline / Zalo tư vấn & tuyển sinh:** `0934 733 527`
 - **Google Maps:** [Chỉ đường tại đây](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
