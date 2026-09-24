@@ -60,72 +60,91 @@
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
 
   <!-- TOPBAR -->
-  <aside aria-label="Thông báo và liên hệ" class="bg-gradient-to-r from-blue-900 via-blue-800 to-indigo-950 text-white text-xs py-2 px-4 border-b border-blue-700/50">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
-      <div class="flex items-center gap-2 text-center sm:text-left">
-        <span class="inline-flex items-center justify-center p-1 bg-red-600 rounded-full animate-pulse text-[10px] font-bold uppercase tracking-wider px-2">Khai Giảng</span>
-        <span class="text-blue-100">Chiêu sinh các lớp thể thao & nghệ thuật Quý 4/2026 — Trợ giá đặc biệt cho đoàn viên</span>
+  <aside aria-label="Thông báo tuyển sinh" class="bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-950 text-white text-xs py-1.5 px-4 border-b border-blue-800/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+      <!-- Announcement Ticker -->
+      <div class="flex items-center gap-2 text-xs truncate">
+        <span class="inline-flex items-center justify-center px-2 py-0.5 bg-red-600 text-white text-[10px] font-black uppercase tracking-wider rounded-full shrink-0 animate-pulse">
+          MỚI
+        </span>
+        <span class="text-blue-100 truncate font-medium text-[11px] sm:text-xs">
+          Tuyển sinh các lớp Quý 4/2026 — Trợ giá học phí cho đoàn viên công đoàn & người lao động
+        </span>
       </div>
-      <div class="flex items-center gap-5 text-blue-200">
-        <a href="tel:0934733527" class="hover:text-amber-300 transition flex items-center gap-1 font-semibold">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i> Hotline: 0934 733 527
+
+      <!-- Quick Contact on Desktop (Hidden on mobile to save vertical space) -->
+      <div class="hidden sm:flex items-center gap-5 text-blue-200 text-xs shrink-0 font-medium">
+        <a href="tel:0934733527" class="hover:text-amber-300 transition flex items-center gap-1.5">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
+          <span>Hotline: <strong class="text-white font-extrabold">0934 733 527</strong></span>
         </a>
-        <a href="https://share.google/bZitFiknyB9p9nH7L" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition flex items-center gap-1">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-400"></i> 245 Nguyễn Duy Trinh, P. Bình Trưng
+        <a href="https://share.google/bZitFiknyB9p9nH7L" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition flex items-center gap-1.5">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-400"></i>
+          <span>245 Nguyễn Duy Trinh, TP. Thủ Đức</span>
         </a>
       </div>
     </div>
   </aside>
 
   <!-- NAVIGATION HEADER -->
-  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/80 shadow-sm transition duration-300">
+  <header class="sticky top-0 z-40 glass-nav border-b border-slate-200/90 shadow-sm transition duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-20">
+      <div class="flex items-center justify-between h-16 sm:h-20">
         <!-- Brand Logo -->
-        <a href="#hero" class="flex items-center gap-3 group">
+        <a href="#hero" class="flex items-center gap-2.5 sm:gap-3 group shrink-0">
           <img src="Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg" alt="Logo Cung Văn Hóa Lao Động" 
-               class="w-12 h-12 rounded-2xl object-contain shadow-sm border border-slate-200 group-hover:scale-105 transition">
+               class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl object-contain shadow-sm border border-slate-200 group-hover:scale-105 transition">
           <div>
-            <span class="block text-[11px] uppercase tracking-wider font-extrabold text-red-600 leading-tight">Cung Văn Hóa Lao Động TP.HCM</span>
-            <span class="block text-lg font-black text-blue-900 tracking-tight leading-tight">CƠ SỞ BÌNH TRƯNG</span>
+            <span class="block text-[10px] sm:text-[11px] uppercase tracking-wider font-extrabold text-red-600 leading-tight">Cung Văn Hóa Lao Động TP.HCM</span>
+            <span class="block text-base sm:text-lg font-black text-blue-900 tracking-tight leading-none mt-0.5">CƠ SỞ BÌNH TRƯNG</span>
           </div>
         </a>
 
-        <!-- Desktop Menu Links -->
-        <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
-          <a href="#hero" class="hover:text-blue-600 transition">Trang chủ</a>
-          <a href="#co-so-vat-chat" class="hover:text-blue-600 transition">Cơ sở vật chất</a>
-          <a href="#lop-hoc" class="text-blue-600 font-bold hover:text-blue-700 transition">Lớp học Quý 4</a>
-          <a href="#an-sinh" class="hover:text-blue-600 transition">An sinh xã hội</a>
-          <a href="#faq" class="hover:text-blue-600 transition">Hỏi đáp</a>
-          <a href="#chi-duong" class="hover:text-blue-600 transition">Chỉ đường</a>
+        <!-- Desktop Menu Links (whitespace-nowrap & balanced gap) -->
+        <nav class="hidden xl:flex items-center gap-6 text-sm font-semibold text-slate-700">
+          <a href="#hero" class="whitespace-nowrap hover:text-blue-600 transition">Trang chủ</a>
+          <a href="#co-so-vat-chat" class="whitespace-nowrap hover:text-blue-600 transition">Cơ sở vật chất</a>
+          <a href="#lop-hoc" class="whitespace-nowrap text-blue-600 font-bold hover:text-blue-700 transition">Lớp học Quý 4</a>
+          <a href="#an-sinh" class="whitespace-nowrap hover:text-blue-600 transition">An sinh xã hội</a>
+          <a href="#faq" class="whitespace-nowrap hover:text-blue-600 transition">Câu hỏi thường gặp</a>
+          <a href="#chi-duong" class="whitespace-nowrap hover:text-blue-600 transition">Chỉ đường</a>
         </nav>
 
-        <!-- CTA & Social Buttons -->
-        <div class="hidden lg:flex items-center gap-3">
+        <!-- CTA & Social Buttons (Refined single CTA + sleek hotline badge) -->
+        <div class="hidden lg:flex items-center gap-4 shrink-0">
           <a href="https://www.facebook.com/cosobinhtrungcvhld" target="_blank" rel="noopener noreferrer" 
-             class="p-2.5 text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition" title="Fanpage Facebook">
-            <i data-lucide="facebook" class="w-5 h-5"></i>
+             class="p-2 text-blue-600 bg-blue-50 hover:bg-blue-100 rounded-xl transition" title="Fanpage Facebook">
+            <i data-lucide="facebook" class="w-4 h-4"></i>
           </a>
+
+          <!-- Hotline Phone text link -->
+          <a href="tel:0934733527" class="flex items-center gap-2 text-slate-700 hover:text-blue-700 transition group whitespace-nowrap px-2 py-1">
+            <div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center group-hover:scale-110 transition shrink-0">
+              <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+            </div>
+            <div class="text-left">
+              <div class="text-[10px] uppercase font-bold text-slate-400 leading-none">Hotline tư vấn</div>
+              <div class="text-sm font-extrabold text-slate-900 leading-tight">0934 733 527</div>
+            </div>
+          </a>
+
+          <!-- Primary CTA Button -->
           <a href="https://zalo.me/0934733527" target="_blank" rel="noopener noreferrer"
-             class="py-2.5 px-4 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-extrabold text-xs rounded-xl shadow-md flex items-center gap-2 transition">
-            <i data-lucide="message-circle" class="w-4 h-4"></i> Nhắn Zalo Tuyển Sinh
-          </a>
-          <a href="tel:0934733527" 
-             class="py-2.5 px-4 bg-amber-500 hover:bg-amber-600 text-slate-900 font-extrabold text-xs rounded-xl shadow-md flex items-center gap-1.5 transition">
-            <i data-lucide="phone-call" class="w-4 h-4"></i> 0934 733 527
+             class="py-2.5 px-5 bg-gradient-to-r from-blue-600 to-sky-600 hover:from-blue-700 hover:to-sky-700 text-white font-extrabold text-xs sm:text-sm rounded-xl shadow-md shadow-blue-500/20 flex items-center gap-2 transition transform hover:-translate-y-0.5 whitespace-nowrap">
+            <i data-lucide="message-circle" class="w-4 h-4"></i>
+            <span>Đăng Ký Xếp Lớp</span>
           </a>
         </div>
 
         <!-- Mobile Menu Hamburger -->
-        <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-700 hover:text-blue-600 rounded-lg" aria-label="Mở menu">
+        <button id="mobile-menu-btn" class="xl:hidden p-2 text-slate-700 hover:text-blue-600 rounded-lg" aria-label="Mở menu">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
     </div>
 
     <!-- Mobile Dropdown Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-5 space-y-3 shadow-xl">
+    <div id="mobile-menu" class="hidden xl:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-5 space-y-3 shadow-xl">
       <a href="#hero" class="block py-2 text-slate-700 font-semibold hover:text-blue-600 border-b border-slate-100">Trang chủ</a>
       <a href="#co-so-vat-chat" class="block py-2 text-slate-700 font-semibold hover:text-blue-600 border-b border-slate-100">Cơ sở vật chất</a>
       <a href="#lop-hoc" class="block py-2 text-blue-600 font-bold hover:text-blue-700 border-b border-slate-100">Lớp học & Tuyển sinh Quý 4</a>
