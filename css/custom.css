@@ -21,13 +21,13 @@ body {
 
 /* Glassmorphism */
 .glass-nav {
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.88);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(226, 232, 240, 0.8);
 }
@@ -58,7 +58,7 @@ body {
   animation: pulse-subtle 2s infinite ease-in-out;
 }
 
-/* Badge Glow */
+/* Badges */
 .badge-hot {
   background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
   box-shadow: 0 2px 8px rgba(220, 38, 38, 0.35);
@@ -74,7 +74,7 @@ body {
   box-shadow: 0 2px 8px rgba(16, 185, 129, 0.35);
 }
 
-/* Modal Backdrop Animation */
+/* Modal Backdrop & Content Animation */
 .modal-backdrop {
   transition: opacity 0.25s ease-in-out;
 }
@@ -98,9 +98,46 @@ body {
   scrollbar-width: none;
 }
 
+/* Modal thumbnail active border */
+.modal-thumb-active {
+  border-color: #0b5ed7 !important;
+  box-shadow: 0 0 0 2px rgba(11, 94, 215, 0.35);
+}
+
+/* FAQ Accordion Transition */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, opacity 0.25s ease-out;
+  opacity: 0;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  opacity: 1;
+}
+
+.faq-item.active .faq-chevron {
+  transform: rotate(180deg);
+}
+
+/* Back to top button */
+#back-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+  transform: translateY(10px);
+}
+
+#back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
 /* Mobile Action Bar Padding offset */
 @media (max-width: 768px) {
   body {
-    padding-bottom: 74px;
+    padding-bottom: 76px;
   }
 }
