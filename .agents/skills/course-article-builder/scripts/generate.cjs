@@ -730,7 +730,7 @@ const courseMetadata = {
       },
       {
         q: 'Liên hệ đặt sân bóng đá nhanh nhất bằng cách nào?',
-        a: 'Quý cơ quan, đội bóng liên hệ trực tiếp Hotline/Zalo Ban Thể Thao: 0934 733 527 để kiểm tra khung giờ trống và chốt lịch thi đấu.'
+        a: 'Quý cơ quan, đội bóng liên hệ trực tiếp Hotline/Zalo Ban Thể Thao: 0904 450 057 để kiểm tra khung giờ trống và chốt lịch thi đấu.'
       }
     ]
   }
@@ -810,12 +810,12 @@ function getSchemaJsonLd(course, meta, canonicalUrl) {
           "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây",
-            "addressLocality": "Phường Bình Trưng Tây",
+            "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng",
+            "addressLocality": "Phường Bình Trưng",
             "addressRegion": "TP. Hồ Chí Minh",
             "addressCountry": "VN"
           },
-          "telephone": "0934733527"
+          "telephone": "0904450057"
         },
         "instructor": {
           "@type": "Person",

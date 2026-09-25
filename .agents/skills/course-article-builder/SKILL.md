@@ -12,8 +12,8 @@ description: Sinh trang bài viết chi tiết lớp học chuẩn SEO, GEO (AI 
 ## 1. Ranh Giới Nghiệp Vụ Bắt Buộc (Hard Guardrails)
 
 1. **Thông tin liên hệ & Địa chỉ bất biến:**
-   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây, TP. Hồ Chí Minh (KHÔNG dùng "TP. Thủ Đức", KHÔNG nhầm với 55B Nguyễn Thị Minh Khai Quận 1 hay Nhà thiếu nhi 200 Nguyễn Duy Trinh).
-   - **Hotline cơ sở:** `0934 733 527`.
+   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh (KHÔNG dùng "TP. Thủ Đức", KHÔNG nhầm với 55B Nguyễn Thị Minh Khai Quận 1 hay Nhà thiếu nhi 200 Nguyễn Duy Trinh).
+   - **Hotline cơ sở:** `0904 450 057`.
    - **Hotline & Zalo trên trang bài viết chi tiết:** **BẮT BUỘC** trỏ thẳng về số điện thoại của **Thầy/Cô chủ nhiệm lớp học đó**.
 2. **Nguồn dữ liệu chân thực (Single Source of Truth):**
    - Chỉ dùng dữ liệu từ `data/courses.json` và `CONTEXT.md`. Tuyệt đối không tự bịa đặt học phí, lịch học, giảng viên.
@@ -40,7 +40,7 @@ description: Sinh trang bài viết chi tiết lớp học chuẩn SEO, GEO (AI 
 | `mua-dan-vu` | `mua-dan-vu` | CLB Múa Dân Vũ | `LOP-HOC/mua-dan-gian/` | Cô Võ Thị Kim Liên | `0907 719 318` |
 | `bong-ro` | `bong-ro` | CLB Bóng Rổ Năng Khiếu | `LOP-HOC/bong-ro/` | Thầy Nguyễn Ngọc Thịnh | `0896 699 089` |
 | `patin` | `patin` | CLB Trượt Patin Cơ Bản | `Hinh-co-so-moi/` | Cô Hồ Kim Ân | `0906 345 894` |
-| `bong-da` | `bong-da` | CLB Bóng Đá Phong Trào | `LOP-HOC/bong-da/` | Ban Thể thao cơ sở | `0934 733 527` |
+| `bong-da` | `bong-da` | CLB Bóng Đá Phong Trào | `LOP-HOC/bong-da/` | Ban Thể thao cơ sở | `0904 450 057` |
 
 ---
 

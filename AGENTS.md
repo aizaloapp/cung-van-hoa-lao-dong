@@ -21,8 +21,8 @@
 Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi câu trả lời và sản phẩm số:
 
 1. **Thông tin liên hệ duy nhất & chính thống:**
-   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (hoặc P. Bình Trưng), TP. Hồ Chí Minh.
-   - **Hotline / Zalo tư vấn & ghi danh:** `0934 733 527`.
+   - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng (hoặc P. Bình Trưng), TP. Hồ Chí Minh.
+   - **Hotline / Zalo tư vấn & ghi danh:** `0904 450 057`.
    - **Bản đồ chỉ đường (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
    - **Kênh Fanpage Facebook:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
 2. **Chống nhầm lẫn địa điểm (Crucial):**
@@ -42,7 +42,7 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
 - **Thân thiện & Gần gũi:** Thấu hiểu đời sống của người lao động và phụ huynh địa phương.
 - **Tràn đầy năng lượng:** Thể hiện rõ tinh thần rèn luyện thể thao, nâng cao sức khỏe, phát triển năng khiếu nghệ thuật.
 - **Tuyệt đối tránh lối hành văn hành chính, xơ cứng:** Thay vì viết kiểu công văn ("Căn cứ kế hoạch..."), hãy mở đầu bằng những câu chuyện sinh động, lợi ích thực tế và lời mời gọi chân thành.
-- **Kêu gọi hành động (CTA) rõ ràng:** Mỗi bài viết hoặc trang giới thiệu đều phải có nút bấm/lời nhắc: *"Nhắn Zalo hoặc gọi ngay Hotline 0934 733 527 để được tư vấn xếp lớp và trải nghiệm cơ sở vật chất mới nhất!"*.
+- **Kêu gọi hành động (CTA) rõ ràng:** Mỗi bài viết hoặc trang giới thiệu đều phải có nút bấm/lời nhắc: *"Nhắn Zalo hoặc gọi ngay Hotline 0904 450 057 để được tư vấn xếp lớp và trải nghiệm cơ sở vật chất mới nhất!"*.
 
 ---
 

@@ -9,10 +9,10 @@
 - **Tên đầy đủ:** Cung Văn Hóa Lao Động Thành phố Hồ Chí Minh — Cơ Sở Bình Trưng
 - **Tên viết tắt / Tên thường gọi:** CVHLĐ Cơ Sở Bình Trưng
 - **Đơn vị chủ quản:** Cung Văn Hóa Lao Động TP. Hồ Chí Minh
-- **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng Tây (nay là P. Bình Trưng), TP. Hồ Chí Minh
+- **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh
 - **Đường đi (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage Facebook:** [https://www.facebook.com/cosobinhtrungcvhld](https://www.facebook.com/cosobinhtrungcvhld) (Tên Page: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
-- **Hotline / Zalo tư vấn & ghi danh:** `0934 733 527`
+- **Hotline / Zalo tư vấn & ghi danh:** `0904 450 057`
 - **Khung giờ hoạt động:**
   - Khối văn phòng hành chính: Giờ hành chính (Thứ 2 – Thứ 6)
   - Cụm thể thao & sân bãi: Mở cửa liên tục từ **05:00 đến 22:00 / 23:00** hàng ngày
@@ -57,7 +57,7 @@ Công trình được đầu tư đồng bộ với tổng mức đầu tư gầ
 | 12 | **CLB Bóng rổ** | Thầy Nguyễn Ngọc Thịnh | 0896 699 089 | Thứ 3 – CN (16:30 – 19:00, 6 buổi/tuần) | 400.000 đ/tháng | Sân bóng rổ ngoài trời |
 | 13 | **CLB Patin** | Cô Hồ Kim Ân | 0906 345 894 | 18:00 – 20:00 (3 buổi/tuần) | 1.200.000 đ/khóa | Sân có mái che |
 | 14 | **CLB Cầu lông** | Đỗ Thanh Hòa | 0937 224 640 | 06:00 – 22:00 hàng ngày (6 sân) | Theo ca & gói tháng | Nhà tập luyện Cầu Lông |
-| 15 | **CLB Bóng đá phong trào** | Ban Thể thao | 0934 733 527 | Chiều & cuối tuần | Theo thỏa thuận | Khuôn viên thể thao |
+| 15 | **CLB Bóng đá phong trào** | Ban Thể thao | 0904 450 057 | Chiều & cuối tuần | Theo thỏa thuận | Khuôn viên thể thao |
 
 ---
 
