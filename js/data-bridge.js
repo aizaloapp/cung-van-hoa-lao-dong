@@ -42,14 +42,14 @@ window.CVHLD_DATA = {
     },
     {
       id: "yoga-tri-lieu",
-      name: "CLB Yoga Trị Liệu",
+      name: "CLB Yoga Trị Liệu (Thân - Tâm - Trí) & Thở Trị Liệu",
       category: "yoga",
       categoryName: "Yoga & Trị liệu",
       instructor: "Cô Nguyễn Thị Liên",
       phone: "0767025678",
       frequency: "04 ca tập/ngày (Thứ 2 đến Thứ 7)",
       duration: "120 phút/buổi",
-      schedule: "05:00 - 06:30 | 07:30 - 09:00 | 14:30 - 16:00 | 18:30 - 20:00",
+      schedule: "Yoga trị liệu: 05:00 | 08:00 | 18:30 — Thở trị liệu: 07:00 | 14:30",
       fee: 600000,
       feeFormatted: "600.000 đ/tháng",
       location: "Phòng CN8 - Lầu 2",
@@ -116,14 +116,14 @@ window.CVHLD_DATA = {
       name: "CLB Yoga Sống Khỏe 1 (Ca Sáng)",
       category: "yoga",
       categoryName: "Yoga & Trị liệu",
-      instructor: "Cô Khổng Thị Lang",
+      instructor: "Cô Khổng Thị Lang & Thầy Trịnh Thành Hòa",
       phone: "0903333254",
       frequency: "03 buổi/tuần (Thứ 2 - 4 - 6)",
       duration: "60 phút/buổi",
       schedule: "06:00 - 07:00",
       fee: 300000,
       feeFormatted: "300.000 đ/tháng (Trợ giá)",
-      location: "Phòng tập Lầu 1",
+      location: "Phòng chuyên đề Lầu 1",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-song-khoe/1.jpg",
       images: [
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-song-khoe/1.jpg",
@@ -156,17 +156,17 @@ window.CVHLD_DATA = {
     },
     {
       id: "mua-dan-vu",
-      name: "CLB Múa Dân Vũ & Dân Gian",
+      name: "CLB Múa Dân Vũ Cộng Đồng",
       category: "arts",
       categoryName: "Nghệ thuật & Dân gian",
-      instructor: "Võ Thị Kim Liên",
+      instructor: "Cô Võ Thị Kim Liên",
       phone: "0907719318",
       frequency: "03 buổi/tuần (Thứ 2 - 4 - 6)",
       duration: "90 phút/buổi",
       schedule: "07:30 - 09:00",
       fee: 100000,
       feeFormatted: "100.000 đ/tháng (Ưu đãi)",
-      location: "Sảnh lớn & phòng sinh hoạt",
+      location: "Sảnh tầng trệt",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/mua-dan-gian/1.jpg",
       images: [
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/mua-dan-gian/1.jpg",
@@ -189,7 +189,7 @@ window.CVHLD_DATA = {
       schedule: "18:00 - 19:00",
       fee: 300000,
       feeFormatted: "300.000 đ/tháng (Trợ giá)",
-      location: "Phòng tập Lầu 1",
+      location: "Phòng chuyên đề Lầu 1",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-song-khoe/2.jpg",
       images: [
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-song-khoe/1.jpg",
@@ -224,7 +224,7 @@ window.CVHLD_DATA = {
     },
     {
       id: "yoga-an-do",
-      name: "CLB Yoga Ấn Độ Cổ Truyền",
+      name: "CLB Yoga Ấn Độ",
       category: "yoga",
       categoryName: "Yoga & Trị liệu",
       instructor: "Thầy Shashi Kant Pramanik",
@@ -234,7 +234,7 @@ window.CVHLD_DATA = {
       schedule: "08:00 - 09:10",
       fee: 500000,
       feeFormatted: "500.000 đ/tháng",
-      location: "Phòng chuyên đề Yoga",
+      location: "Phòng chức năng 7 Lầu 2",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-An-Do/1.jpg",
       images: [
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-An-Do/1.jpg",
@@ -248,23 +248,23 @@ window.CVHLD_DATA = {
     },
     {
       id: "dance-kids-ballet-kids",
-      name: "CLB Dance Kids & Ballet Kids",
+      name: "CLB Ballet, Nhảy Hiện Đại, Dancesport Thiếu Nhi Và Người Lớn",
       category: "kids",
       categoryName: "Năng khiếu Thiếu nhi",
       instructor: "Cô Nguyễn Ngọc Mai Trâm",
       phone: "0937712003",
-      frequency: "Các ngày trong tuần (Linh hoạt)",
+      frequency: "Các ngày trong tuần & Cuối tuần",
       duration: "60 - 90 phút/buổi",
-      schedule: "17:00 - 21:00",
+      schedule: "Ngày trong tuần (17:00 - 21:00) | Thứ 7 & Chủ Nhật (08:30 - 19:00)",
       fee: null,
       feeFormatted: "Liên hệ tư vấn xếp lớp",
-      location: "Phòng 9 - Lầu 2",
+      location: "Phòng 9 Lầu 2 (Sàn gỗ chuẩn)",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/2.jpg",
       images: [
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/2.jpg",
         "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/3.jpg"
       ],
-      target: "Các bé từ 4 - 15 tuổi yêu thích múa Ballet & Dance",
+      target: "Các bé từ 4 - 15 tuổi và người lớn yêu thích múa Ballet & Dance",
       description: "Giúp trẻ hình thành tư thế vóc dáng thanh thoát, rèn luyện sự dẻo dai cơ thể và ươm mầm năng khiếu nghệ thuật múa chuẩn mực."
     },
     {
@@ -274,11 +274,11 @@ window.CVHLD_DATA = {
       categoryName: "Thể thao & Vận động",
       instructor: "Thầy Nguyễn Ngọc Thịnh",
       phone: "0896699089",
-      frequency: "06 buổi/tuần (Thứ 3 đến Chủ Nhật)",
+      frequency: "02 buổi/tuần",
       duration: "90 phút/buổi",
-      schedule: "16:30 - 19:00",
-      fee: 400000,
-      feeFormatted: "400.000 đ/tháng",
+      schedule: "Thứ 3 & 5; Thứ 4 & 6; Thứ 7 & CN (16:30 - 19:00)",
+      fee: 500000,
+      feeFormatted: "500.000 đ/tháng",
       location: "Sân bóng rổ ngoài trời",
       coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/bong-ro/1.jpg",
       images: [
@@ -353,6 +353,90 @@ window.CVHLD_DATA = {
       ],
       target: "Các đội bóng doanh nghiệp, công đoàn cơ sở và thanh niên địa phương",
       description: "Không gian giao lưu thể thao sôi động, kết nối tinh thần đồng đội sau những giờ làm việc căng thẳng tại nhà xưởng, văn phòng."
+    },
+    {
+      id: "dancesport-bachata-kizomba",
+      name: "CLB Dancesport: Bachata & Kizomba",
+      category: "arts",
+      categoryName: "Nghệ thuật & Khiêu vũ",
+      instructor: "Vũ sư Cường Ba",
+      phone: "0969897988",
+      frequency: "02 buổi/tuần (Thứ 7 & Chủ Nhật)",
+      duration: "90 phút/buổi",
+      schedule: "17:00 - 18:30 (Thứ 7 & Chủ Nhật)",
+      fee: 100000,
+      feeFormatted: "100.000 đ/tháng (Vui khỏe)",
+      location: "Phòng chức năng 2",
+      coverImage: "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/1.jpg",
+      images: [
+        "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/1.jpg",
+        "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/nhay-hien-dai/2.jpg",
+        "Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/Hinh-co-so-moi/1.jpg"
+      ],
+      target: "Cộng đồng, người yêu khiêu vũ thể thao, mọi lứa tuổi",
+      description: "Hòa mình vào giai điệu Bachata nồng nàn và Kizomba uyển chuyển, giải tỏa căng thẳng cuối tuần, nâng cao độ dẻo dai và kết nối cộng đồng văn minh."
+    }
+  ],
+  rentals: [
+    {
+      id: "HT-01",
+      category: "hoi-truong",
+      name: "Hệ Thống 02 Hội Trường Lớn (250 – 500 Ghế)",
+      badge: "250 – 500 Chỗ",
+      badgeColor: "red",
+      location: "Lầu 2 & Lầu 3",
+      imageThumb: "assets/images/cho-thue/hoi-truong-san-khau-thumb.webp",
+      imageFull: "assets/images/cho-thue/hoi-truong-san-khau-full.webp"
+    },
+    {
+      id: "PH-02",
+      category: "hoi-truong",
+      name: "Phòng Hội Nghị VIP & Bàn Tròn Chữ U",
+      badge: "25 – 45 Đại Biểu",
+      badgeColor: "blue",
+      location: "Khu Hội Nghị Lầu 1",
+      imageThumb: "assets/images/cho-thue/phong-hop-vip-thumb.webp",
+      imageFull: "assets/images/cho-thue/phong-hop-vip-full.webp"
+    },
+    {
+      id: "ST-03",
+      category: "trien-lam",
+      name: "Sảnh Triển Lãm Tầng Trệt Indoor Đa Năng",
+      badge: "200 – 350 Khách",
+      badgeColor: "emerald",
+      location: "Tầng Trệt Cổng Chính",
+      imageThumb: "assets/images/cho-thue/sanh-trien-lam-thumb.webp",
+      imageFull: "assets/images/cho-thue/sanh-trien-lam-full.webp"
+    },
+    {
+      id: "HC-04",
+      category: "trien-lam",
+      name: "Khu Ki-ốt Sinh Thái & Sân Hội Chợ Ngoài Trời",
+      badge: "Hàng Trăm Khách",
+      badgeColor: "amber",
+      location: "Sân Trước & Hoa Viên",
+      imageThumb: "assets/images/cho-thue/hoi-cho-nha-choi-thumb.webp",
+      imageFull: "assets/images/cho-thue/hoi-cho-nha-choi-full.webp"
+    },
+    {
+      id: "STD-05",
+      category: "studio",
+      name: "Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm",
+      badge: "20 – 40 Người",
+      badgeColor: "purple",
+      location: "Lầu 1 & Lầu 2",
+      imageThumb: "assets/images/cho-thue/studio-san-go-thumb.webp",
+      imageFull: "assets/images/cho-thue/studio-san-go-full.webp"
+    },
+    {
+      id: "TT-06",
+      category: "the-thao",
+      name: "Tổ Hợp Thể Thao: Cầu Lông, Bóng Đá Mini & Bóng Rổ",
+      badge: "Quy Mô Đoàn Thể",
+      badgeColor: "sky",
+      location: "Lầu 4 & Ngoài Trời",
+      imageThumb: "assets/images/cho-thue/san-bong-da-thumb.webp",
+      imageFull: "assets/images/cho-thue/san-bong-da-full.webp"
     }
   ]
 };

@@ -1,0 +1,200 @@
+{
+  "lastUpdated": "2026-10-01",
+  "contact": {
+    "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
+    "shortName": "CVHLĐ Bình Trưng",
+    "hotline": "0904 450 057",
+    "hotlineRaw": "0904450057",
+    "zaloUrl": "https://zalo.me/0904450057",
+    "address": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh",
+    "mapUrl": "https://share.google/bZitFiknyB9p9nH7L",
+    "facebook": "https://www.facebook.com/cosobinhtrungcvhld"
+  },
+  "heroSpotlight": {
+    "title": "Tổ Hợp Hội Nghị, Phòng Họp VIP & Sự Kiện Đa Năng Tại TP. Thủ Đức",
+    "description": "Tọa lạc tại mặt tiền số 245 Nguyễn Duy Trinh, sở hữu 02 hội trường lớn 500 & 250 chỗ, sảnh triển lãm bóng gương hàng trăm m², phòng họp VIP chữ U sang trọng, cùng cụm 6 sân cầu lông và sân bóng đá cỏ nhân tạo. Bãi đỗ xe ô tô rộng rãi, trợ giá đặc biệt cho Công đoàn & Doanh nghiệp.",
+    "imageThumb": "assets/images/cho-thue/mat-tien-thumb.webp",
+    "imageFull": "assets/images/cho-thue/mat-tien-full.webp"
+  },
+  "stats": [
+    { "value": "500+", "label": "Chỗ Ngồi Hội Trường Lớn", "sub": "Trang bị màn chiếu, âm thanh, giàn Par LED" },
+    { "value": "1.000m²+", "label": "Sảnh Triển Lãm & Sân Bãi", "sub": "Phù hợp hội chợ, ngày hội việc làm, teambuilding" },
+    { "value": "06", "label": "Sân Cầu Lông PVC & Sân Bóng", "sub": "Tổ chức hội thao doanh nghiệp trọn gói" },
+    { "value": "30%", "label": "Ưu Đãi Trợ Giá Công Đoàn", "sub": "Dành cho CĐCS, cơ quan hành chính & trường học" }
+  ],
+  "categories": [
+    { "id": "all", "name": "Tất Cả Không Gian" },
+    { "id": "hoi-truong", "name": "Hội Trường & Họp VIP" },
+    { "id": "trien-lam", "name": "Sảnh Triển Lãm & Hội Chợ" },
+    { "id": "studio", "name": "Studio Sàn Gỗ & Đào Tạo" },
+    { "id": "the-thao", "name": "Sân Thể Thao & Hội Thao" }
+  ],
+  "items": [
+    {
+      "id": "HT-01",
+      "category": "hoi-truong",
+      "name": "Hệ Thống 02 Hội Trường Lớn (250 – 500 Ghế)",
+      "badge": "250 – 500 Chỗ",
+      "badgeColor": "red",
+      "location": "Lầu 2 & Lầu 3",
+      "rentalModel": "Theo Buổi (Sáng/Chiều/Tối) hoặc Trọn Ngày",
+      "summary": "Không gian hội trường bậc thang bọc thảm cách âm, ghế nệm đỏ sang trọng, sân khấu thảm đỏ chuyên nghiệp phục vụ đại hội, hội nghị và biểu diễn nghệ thuật.",
+      "features": [
+        "Sân khấu thảm đỏ rộng, màn chiếu lớn & bục phát biểu trang trọng",
+        "Giàn đèn Par LED sân khấu & hệ thống âm thanh loa Full + Sub cao cấp",
+        "Ghế nệm đỏ êm ái xếp tầng giật cấp, tầm nhìn thoáng đãng",
+        "Có phòng hậu trường thay trang phục & lối đi riêng cho VIP",
+        "Kỹ thuật viên âm thanh ánh sáng trực hỗ trợ xuyên suốt sự kiện"
+      ],
+      "suitableFor": "Đại hội cổ đông, hội nghị khách hàng, lễ tổng kết năm, đại hội công đoàn, liên hoan ca múa nhạc, tiếp xúc cử tri",
+      "imageThumb": "assets/images/cho-thue/hoi-truong-san-khau-thumb.webp",
+      "imageFull": "assets/images/cho-thue/hoi-truong-san-khau-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/hoi-truong-san-khau-full.webp",
+        "assets/images/cho-thue/hoi-truong-tong-the-full.webp"
+      ]
+    },
+    {
+      "id": "PH-02",
+      "category": "hoi-truong",
+      "name": "Phòng Hội Nghị VIP & Bàn Tròn Chữ U",
+      "badge": "25 – 45 Đại Biểu",
+      "badgeColor": "blue",
+      "location": "Khu Hội Nghị Lầu 1",
+      "rentalModel": "Theo Giờ hoặc Theo Buổi linh hoạt",
+      "summary": "Phòng họp bàn tròn chữ U trang trọng với bàn gỗ nâu bóng, ghế da cao cấp, bục cờ Đảng - Quốc kỳ và máy lạnh công suất lớn riêng biệt.",
+      "features": [
+        "Bàn chữ U gỗ cao cấp kèm dãy ghế phụ phía sau",
+        "Ghế da xoay tay vịn êm ái cho đại biểu chủ trì",
+        "Màn chiếu máy chiếu sắc nét, hệ thống micro cổ ngỗng từng vị trí",
+        "Bục cờ Đảng, Bác Hồ, hoa tươi đại biểu sẵn sàng",
+        "Khu vực phục vụ nước uống & teabreak liền kề"
+      ],
+      "suitableFor": "Họp Ban chấp hành công đoàn, họp HĐQT doanh nghiệp, ký kết hợp tác thương mại, hội thảo chuyên đề, đại hội chi bộ",
+      "imageThumb": "assets/images/cho-thue/phong-hop-vip-thumb.webp",
+      "imageFull": "assets/images/cho-thue/phong-hop-vip-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/phong-hop-vip-full.webp"
+      ]
+    },
+    {
+      "id": "ST-03",
+      "category": "trien-lam",
+      "name": "Sảnh Triển Lãm Tầng Trệt Indoor Đa Năng",
+      "badge": "200 – 350 Khách",
+      "badgeColor": "emerald",
+      "location": "Tầng Trệt — Ngay Cổng Chính",
+      "rentalModel": "Theo Ngày hoặc Theo Đợt Triển Lãm",
+      "summary": "Sảnh trệt hàng trăm m² với sàn gạch men bóng gương, trần cao thoáng đãng, bục sân khấu mini, hệ thống PCCC sprinkler an toàn tuyệt đối.",
+      "features": [
+        "Mặt sàn gạch men sáng bóng, tải trọng lớn cho thiết bị trưng bày",
+        "Cửa chính đón ánh sáng tự nhiên, ngay cạnh sảnh đón khách & thang máy",
+        "Bục sân khấu mini sẵn sàng cho lễ khai mạc triển lãm",
+        "Nguồn điện công suất lớn bố trí đều quanh các cột sảnh",
+        "Dễ dàng setup backdrop, booth triển lãm, quầy check-in"
+      ],
+      "suitableFor": "Triển lãm tranh ảnh nghệ thuật, trưng bày sản phẩm OCOP, ngày hội việc làm, tiệc teabreak / tiệc đứng chào đón khách",
+      "imageThumb": "assets/images/cho-thue/sanh-trien-lam-thumb.webp",
+      "imageFull": "assets/images/cho-thue/sanh-trien-lam-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/sanh-trien-lam-full.webp"
+      ]
+    },
+    {
+      "id": "HC-04",
+      "category": "trien-lam",
+      "name": "Khu Ki-ốt Sinh Thái & Sân Hội Chợ Ngoài Trời",
+      "badge": "Hàng Trăm Khách",
+      "badgeColor": "amber",
+      "location": "Khuôn Viên Sân Trước & Vườn Sinh Thái",
+      "rentalModel": "Theo Ngày / Cuối Tuần / Đợt Hội Chợ",
+      "summary": "Không gian kết hợp giữa các dãy nhà chòi khung tre mộc mạc và quảng trường bê tông rộng lớn, rợp bóng cây xanh nhiệt đới mát mẻ.",
+      "features": [
+        "Dãy nhà chòi khung tre mái lợp sinh thái độc đáo, thân thiện môi trường",
+        "Quảng trường sân bê tông rộng rãi, xe tải chở hàng vào tận nơi",
+        "Hệ thống tiểu cảnh cây xanh, hoa viên tạo điểm nhấn check-in",
+        "Đường cấp thoát nước & nguồn điện chờ sẵn cho từng gian hàng",
+        "Bảo vệ tuần tra an ninh 24/7 toàn khuôn viên"
+      ],
+      "suitableFor": "Phiên chợ quê cuối tuần, hội chợ ẩm thực dân gian, gian hàng bán hàng lưu động công đoàn, teambuilding, lễ hội dân gian",
+      "imageThumb": "assets/images/cho-thue/hoi-cho-nha-choi-thumb.webp",
+      "imageFull": "assets/images/cho-thue/hoi-cho-nha-choi-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/hoi-cho-nha-choi-full.webp",
+        "assets/images/cho-thue/hoi-cho-quan-truong-full.webp",
+        "assets/images/cho-thue/hoi-cho-tieu-canh-full.webp"
+      ]
+    },
+    {
+      "id": "STD-05",
+      "category": "studio",
+      "name": "Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm",
+      "badge": "20 – 40 Người",
+      "badgeColor": "purple",
+      "location": "Lầu 1 & Lầu 2",
+      "rentalModel": "Theo Giờ, Khung Giờ Cố Định hoặc Khóa Học",
+      "summary": "Hệ thống phòng tập sàn gỗ cao su chống trơn, gương ốp tràn trần 2 mặt tường, gióng ba-lê inox và phòng đào tạo kỹ năng vách tiêu âm hiện đại.",
+      "features": [
+        "Sàn gỗ chống sốc cao cấp, gương soi 2 mặt tường full trần",
+        "Gióng múa ba-lê inox cố định chắc chắn quanh vách",
+        "Loa Bluetooth công suất lớn & điều hòa mát lạnh",
+        "Phòng đào tạo tiêu âm xanh xám, bàn ghế học viên di động",
+        "Ánh sáng tự nhiên chan hòa, view nhìn thoáng mát"
+      ],
+      "suitableFor": "Tập nhảy hiện đại, dancesport, múa dân vũ, yoga, casting diễn viên, quay video dance/TikTok; lớp đào tạo kỹ năng, workshop",
+      "imageThumb": "assets/images/cho-thue/studio-san-go-thumb.webp",
+      "imageFull": "assets/images/cho-thue/studio-san-go-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/studio-san-go-full.webp",
+        "assets/images/cho-thue/phong-dao-tao-full.webp"
+      ]
+    },
+    {
+      "id": "TT-06",
+      "category": "the-thao",
+      "name": "Tổ Hợp Thể Thao: Bóng Đá Mini, Bóng Rổ & 6 Sân Cầu Lông",
+      "badge": "Quy Mô Đoàn Thể",
+      "badgeColor": "sky",
+      "location": "Nhà Thi Đấu Lầu 4 & Khu Thể Thao Ngoài Trời",
+      "rentalModel": "Theo Giờ hoặc Trọn Gói Ngày Hội Thao",
+      "summary": "Tổ hợp thể thao đa năng gồm cụm 6 sân cầu lông thảm PVC trong nhà, sân bóng đá cỏ nhân tạo ngoài trời có chòi nghỉ sinh thái và sân bóng rổ tiêu chuẩn.",
+      "features": [
+        "Cụm 6 sân cầu lông thảm PVC chống trượt, trần cao thông gió",
+        "Sân bóng đá cỏ nhân tạo có hệ thống lưới chắn an toàn & chòi tre nghỉ ngơi",
+        "Sân bóng rổ mặt bê tông tiêu chuẩn thi đấu",
+        "Khán đài cổ vũ, phòng thay đồ & khu vệ sinh sạch sẽ riêng biệt",
+        "Dàn đèn chiếu sáng ban đêm công suất cao phục vụ sau giờ làm việc"
+      ],
+      "suitableFor": "Giải thể thao nội bộ doanh nghiệp, giải cầu lông mở rộng, giao lưu bóng đá công đoàn cơ sở, hội thao rèn luyện thể chất",
+      "imageThumb": "assets/images/cho-thue/san-bong-da-thumb.webp",
+      "imageFull": "assets/images/cho-thue/san-bong-da-full.webp",
+      "gallery": [
+        "assets/images/cho-thue/san-bong-da-full.webp",
+        "assets/images/cho-thue/san-cau-long-full.webp",
+        "assets/images/cho-thue/san-bong-ro-full.webp"
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Cơ sở có xuất hóa đơn giá trị gia tăng (VAT) cho doanh nghiệp không?",
+      "a": "Có đầy đủ 100%. Là đơn vị sự nghiệp công lập trực thuộc Liên đoàn Lao động TP.HCM, Cung Văn Hóa Lao Động TP.HCM cung cấp hợp đồng pháp lý chuẩn mực, biên bản nghiệm thu và xuất hóa đơn điện tử VAT hợp lệ phục vụ quyết toán thuế."
+    },
+    {
+      "q": "Khuôn viên có đủ chỗ đỗ xe cho ô tô và đoàn khách đông người không?",
+      "a": "Khuôn viên tại số 245 Nguyễn Duy Trinh sở hữu sân trước rộng rãi, có bãi đỗ xe ô tô miễn phí cho đại biểu và khu vực giữ hàng trăm xe máy an toàn, có bảo vệ túc trực 24/7."
+    },
+    {
+      "q": "Có thể đến khảo sát thực tế không gian trước khi quyết định thuê không?",
+      "a": "Rất hoan nghênh Quý đơn vị! Bạn chỉ cần liên hệ Hotline/Zalo 0904 450 057, ban quản lý sẽ sắp xếp nhân sự đón tiếp, hướng dẫn xem thực tế từng phòng và tư vấn phương án bố trí bàn ghế phù hợp nhất."
+    },
+    {
+      "q": "Công đoàn cơ sở hoặc trường học có được chính sách trợ giá không?",
+      "a": "Với sứ mệnh thiết chế phục vụ người lao động và an sinh xã hội, Cung Văn Hóa Lao Động Cơ Sở Bình Trưng luôn áp dụng chính sách trợ giá ưu đãi từ 15% đến 30% cho các cấp Công đoàn, đơn vị giáo dục và tổ chức thiện nguyện."
+    },
+    {
+      "q": "Cơ sở có hỗ trợ kỹ thuật viên âm thanh ánh sáng và tiệc teabreak không?",
+      "a": "Có. Mỗi buổi thuê hội trường đều có kỹ thuật viên trực vận hành âm thanh ánh sáng, máy chiếu. Đồng thời cơ sở hỗ trợ kết nối các đơn vị teabreak tiệc trà, tiệc ngọt uy tín theo ngân sách của khách hàng."
+    }
+  ]
+}

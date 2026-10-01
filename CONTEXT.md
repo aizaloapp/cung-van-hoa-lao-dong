@@ -39,25 +39,26 @@ Công trình được đầu tư đồng bộ với tổng mức đầu tư gầ
 
 ---
 
-## 3. Danh Mục Lớp Học & CLB Quý 4.2026 (Đã Duyệt)
+## 3. Danh Mục Lớp Học & CLB Quý 4.2026 (Đã Duyệt - 16 Bộ Môn)
 
 | STT | Tên Lớp / Bộ Môn | Giáo Viên / Phụ Trách | Điện Thoại | Khung Giờ & Tần Suất | Mức Học Phí | Địa Điểm Tập Luyện |
 |:---:|:---|:---|:---:|:---|:---:|:---|
-| 1 | **CLB Nhảy hiện đại thiếu nhi** | Thầy Trần Trung Hiền | 0902 774 594 | 18:00 – 19:00 (2 buổi/tuần) | 600.000 đ/tháng | Phòng cũ ở sảnh |
-| 2 | **CLB Yoga trị liệu** | Cô Nguyễn Thị Liên | 0767 025 678 | 4 ca/ngày: 05:00-06:30, 07:30-09:00, 14:30-16:00, 18:30-20:00 | 600.000 đ/tháng | Phòng CN8 lầu 2 |
+| 1 | **CLB Nhảy hiện đại thiếu nhi** | Thầy Trần Trung Hiền | 0902 774 594 | 18:00 – 19:00 (2 buổi/tuần) | 600.000 đ/tháng | Phòng tập sảnh đa năng trệt |
+| 2 | **CLB Yoga trị liệu & Thở trị liệu** | Cô Nguyễn Thị Liên | 0767 025 678 | Yoga: 05:00, 08:00, 18:30; Thở: 07:00, 14:30 | 600.000 đ/tháng | Phòng CN8 lầu 2 |
 | 3 | **CLB Bắn cung** | Thầy Đoàn Thanh Tiếp | 0703 275 125 | Thứ 2 – CN (15:00 – 21:00, 3 buổi/tuần) | 1.500.000 đ/khóa | Sân cạnh CLB Cầu Lông |
 | 4 | **CLB Boxing Kids & Người lớn** | Thầy Nguyễn Thanh Việt | 0939 305 458 | 06:00 – 21:00 (nhiều ca linh hoạt) | 1.200.000 đ/tháng (2.700.000 đ/3 tháng) | CLB cũ; sân sau tòa nhà |
-| 5 | **CLB Yoga sống khỏe 1 (Sáng)** | Cô Khổng Thị Lang | 0903 333 254 | Thứ 2-4-6 (06:00 – 07:00) | 300.000 đ/tháng | Phòng cũ lầu 1 |
-| 6 | **CLB Lân sư rồng** | Huỳnh Kim Hoàng | 0933 967 938 | 11:00-12:30 & 16:00-17:30 (10 buổi/tuần) | **Miễn phí** | Khuôn viên cơ quan |
-| 7 | **CLB Múa dân vũ** | Võ Thị Kim Liên | 0907 719 318 | 07:30 – 09:00 (3 buổi/tuần) | 100.000 đ/tháng | Sảnh; phòng sinh hoạt |
-| 8 | **CLB Yoga sống khỏe 2 (Tối)** | Cô Nguyễn Thị Bảy | 0767 119 854 | Thứ 3-5-7 (18:00 – 19:00) | 300.000 đ/tháng | Phòng cũ lầu 1 |
-| 9 | **CLB Taekwondo** | Thầy Huỳnh Thanh Danh | 0901 539 619 | Thứ 3-5-7 (18:00 – 19:30) | 400.000 đ/tháng | Sân ngoài trời và sảnh |
-| 10 | **CLB Yoga Ấn Độ** | Thầy Shashi Kant Pramanik | 0909 620 705 | Thứ 2 – Thứ 7 (08:00 – 09:10) | 500.000 đ/tháng | Phòng chuyên đề Yoga |
-| 11 | **CLB Dance Kids & Ballet Kids** | Cô Nguyễn Ngọc Mai Trâm | 0937 712 003 | Các ngày trong tuần (17:00 – 21:00) | Tư vấn theo gói | Phòng 9 lầu 2 |
-| 12 | **CLB Bóng rổ** | Thầy Nguyễn Ngọc Thịnh | 0896 699 089 | Thứ 3 – CN (16:30 – 19:00, 6 buổi/tuần) | 400.000 đ/tháng | Sân bóng rổ ngoài trời |
-| 13 | **CLB Patin** | Cô Hồ Kim Ân | 0906 345 894 | 18:00 – 20:00 (3 buổi/tuần) | 1.200.000 đ/khóa | Sân có mái che |
-| 14 | **CLB Cầu lông** | Đỗ Thanh Hòa | 0937 224 640 | 06:00 – 22:00 hàng ngày (6 sân) | Theo ca & gói tháng | Nhà tập luyện Cầu Lông |
+| 5 | **CLB Yoga sống khỏe 1 (Sáng)** | Cô Khổng Thị Lang & Thầy Trịnh Thành Hòa | 0903 333 254 | Thứ 2-4-6 (06:00 – 07:00) | 300.000 đ/tháng | Phòng chuyên đề Lầu 1 |
+| 6 | **CLB Lân sư rồng Bình Trưng** | Huỳnh Kim Hoàng | 0933 967 938 | 11:00-12:30 & 16:00-17:30 (10 buổi/tuần) | **Miễn phí 100%** | Khuôn viên cơ quan |
+| 7 | **CLB Múa dân vũ cộng đồng** | Cô Võ Thị Kim Liên | 0907 719 318 | 07:30 – 09:00 (Thứ 2 - 4 - 6) | 100.000 đ/tháng | Sảnh tầng trệt |
+| 8 | **CLB Yoga sống khỏe 2 (Tối)** | Cô Nguyễn Thị Bảy | 0767 119 854 | Thứ 3-5-7 (18:00 – 19:00) | 300.000 đ/tháng | Phòng chuyên đề Lầu 1 |
+| 9 | **CLB Taekwondo thiếu nhi** | Thầy Huỳnh Thanh Danh | 0901 539 619 | Thứ 3-5-7 (18:00 – 19:30) | 400.000 đ/tháng | Sân ngoài trời và sảnh |
+| 10 | **CLB Yoga Ấn Độ** | Thầy Shashi Kant Pramanik | 0909 620 705 | Thứ 2 – Thứ 7 (08:00 – 09:10) | 500.000 đ/tháng | Phòng chức năng 7 Lầu 2 |
+| 11 | **CLB Ballet, Nhảy Hiện Đại, Dancesport Thiếu Nhi & Người Lớn** | Cô Nguyễn Ngọc Mai Trâm | 0937 712 003 | Ngày trong tuần (17:00 – 21:00) & Thứ 7, CN (08:30 – 19:00) | Tư vấn theo gói | Phòng 9 Lầu 2 (Sàn gỗ chuẩn) |
+| 12 | **CLB Bóng rổ năng khiếu** | Thầy Nguyễn Ngọc Thịnh | 0896 699 089 | Thứ 3 & 5, Thứ 4 & 6, Thứ 7 & CN (16:30 – 19:00) | 500.000 đ/tháng | Sân bóng rổ ngoài trời |
+| 13 | **CLB Trượt patin kỹ năng** | Cô Hồ Kim Ân | 0906 345 894 | 18:00 – 20:00 (3 buổi/tuần) | 1.200.000 đ/khóa | Sân tập |
+| 14 | **CLB Cầu lông (6 Sân PVC)** | Đỗ Thanh Hòa | 0937 224 640 | 06:00 – 22:00 hàng ngày | Theo ca & gói tháng | Nhà tập luyện Cầu Lông |
 | 15 | **CLB Bóng đá phong trào** | Ban Thể thao | 0904 450 057 | Chiều & cuối tuần | Theo thỏa thuận | Khuôn viên thể thao |
+| 16 | **CLB Dancesport: Bachata & Kizomba** | Vũ sư Cường Ba | 0969 897 988 | Thứ 7 & Chủ Nhật (17:00 – 18:30) | 100.000 đ/tháng | Phòng chức năng 2 |
 
 ---
 
@@ -78,3 +79,20 @@ Mọi hình ảnh phục vụ bài viết truyền thông hoặc giao diện web
   - `Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-An-Do/` (5 ảnh)
   - `Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-song-khoe/` (3 ảnh)
   - `Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/LOP-HOC/Yoga-tri-lieu/` (5 ảnh)
+- **Kho ảnh Cho thuê & Sự kiện (Gốc):** `Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/cho-thue/` (11 file gốc)
+- **Kho ảnh WebP chuẩn hóa tối ưu (Tải siêu tốc):** `assets/images/cho-thue/` (13 ảnh Thumbnails 800px & Full 1600px)
+
+---
+
+## 5. Danh Mục Dịch Vụ Cho Thuê Hội Trường, Phòng Họp & Sự Kiện (B2B)
+
+Dữ liệu JSON chuẩn: `data/rentals.json` | Trang đích chi tiết: `/cho-thue/index.html`
+
+1. **HT-01 — Hệ Thống 02 Hội Trường Lớn (250 – 500 Chỗ):** Lầu 2 & Lầu 3. Sân khấu thảm đỏ rộng, giàn đèn Par LED, âm thanh Full + Sub, ghế nệm đỏ xếp tầng. Phù hợp đại hội, hội nghị, liên hoan văn nghệ.
+2. **PH-02 — Phòng Hội Nghị VIP & Bàn Tròn Chữ U (25 – 45 Đại Biểu):** Lầu 1. Bàn chữ U gỗ nâu bóng, ghế da xoay cao cấp, bục cờ Đảng - Quốc kỳ, micro cổ ngỗng từng vị trí, máy lạnh riêng biệt.
+3. **ST-03 — Sảnh Triển Lãm Tầng Trệt Indoor Đa Năng (200 – 350 Khách):** Tầng trệt. Sàn gạch men bóng gương hàng trăm m², bục sân khấu mini, gần cửa chính & thang máy, PCCC sprinkler an toàn.
+4. **HC-04 — Khu Ki-ốt Sinh Thái & Sân Hội Chợ Ngoài Trời (Hàng Trăm Khách):** Dãy nhà chòi tre mộc mạc, quảng trường sân bê tông xe tải vào tận nơi, cây xanh nhiệt đới râm mát.
+5. **STD-05 — Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm (20 – 40 Người):** Lầu 1 & 2. Sàn gỗ chống trơn, gương 2 mặt full trần, gióng ba-lê inox; phòng đào tạo vách tiêu âm hiện đại.
+6. **TT-06 — Tổ Hợp Thể Thao: 6 Sân Cầu Lông PVC, Sân Bóng Đá Mini & Bóng Rổ:** Lầu 4 & ngoài trời. Dàn đèn LED đêm, khán đài, chòi nghỉ sinh thái phục vụ giải thể thao nội bộ doanh nghiệp.
+
+*Chính sách:* Hợp đồng pháp lý chuẩn mực, xuất hóa đơn VAT điện tử, trợ giá 15% – 30% cho Công đoàn cơ sở, bãi đỗ xe ô tô & xe máy an ninh miễn phí. Hotline: `0904 450 057`.

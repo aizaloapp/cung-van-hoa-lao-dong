@@ -43,7 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'bong-ro': 'lop-hoc/bong-ro/',
     'patin': 'lop-hoc/patin/',
     'cau-long': 'lop-hoc/cau-long/',
-    'bong-da': 'lop-hoc/bong-da/'
+    'bong-da': 'lop-hoc/bong-da/',
+    'dancesport-bachata-kizomba': 'lop-hoc/dancesport-bachata-kizomba/'
   };
 
   // Filter courses logic
@@ -91,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <h3 class="text-lg font-bold text-slate-800">Không tìm thấy lớp học phù hợp với từ khóa "${searchQuery}"</h3>
           <p class="text-slate-500 text-sm mt-1 max-w-md mx-auto">Vui lòng thử tìm với từ khóa khác hoặc liên hệ bộ phận tiếp nhận qua Hotline / Zalo <strong>${data.facility.hotlineDisplay}</strong> để được hỗ trợ xếp lớp ngay.</p>
           <button onclick="resetFilters()" class="mt-5 px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold rounded-xl transition shadow-md">
-            Xem lại tất cả 15 lớp học
+            Xem lại tất cả ${data.courses.length} lớp học
           </button>
         </div>
       `;
