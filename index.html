@@ -33,51 +33,102 @@
   <!-- Schema.org Structured Data -->
   <script type="application/ld+json">
   {
-  "@context": "https://schema.org",
-  "@type": "SportsActivityLocation",
-  "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
-  "image": "https://cungvanhoalaodong.com/Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng",
-    "addressLocality": "Phường Bình Trưng",
-    "addressRegion": "TP. Hồ Chí Minh",
-    "addressCountry": "VN"
-  },
-  "telephone": "0904450057",
-  "url": "https://cungvanhoalaodong.com/",
-  "sameAs": [
-    "https://www.facebook.com/cosobinhtrungcvhld"
-  ],
-  "hasMap": "https://share.google/bZitFiknyB9p9nH7L",
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "05:00",
-      "closes": "22:00"
-    }
-  ],
-  "description": "Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh công đoàn phục vụ người lao động và nhân dân khu vực Bình Trưng, TP. Hồ Chí Minh.",
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 10.78768,
-    "longitude": 106.7766
-  },
-  "parentOrganization": {
-    "@type": "GovernmentOrganization",
-    "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh",
-    "url": "https://cungvanhoalaodong.com/"
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SportsActivityLocation",
+        "@id": "https://cungvanhoalaodong.com/#facility",
+        "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
+        "image": "https://cungvanhoalaodong.com/Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng",
+          "addressLocality": "Phường Bình Trưng",
+          "addressRegion": "TP. Hồ Chí Minh",
+          "addressCountry": "VN"
+        },
+        "telephone": "0904450057",
+        "url": "https://cungvanhoalaodong.com/",
+        "sameAs": [
+          "https://www.facebook.com/cosobinhtrungcvhld"
+        ],
+        "hasMap": "https://share.google/bZitFiknyB9p9nH7L",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "05:00",
+            "closes": "22:00"
+          }
+        ],
+        "description": "Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh công đoàn phục vụ người lao động và nhân dân khu vực Bình Trưng, TP. Hồ Chí Minh.",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.78768,
+          "longitude": 106.7766
+        },
+        "parentOrganization": {
+          "@type": "GovernmentOrganization",
+          "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh",
+          "url": "https://cungvanhoalaodong.com/"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://cungvanhoalaodong.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Học viên mới có được đăng ký học thử trước không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hầu hết các bộ môn như Boxing, Taekwondo, Yoga, Nhảy hiện đại thiếu nhi đều hỗ trợ học viên đến trải nghiệm, làm quen giáo viên và đánh giá sự phù hợp trước khi đóng học phí chính thức. Bạn chỉ cần nhắn Zalo hoặc gọi 0904 450 057 để được xếp lịch học thử miễn phí."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Đoàn viên công đoàn và công nhân có chính sách giảm giá thế nào?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Là thiết chế của Công đoàn, các lớp học tại Cơ sở Bình Trưng được áp dụng mức học phí trợ giá thiết thực (chỉ từ 100.000đ – 300.000đ/tháng với các lớp Yoga sống khỏe, Múa dân vũ; miễn phí hoàn toàn lớp Lân Sư Rồng). Ngoài ra, các công đoàn cơ sở khi thuê cụm sân cầu lông tập luyện cố định cho đoàn viên đều được chiết khấu tiền giờ ưu đãi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Đến tham gia lớp học hoặc sự kiện có chỗ đậu xe ô tô và bãi giữ xe máy an toàn không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khuôn viên Cung Văn Hóa Lao Động Cơ Sở Bình Trưng (Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP.HCM) sở hữu mặt bằng sân bãi rộng rãi hàng nghìn mét vuông, có khu vực đỗ xe ô tô và bãi giữ xe máy an ninh, có nhân viên bảo vệ túc trực kiểm soát vé ra vào (thu phí theo quy định hiện hành), rất an tâm và thuận tiện cho học viên, quý phụ huynh đưa đón con em cũng như khách đến tham gia sự kiện."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Cơ sở 245 Nguyễn Duy Trinh có phải Nhà thiếu nhi số 200 Nguyễn Duy Trinh không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Không phải. Địa chỉ số 200 Nguyễn Duy Trinh là Nhà Thiếu Nhi Quận 2 cũ (chuyên lứa tuổi nhi đồng). Còn địa chỉ số 245 Nguyễn Duy Trinh là Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng, tòa nhà 5 tầng khang trang phục vụ đa lứa tuổi: thiếu nhi, học sinh, đoàn viên, người lao động và người cao tuổi."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Đăng ký thuê sân cầu lông hoặc đăng ký lớp học như thế nào?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bạn có thể đăng ký nhanh bằng 3 cách: (1) Nhắn tin qua Zalo Hotline 0904 450 057; (2) Điền form đăng ký trực tuyến phía dưới website; hoặc (3) Đến trực tiếp phòng ghi danh tại sảnh tầng trệt số 245 Nguyễn Duy Trinh trong giờ hoạt động để nhận thẻ học viên và xếp lịch tập ngay."
+            }
+          }
+        ]
+      }
+    ]
   }
-}
   </script>
 </head>
 
@@ -978,11 +1029,11 @@
         <!-- FAQ 3 -->
         <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200/80 overflow-hidden transition">
           <button class="faq-header w-full p-5 text-left font-bold text-slate-900 text-sm sm:text-base flex items-center justify-between gap-4">
-            <span>3. Khuôn viên cơ sở có chỗ đậu xe ô tô và xe máy không?</span>
+            <span>3. Đến tham gia lớp học hoặc sự kiện có chỗ đậu xe ô tô và bãi giữ xe máy an toàn không?</span>
             <i data-lucide="chevron-down" class="faq-chevron w-5 h-5 text-slate-500 shrink-0 transition duration-300"></i>
           </button>
           <div class="faq-answer px-5 pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-200/50 pt-3">
-            Cơ sở sở hữu mặt bằng sân bãi rộng rãi hàng nghìn mét vuông, có bảo vệ túc trực và bãi giữ xe an ninh, thuận tiện cho phụ huynh, học viên đi xe máy cũng như xe ô tô (thu phí theo quy định).
+            Khuôn viên Cung Văn Hóa Lao Động Cơ Sở Bình Trưng (Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP.HCM) sở hữu mặt bằng sân bãi rộng rãi hàng nghìn mét vuông, có khu vực đỗ xe ô tô và bãi giữ xe máy an ninh, có nhân viên bảo vệ túc trực kiểm soát vé ra vào (thu phí theo quy định hiện hành), rất an tâm và thuận tiện cho học viên, quý phụ huynh đưa đón con em cũng như khách đến tham gia sự kiện.
           </div>
         </div>
 
