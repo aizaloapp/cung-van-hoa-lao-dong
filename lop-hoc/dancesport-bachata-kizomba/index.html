@@ -33,95 +33,106 @@
 
   <!-- Schema.org JSON-LD (SEO & GEO Structured Data) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Course",
-        "name": "CLB Dancesport: Bachata & Kizomba",
-        "description": "Lớp khiêu vũ thể thao Dancesport Bachata & Kizomba cộng đồng tại Cung Văn Hóa Lao Động Cơ Sở Bình Trưng (245 Nguyễn Duy Trinh). Vũ sư Cường Ba trực tiếp hướng dẫn. Lịch học Thứ 7 & Chủ Nhật (17:00 - 18:30). Học phí 100.000 đ/tháng.",
-        "provider": {
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Course",
+      "name": "CLB Dancesport: Bachata & Kizomba",
+      "description": "Lớp khiêu vũ thể thao Dancesport Bachata & Kizomba cộng đồng tại Cung Văn Hóa Lao Động Cơ Sở Bình Trưng (245 Nguyễn Duy Trinh). Vũ sư Cường Ba trực tiếp hướng dẫn. Lịch học Thứ 7 & Chủ Nhật (17:00 - 18:30). Học phí 100.000 đ/tháng.",
+      "provider": {
+        "@type": "GovernmentOrganization",
+        "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
+        "url": "https://cungvanhoalaodong.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Số 245 Nguyễn Duy Trinh",
+          "addressLocality": "Phường Bình Trưng",
+          "addressRegion": "TP. Hồ Chí Minh",
+          "addressCountry": "VN"
+        },
+        "telephone": "0904450057",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 10.78768,
+          "longitude": 106.7766
+        },
+        "hasMap": "https://share.google/bZitFiknyB9p9nH7L",
+        "parentOrganization": {
           "@type": "GovernmentOrganization",
-          "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng",
-          "url": "https://cungvanhoalaodong.com",
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Số 245 Nguyễn Duy Trinh",
-            "addressLocality": "Phường Bình Trưng",
-            "addressRegion": "TP. Hồ Chí Minh",
-            "addressCountry": "VN"
-          },
-          "telephone": "0904450057"
-        },
-        "instructor": {
-          "@type": "Person",
-          "name": "Vũ sư Cường Ba",
-          "telephone": "0969897988",
-          "jobTitle": "Chủ nhiệm CLB & Vũ sư Khiêu vũ Thể thao"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "100000",
-          "priceCurrency": "VND",
-          "category": "100.000 đ/tháng",
-          "availability": "https://schema.org/InStock",
-          "validFrom": "2026-10-01"
+          "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh",
+          "url": "https://cungvanhoalaodong.com/"
         }
       },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Trang chủ",
-            "item": "https://cungvanhoalaodong.com/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Lớp học",
-            "item": "https://cungvanhoalaodong.com/#lop-hoc"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "CLB Dancesport Bachata & Kizomba",
-            "item": "https://cungvanhoalaodong.com/lop-hoc/dancesport-bachata-kizomba/"
-          }
-        ]
+      "instructor": {
+        "@type": "Person",
+        "name": "Vũ sư Cường Ba",
+        "telephone": "0969897988",
+        "jobTitle": "Chủ nhiệm CLB & Vũ sư Khiêu vũ Thể thao"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Người chưa từng khiêu vũ có theo học được lớp Bachata & Kizomba không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Hoàn toàn được! Lớp học được thiết kế dành cho mọi đối tượng từ cơ bản nhất. Vũ sư Cường Ba sẽ kèm cặp từng nhịp đếm, bước chân căn bản (Basic Step) để học viên tự tin sau vài buổi tập."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Đi học một mình có cần phải có bạn nhảy đi cùng không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Không bắt buộc phải có bạn nhảy. Trong buổi học, các học viên sẽ luân phiên đổi cặp (rotation) để cùng thực hành, tạo không khí cởi mở và giúp mọi người rèn phản xạ dẫn dắt/theo bước."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Cần chuẩn bị trang phục và giày như thế nào khi đến lớp?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Trang phục lịch sự, co giãn thoải mái. Bạn có thể mang giày khiêu vũ chuyên dụng hoặc giày thể thao mềm, êm chân để di chuyển linh hoạt."
-            }
-          }
-        ]
+      "offers": {
+        "@type": "Offer",
+        "price": "100000",
+        "priceCurrency": "VND",
+        "category": "100.000 đ/tháng",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-10-01"
       }
-    ]
-  }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Trang chủ",
+          "item": "https://cungvanhoalaodong.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Lớp học",
+          "item": "https://cungvanhoalaodong.com/#lop-hoc"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "CLB Dancesport Bachata & Kizomba",
+          "item": "https://cungvanhoalaodong.com/lop-hoc/dancesport-bachata-kizomba/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Người chưa từng khiêu vũ có theo học được lớp Bachata & Kizomba không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hoàn toàn được! Lớp học được thiết kế dành cho mọi đối tượng từ cơ bản nhất. Vũ sư Cường Ba sẽ kèm cặp từng nhịp đếm, bước chân căn bản (Basic Step) để học viên tự tin sau vài buổi tập."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Đi học một mình có cần phải có bạn nhảy đi cùng không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Không bắt buộc phải có bạn nhảy. Trong buổi học, các học viên sẽ luân phiên đổi cặp (rotation) để cùng thực hành, tạo không khí cởi mở và giúp mọi người rèn phản xạ dẫn dắt/theo bước."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cần chuẩn bị trang phục và giày như thế nào khi đến lớp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trang phục lịch sự, co giãn thoải mái. Bạn có thể mang giày khiêu vũ chuyên dụng hoặc giày thể thao mềm, êm chân để di chuyển linh hoạt."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-rose-600 selection:text-white">

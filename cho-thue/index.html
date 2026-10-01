@@ -34,101 +34,141 @@
 
   <!-- Schema.org JSON-LD (EventVenue + LocalBusiness + FAQPage) -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": ["EventVenue", "LocalBusiness"],
-        "@id": "https://cungvanhoalaodong.com/cho-thue/#venue",
-        "name": "Dịch Vụ Cho Thuê Hội Trường & Không Gian Sự Kiện — CVHLĐ Cơ Sở Bình Trưng",
-        "alternateName": "Cho thuê hội trường 245 Nguyễn Duy Trinh",
-        "url": "https://cungvanhoalaodong.com/cho-thue/",
-        "telephone": "+84904450057",
-        "priceRange": "$$",
-        "image": [
-          "https://cungvanhoalaodong.com/assets/images/cho-thue/mat-tien-full.webp",
-          "https://cungvanhoalaodong.com/assets/images/cho-thue/hoi-truong-san-khau-full.webp",
-          "https://cungvanhoalaodong.com/assets/images/cho-thue/phong-hop-vip-full.webp"
-        ],
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng",
-          "addressLocality": "Thành phố Thủ Đức",
-          "addressRegion": "Thành phố Hồ Chí Minh",
-          "addressCountry": "VN"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "10.7878",
-          "longitude": "106.7725"
-        },
-        "hasMap": "https://share.google/bZitFiknyB9p9nH7L",
-        "maximumAttendeeCapacity": 500,
-        "amenityFeature": [
-          { "@type": "LocationFeatureSpecification", "name": "Bãi đỗ xe ô tô & xe máy an ninh rộng rãi", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Màn chiếu & Máy chiếu sắc nét", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Giàn đèn Par LED sân khấu", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Hệ thống âm thanh hội nghị Full + Sub", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Máy lạnh công suất lớn", "value": true },
-          { "@type": "LocationFeatureSpecification", "name": "Kỹ thuật viên trực xuyên suốt", "value": true }
-        ],
-        "openingHoursSpecification": [
-          {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-            "opens": "07:30",
-            "closes": "21:30"
-          }
-        ]
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": [
+        "EventVenue",
+        "LocalBusiness"
+      ],
+      "@id": "https://cungvanhoalaodong.com/cho-thue/#venue",
+      "name": "Dịch Vụ Cho Thuê Hội Trường & Không Gian Sự Kiện — CVHLĐ Cơ Sở Bình Trưng",
+      "alternateName": "Cho thuê hội trường 245 Nguyễn Duy Trinh",
+      "url": "https://cungvanhoalaodong.com/cho-thue/",
+      "telephone": "+84904450057",
+      "priceRange": "$$",
+      "image": [
+        "https://cungvanhoalaodong.com/assets/images/cho-thue/mat-tien-full.webp",
+        "https://cungvanhoalaodong.com/assets/images/cho-thue/hoi-truong-san-khau-full.webp",
+        "https://cungvanhoalaodong.com/assets/images/cho-thue/phong-hop-vip-full.webp"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Số 245 Nguyễn Duy Trinh, Phường Bình Trưng",
+        "addressLocality": "Thành phố Thủ Đức",
+        "addressRegion": "Thành phố Hồ Chí Minh",
+        "addressCountry": "VN"
       },
-      {
-        "@type": "FAQPage",
-        "@id": "https://cungvanhoalaodong.com/cho-thue/#faq",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Cơ sở có xuất hóa đơn giá trị gia tăng (VAT) cho doanh nghiệp không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Có đầy đủ 100%. Là đơn vị sự nghiệp trực thuộc Liên đoàn Lao động TP.HCM, Cung Văn Hóa Lao Động TP.HCM cung cấp hợp đồng pháp lý chuẩn mực, biên bản nghiệm thu và xuất hóa đơn điện tử VAT hợp lệ phục vụ quyết toán thuế."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Khuôn viên có đủ chỗ đỗ xe cho ô tô và đoàn khách đông người không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Khuôn viên tại số 245 Nguyễn Duy Trinh sở hữu sân trước rộng rãi, có bãi đỗ xe ô tô cho đại biểu và khu vực giữ hàng trăm xe máy an toàn, có bảo vệ túc trực 24/7."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Có thể đến khảo sát thực tế không gian trước khi quyết định thuê không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Rất hoan nghênh Quý đơn vị! Bạn chỉ cần liên hệ Hotline/Zalo 0904 450 057, ban quản lý sẽ sắp xếp nhân sự đón tiếp, hướng dẫn xem thực tế từng phòng và tư vấn phương án bố trí bàn ghế phù hợp nhất."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Công đoàn cơ sở hoặc trường học có được chính sách trợ giá không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Với sứ mệnh thiết chế phục vụ người lao động và an sinh xã hội, Cung Văn Hóa Lao Động Cơ Sở Bình Trưng luôn áp dụng chính sách trợ giá ưu đãi từ 15% đến 30% cho các cấp Công đoàn, đơn vị giáo dục và tổ chức thiện nguyện."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Cơ sở có hỗ trợ kỹ thuật viên âm thanh ánh sáng và tiệc teabreak không?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Có. Mỗi buổi thuê hội trường đều có kỹ thuật viên trực vận hành âm thanh ánh sáng, máy chiếu. Đồng thời cơ sở hỗ trợ kết nối các đơn vị teabreak tiệc trà, tiệc ngọt uy tín theo ngân sách của khách hàng."
-            }
-          }
-        ]
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 10.78768,
+        "longitude": 106.7766
+      },
+      "hasMap": "https://share.google/bZitFiknyB9p9nH7L",
+      "maximumAttendeeCapacity": 500,
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Bãi đỗ xe ô tô & xe máy an ninh rộng rãi",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Màn chiếu & Máy chiếu sắc nét",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Giàn đèn Par LED sân khấu",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Hệ thống âm thanh hội nghị Full + Sub",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Máy lạnh công suất lớn",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Kỹ thuật viên trực xuyên suốt",
+          "value": true
+        }
+      ],
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "07:30",
+          "closes": "21:30"
+        }
+      ],
+      "parentOrganization": {
+        "@type": "GovernmentOrganization",
+        "name": "Cung Văn Hóa Lao Động TP. Hồ Chí Minh",
+        "url": "https://cungvanhoalaodong.com/"
       }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cungvanhoalaodong.com/cho-thue/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Cơ sở có xuất hóa đơn giá trị gia tăng (VAT) cho doanh nghiệp không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có đầy đủ 100%. Là đơn vị sự nghiệp trực thuộc Liên đoàn Lao động TP.HCM, Cung Văn Hóa Lao Động TP.HCM cung cấp hợp đồng pháp lý chuẩn mực, biên bản nghiệm thu và xuất hóa đơn điện tử VAT hợp lệ phục vụ quyết toán thuế."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Khuôn viên có đủ chỗ đỗ xe cho ô tô và đoàn khách đông người không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Khuôn viên tại số 245 Nguyễn Duy Trinh sở hữu sân trước rộng rãi, có bãi đỗ xe ô tô cho đại biểu và khu vực giữ hàng trăm xe máy an toàn, có bảo vệ túc trực 24/7."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Có thể đến khảo sát thực tế không gian trước khi quyết định thuê không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Rất hoan nghênh Quý đơn vị! Bạn chỉ cần liên hệ Hotline/Zalo 0904 450 057, ban quản lý sẽ sắp xếp nhân sự đón tiếp, hướng dẫn xem thực tế từng phòng và tư vấn phương án bố trí bàn ghế phù hợp nhất."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Công đoàn cơ sở hoặc trường học có được chính sách trợ giá không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Với sứ mệnh thiết chế phục vụ người lao động và an sinh xã hội, Cung Văn Hóa Lao Động Cơ Sở Bình Trưng luôn áp dụng chính sách trợ giá ưu đãi từ 15% đến 30% cho các cấp Công đoàn, đơn vị giáo dục và tổ chức thiện nguyện."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Cơ sở có hỗ trợ kỹ thuật viên âm thanh ánh sáng và tiệc teabreak không?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Có. Mỗi buổi thuê hội trường đều có kỹ thuật viên trực vận hành âm thanh ánh sáng, máy chiếu. Đồng thời cơ sở hỗ trợ kết nối các đơn vị teabreak tiệc trà, tiệc ngọt uy tín theo ngân sách của khách hàng."
+          }
+        }
+      ]
+    }
+  ]
+}
   </script>
 </head>
 
