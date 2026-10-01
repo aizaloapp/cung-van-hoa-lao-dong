@@ -89,7 +89,7 @@ Mọi hình ảnh phục vụ bài viết truyền thông hoặc giao diện web
 Dữ liệu JSON chuẩn: `data/rentals.json` | Trang đích chi tiết: `/cho-thue/index.html`
 
 1. **HT-01 — Hệ Thống 02 Hội Trường Lớn (250 – 500 Chỗ):** Lầu 2 & Lầu 3. Sân khấu thảm đỏ rộng, giàn đèn Par LED, âm thanh Full + Sub, ghế nệm đỏ xếp tầng. Phù hợp đại hội, hội nghị, liên hoan văn nghệ.
-2. **PH-02 — Phòng Hội Nghị VIP & Bàn Tròn Chữ U (25 – 45 Đại Biểu):** Lầu 1. Bàn chữ U gỗ nâu bóng, ghế da xoay cao cấp, bục cờ Đảng - Quốc kỳ, micro cổ ngỗng từng vị trí, máy lạnh riêng biệt.
+2. **PH-02 — Phòng Hội Nghị VIP & Bàn Tròn Chữ U (25 – 45 Đại Biểu):** Lầu 1. Bàn chữ U gỗ nâu bóng, ghế da xoay cao cấp, bục cờ Đảng - Quốc kỳ, micro cổ ngỗng từng vị trí, hệ thống quạt làm mát thông thoáng (phòng không trang bị máy lạnh).
 3. **ST-03 — Sảnh Triển Lãm Tầng Trệt Indoor Đa Năng (200 – 350 Khách):** Tầng trệt. Sàn gạch men bóng gương hàng trăm m², bục sân khấu mini, gần cửa chính & thang máy, PCCC sprinkler an toàn.
 4. **HC-04 — Khu Ki-ốt Sinh Thái & Sân Hội Chợ Ngoài Trời (Hàng Trăm Khách):** Dãy nhà chòi tre mộc mạc, quảng trường sân bê tông xe tải vào tận nơi, cây xanh nhiệt đới râm mát.
 5. **STD-05 — Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm (20 – 40 Người):** Lầu 1 & 2. Sàn gỗ chống trơn, gương 2 mặt full trần, gióng ba-lê inox; phòng đào tạo vách tiêu âm hiện đại.
