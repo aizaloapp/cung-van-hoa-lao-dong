@@ -37,7 +37,13 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
 5. **Quy định bãi giữ xe (Tuyệt đối không ghi miễn phí):**
    - Cơ sở có bãi giữ xe máy và bãi đỗ xe ô tô rộng rãi, an ninh có bảo vệ kiểm soát.
    - **KHÔNG MIỄN PHÍ gửi xe** (thực hiện thu phí theo biểu giá quy định của nhà nước/đơn vị vận hành bãi xe).
-   - Tuyệt đối KHÔNG đưa thông tin "miễn phí gửi xe/đỗ xe" vào bất kỳ bài viết, website, bài đăng mạng xã hội hay câu trả lời tư vấn nào.
+   - Tuyệt đối KHÔNG đưa thông tin "miễn phí gửi xe/đỗ xe" vào bất kỳ bài viết, website, bài đăng mạng xã hội, câu trả lời tư vấn hay **các tệp dữ liệu máy đọc (`llms.txt`, `auth.md`, `data/courses.json`)**.
+6. **Phân tách độc lập HTML DOM & Schema JSON-LD khi đồng bộ FAQ:**
+   - Tuyệt đối **KHÔNG dùng kiểm tra chuỗi toàn văn** (`if question in content`) khi vừa cập nhật Schema vừa cập nhật HTML.
+   - Bắt buộc kiểm tra độc lập 2 vùng:
+     1. Khối hiển thị HTML: Phải kiểm tra sự tồn tại của thẻ `<span>{question}</span>` hoặc `<details>` bên trong vùng `<!-- FAQ Section -->`.
+     2. Khối dữ liệu cấu trúc: Kiểm tra mảng `mainEntity` của `FAQPage` trong JSON-LD.
+   - Đảm bảo tính nhất quán: Người dùng nhìn thấy gì trên màn hình thì Google Bot và AI đọc được đúng như vậy trong Schema.
 
 ---
 
