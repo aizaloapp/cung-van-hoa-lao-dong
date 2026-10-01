@@ -1,0 +1,17 @@
+{
+  "resource": "https://cungvanhoalaodong.com",
+  "authorization_servers": [
+    "https://cungvanhoalaodong.com"
+  ],
+  "scopes_supported": [
+    "read:data",
+    "write:data"
+  ],
+  "bearer_methods_supported": [
+    "header"
+  ],
+  "jwks_uri": "https://cungvanhoalaodong.com/.well-known/jwks.json",
+  "resource_name": "Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng API & Agent Resources",
+  "resource_documentation": "https://cungvanhoalaodong.com/openapi.json",
+  "resource_policy_uri": "https://cungvanhoalaodong.com/auth.md"
+}

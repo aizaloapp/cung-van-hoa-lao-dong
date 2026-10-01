@@ -1,11 +1,14 @@
-# Security and Performance Headers for Cloudflare Pages
+# Security, Performance and Agent Readiness Headers for Cloudflare Pages
 
-# Default headers for all routes
+# Global headers for all routes & AI Discovery
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+  Link: </llms.txt>; rel="alternate"; type="text/markdown", </llms.txt>; rel="describedby"; type="text/markdown", </.well-known/api-catalog>; rel="api-catalog", </.well-known/mcp/server-card.json>; rel="mcp-server-card", </.well-known/agent-card.json>; rel="agent-card", </.well-known/agent.json>; rel="agent", </.well-known/oauth-protected-resource>; rel="oauth-protected-resource", </auth.md>; rel="auth-metadata", </.well-known/auth.md>; rel="auth-metadata", </.well-known/http-message-signatures-directory>; rel="http-message-signatures-directory"
+  Vary: Accept
 
 # Cache control for HTML documents (always revalidate)
 /*.html
@@ -13,6 +16,9 @@
 
 # Cache control for static assets (images, css, js, json)
 /Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/*
+  Cache-Control: public, max-age=2592000, immutable
+
+/assets/*
   Cache-Control: public, max-age=2592000, immutable
 
 /css/*
@@ -24,7 +30,61 @@
 /data/*
   Cache-Control: public, max-age=0, must-revalidate
 
-# Prevent indexing and discourage public browsing of internal workspace documentation
-/*.md
-  X-Robots-Tag: noindex, nofollow, noarchive
-  Cache-Control: no-store, max-age=0
+# Web Bot Auth MIME Type (RFC 8037 / RFC 9421)
+/.well-known/http-message-signatures-directory
+  Content-Type: application/http-message-signatures-directory+json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/.well-known/http-message-signatures-directory.json
+  Content-Type: application/http-message-signatures-directory+json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# RFC 9727 API Catalog Linkset
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# WorkOS Agent Authentication Standard
+/.well-known/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+# Protocols & Cards (JSON)
+/.well-known/agent-card.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/.well-known/agent.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/.well-known/mcp/server-card.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/.well-known/oauth-authorization-server
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600
+
+/.well-known/oauth-protected-resource
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600

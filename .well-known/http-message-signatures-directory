@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "OKP",
+      "crv": "Ed25519",
+      "kid": "cung-van-hoa-lao-dong-web-bot-2026",
+      "x": "25vK_k3W5F0k8QJ9z3nQp2dG9nN-eB6eP2jM6lW3xY4",
+      "use": "sig",
+      "alg": "EdDSA"
+    }
+  ]
+}

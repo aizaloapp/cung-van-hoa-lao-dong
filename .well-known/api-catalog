@@ -1,0 +1,19 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://cungvanhoalaodong.com/api",
+      "service-desc": [
+        {
+          "href": "https://cungvanhoalaodong.com/openapi.json",
+          "type": "application/vnd.oai.openapi+json;version=3.1.0"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://cungvanhoalaodong.com/llms.txt",
+          "type": "text/markdown"
+        }
+      ]
+    }
+  ]
+}

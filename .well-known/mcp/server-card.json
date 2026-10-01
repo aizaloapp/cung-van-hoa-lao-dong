@@ -1,0 +1,35 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/mcp-server-card/v1.json",
+  "version": "1.0",
+  "protocolVersion": "2024-11-05",
+  "serverInfo": {
+    "name": "cung-van-hoa-lao-dong-mcp",
+    "title": "Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng MCP Server",
+    "version": "1.0.0"
+  },
+  "description": "Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh công đoàn phục vụ người lao động và nhân dân tại 245 Nguyễn Duy Trinh, TP. Hồ Chí Minh.",
+  "transport": {
+    "type": "streamable-http",
+    "endpoint": "/api/mcp"
+  },
+  "authentication": {
+    "required": false
+  },
+  "tools": [
+    {
+      "name": "lookup_info",
+      "title": "Lookup Domain Information",
+      "description": "Query specific knowledge and resources from Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Topic, keyword, or query string"
+          }
+        },
+        "required": ["query"]
+      }
+    }
+  ]
+}

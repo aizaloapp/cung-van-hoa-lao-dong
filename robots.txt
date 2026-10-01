@@ -1,6 +1,16 @@
+# robots.txt with Cloudflare AI & Search Engine Optimization
+# Project: Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng
+# Host: cungvanhoalaodong.com
+
 User-agent: *
 Allow: /
-Disallow: /*.md$
-Disallow: /*.json$
 
+# Agent & AI Directives (RFC 9309 & Content-Signal)
+Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+
+# Sitemap & LLMs Discovery
 Sitemap: https://cungvanhoalaodong.com/sitemap.xml
+Link: <https://cungvanhoalaodong.com/llms.txt>; rel="describedby"; type="text/markdown"
+Link: <https://cungvanhoalaodong.com/.well-known/api-catalog>; rel="api-catalog"
+Link: <https://cungvanhoalaodong.com/.well-known/mcp/server-card.json>; rel="mcp-server-card"
+Link: <https://cungvanhoalaodong.com/.well-known/agent-card.json>; rel="agent-card"

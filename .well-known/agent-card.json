@@ -1,0 +1,38 @@
+{
+  "$schema": "https://a2a-protocol.org/schemas/agent-card/v1.json",
+  "name": "Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng AI",
+  "version": "1.0.0",
+  "description": "Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và an sinh công đoàn phục vụ người lao động và nhân dân tại 245 Nguyễn Duy Trinh, TP. Hồ Chí Minh.",
+  "url": "https://cungvanhoalaodong.com/api/mcp",
+  "provider": {
+    "organization": "Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng",
+    "url": "https://cungvanhoalaodong.com"
+  },
+  "capabilities": {
+    "tools": true,
+    "streaming": true,
+    "prompts": true,
+    "message/stream": true
+  },
+  "supportedInterfaces": [
+    {
+      "url": "https://cungvanhoalaodong.com/api/mcp",
+      "protocol": "streamable-http",
+      "type": "mcp"
+    }
+  ],
+  "skills": [
+    {
+      "id": "default-lookup",
+      "name": "Knowledge & Action Lookup",
+      "description": "Query domain data and execute assistant workflows for Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng.",
+      "inputModes": ["application/json", "text/plain"],
+      "outputModes": ["application/json", "text/markdown"],
+      "examples": ["Query default information from Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng"]
+    }
+  ],
+  "authentication": {
+    "schemes": ["bearer", "none"],
+    "token_endpoint": "https://cungvanhoalaodong.com/api/auth/token"
+  }
+}
