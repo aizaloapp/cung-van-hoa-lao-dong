@@ -65,27 +65,32 @@
 
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white overflow-x-hidden">
 
-  <!-- TOPBAR -->
-  <aside aria-label="Thông báo tuyển sinh" class="bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-950 text-white text-xs py-1.5 px-4 border-b border-blue-800/60">
-    <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+  <!-- TOPBAR (Optimized for Mobile & Desktop) -->
+  <aside aria-label="Thông báo tuyển sinh" class="bg-gradient-to-r from-blue-950 via-blue-900 to-indigo-950 text-white text-xs py-1.5 px-3 sm:px-4 border-b border-blue-800/60">
+    <div class="max-w-7xl mx-auto flex justify-between items-center gap-2 sm:gap-4">
       <!-- Announcement Ticker -->
-      <div class="flex items-center gap-2 text-xs truncate">
-        <span class="inline-flex items-center justify-center px-2 py-0.5 bg-red-600 text-white text-[10px] font-black uppercase tracking-wider rounded-full shrink-0 animate-pulse">
+      <div class="flex items-center gap-1.5 sm:gap-2 text-xs min-w-0">
+        <span class="inline-flex items-center justify-center px-1.5 sm:px-2 py-0.5 bg-red-600 text-white text-[9px] sm:text-[10px] font-black uppercase tracking-wider rounded-full shrink-0 animate-pulse">
           MỚI
         </span>
-        <span class="text-blue-100 truncate font-medium text-[11px] sm:text-xs">
+        <!-- Mobile Text (Concise & Clean) -->
+        <span class="sm:hidden text-blue-100 font-medium text-[11px] truncate">
+          Tuyển sinh Quý 4/2026
+        </span>
+        <!-- Desktop Text (Full detailed version) -->
+        <span class="hidden sm:inline text-blue-100 font-medium text-xs truncate">
           Tuyển sinh các lớp Quý 4/2026 &bull; Nhận đặt Hội trường 500 chỗ, Phòng họp VIP & Sân sự kiện — Trợ giá Công đoàn
         </span>
       </div>
 
-      <!-- Quick Contact on Desktop (Hidden on mobile to save vertical space) -->
-      <div class="hidden sm:flex items-center gap-5 text-blue-200 text-xs shrink-0 font-medium">
-        <a href="tel:0904450057" class="hover:text-amber-300 transition flex items-center gap-1.5">
-          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i>
-          <span>Hotline: <strong class="text-white font-extrabold">0904 450 057</strong></span>
+      <!-- Quick Contact (Hotline visible on all devices, Location on desktop) -->
+      <div class="flex items-center gap-3 sm:gap-5 text-blue-200 text-xs shrink-0 font-medium">
+        <a href="tel:0904450057" class="hover:text-amber-300 transition flex items-center gap-1 text-[11px] sm:text-xs">
+          <i data-lucide="phone" class="w-3 h-3 sm:w-3.5 sm:h-3.5 text-amber-400 shrink-0"></i>
+          <span>Hotline: <strong class="text-white font-extrabold whitespace-nowrap">0904 450 057</strong></span>
         </a>
-        <a href="https://share.google/bZitFiknyB9p9nH7L" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300 transition flex items-center gap-1">
-          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-400"></i>
+        <a href="https://share.google/bZitFiknyB9p9nH7L" target="_blank" rel="noopener noreferrer" class="hidden md:flex hover:text-amber-300 transition items-center gap-1">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-red-400 shrink-0"></i>
           <span>245 Nguyễn Duy Trinh, TP. Hồ Chí Minh</span>
         </a>
       </div>
