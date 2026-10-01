@@ -34,6 +34,10 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
    - Luôn đối soát với **[CONTEXT.md](file:///d:/A-Du-An/Cung-van-hoa-lao-dong/CONTEXT.md)** và dữ liệu chuẩn **[`data/courses.json`](file:///d:/A-Du-An/Cung-van-hoa-lao-dong/data/courses.json)**.
 4. **Bảo mật và an toàn mã nguồn:**
    - Không commit bất kỳ file `.env*` hoặc khóa bảo mật nào lên Git.
+5. **Quy định bãi giữ xe (Tuyệt đối không ghi miễn phí):**
+   - Cơ sở có bãi giữ xe máy và bãi đỗ xe ô tô rộng rãi, an ninh có bảo vệ kiểm soát.
+   - **KHÔNG MIỄN PHÍ gửi xe** (thực hiện thu phí theo biểu giá quy định của nhà nước/đơn vị vận hành bãi xe).
+   - Tuyệt đối KHÔNG đưa thông tin "miễn phí gửi xe/đỗ xe" vào bất kỳ bài viết, website, bài đăng mạng xã hội hay câu trả lời tư vấn nào.
 
 ---
 

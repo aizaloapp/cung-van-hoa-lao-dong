@@ -95,4 +95,12 @@ Dữ liệu JSON chuẩn: `data/rentals.json` | Trang đích chi tiết: `/cho-t
 5. **STD-05 — Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm (20 – 40 Người):** Lầu 1 & 2. Sàn gỗ chống trơn, gương 2 mặt full trần, gióng ba-lê inox; phòng đào tạo vách tiêu âm hiện đại; hệ thống quạt làm mát thông thoáng (phòng không trang bị máy lạnh và loa Bluetooth).
 6. **TT-06 — Tổ Hợp Thể Thao: 6 Sân Cầu Lông PVC, Sân Bóng Đá Mini & Bóng Rổ:** Lầu 4 & ngoài trời. Dàn đèn LED đêm, khán đài, chòi nghỉ sinh thái phục vụ giải thể thao nội bộ doanh nghiệp.
 
-*Chính sách:* Hợp đồng pháp lý chuẩn mực, xuất hóa đơn VAT điện tử, trợ giá 15% – 30% cho Công đoàn cơ sở, bãi đỗ xe ô tô & xe máy an ninh miễn phí. Hotline: `0904 450 057`.
+*Chính sách:* Hợp đồng pháp lý chuẩn mực, xuất hóa đơn VAT điện tử, trợ giá 15% – 30% cho Công đoàn cơ sở, bãi đỗ xe ô tô & xe máy an ninh rộng rãi (thu phí giữ xe theo quy định). Hotline: `0904 450 057`.
+
+---
+
+## 6. Quy Định Vận Hành Cốt Lõi Về Bãi Giữ Xe (Parking Policy)
+
+- **Quy mô:** Khuôn viên có bãi giữ xe máy và bãi đỗ xe ô tô rộng rãi, có bảo vệ kiểm soát an ninh 24/7.
+- **Quy định thu phí:** **KHÔNG MIỄN PHÍ gửi xe** cho học viên, phụ huynh hay khách thuê hội trường/sự kiện. Việc giữ xe có thu phí theo biểu giá quy định hiện hành.
+- **Ranh giới truyền thông:** Tuyệt đối không ghi "miễn phí gửi xe", "miễn phí đỗ xe" trong bất kỳ bài viết, website, bài đăng mạng xã hội hay tài liệu tư vấn nào.
