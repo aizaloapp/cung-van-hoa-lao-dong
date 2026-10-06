@@ -1,0 +1,112 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng Public API",
+    "description": "Public Machine-Readable API and Model Context Protocol (MCP) endpoints for courses, facility rentals, and autonomous agent queries.",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Ban Quản Trị CVHLĐ Cơ Sở Bình Trưng",
+      "url": "https://cungvanhoalaodong.com",
+      "email": "hotline@cungvanhoalaodong.com"
+    },
+    "license": {
+      "name": "CC BY-ND 4.0",
+      "url": "https://creativecommons.org/licenses/by-nd/4.0/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://cungvanhoalaodong.com",
+      "description": "Production Edge Server (Cloudflare Pages)"
+    }
+  ],
+  "paths": {
+    "/api/mcp": {
+      "post": {
+        "summary": "Model Context Protocol (MCP) JSON-RPC Endpoint",
+        "description": "Handles JSON-RPC 2.0 requests for tool discovery and invocation (search_courses, get_rental_spaces, get_facility_info) by AI Agents.",
+        "operationId": "invokeMcpRpc",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "jsonrpc": { "type": "string", "example": "2.0" },
+                  "method": { "type": "string", "example": "tools/call" },
+                  "params": { "type": "object" },
+                  "id": { "oneOf": [{ "type": "string" }, { "type": "integer" }], "example": 1 }
+                },
+                "required": ["jsonrpc", "method", "id"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "JSON-RPC 2.0 Response with tool result",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "jsonrpc": { "type": "string", "example": "2.0" },
+                    "result": { "type": "object" },
+                    "id": { "oneOf": [{ "type": "string" }, { "type": "integer" }] }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/courses.json": {
+      "get": {
+        "summary": "Get 16 Courses and Classes Data",
+        "description": "Returns the complete structured JSON list of all 16 courses, instructors, fees, schedules and locations.",
+        "operationId": "getCoursesData",
+        "responses": {
+          "200": {
+            "description": "Course catalog dataset",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "facility": { "type": "object" },
+                    "courses": { "type": "array" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/rentals.json": {
+      "get": {
+        "summary": "Get Event and Meeting Rental Spaces Data",
+        "description": "Returns the complete structured JSON dataset of all 6 B2B event halls, meeting rooms and sports facilities.",
+        "operationId": "getRentalsData",
+        "responses": {
+          "200": {
+            "description": "Rental spaces dataset",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "facility": { "type": "object" },
+                    "spaces": { "type": "array" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

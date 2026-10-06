@@ -1,0 +1,1481 @@
+<!DOCTYPE html>
+<html lang="vi" style="--preview-scale: 0.65;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poster Khai Giảng Khiêu Vũ Rumba Cơ Bản — Vũ Sư Trần Tú | CVHLĐ Bình Trưng</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Montserrat:wght@600;700;800;900&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="js/html2canvas.min.js"></script>
+
+  <style>
+    /* =========================================================
+       RESET & BASE CONTROL BAR STYLING
+       ========================================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #f1f5f9;
+      font-family: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 60px;
+      overflow-x: hidden;
+    }
+
+    /* TOP TOOLBAR STUDIO */
+    .studio-toolbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 12px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .toolbar-left, .toolbar-center, .toolbar-right {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .studio-title {
+      font-weight: 800;
+      font-size: 15px;
+      color: #fbbf24;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .studio-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #1e293b;
+      color: #e2e8f0;
+      border: 1px solid #334155;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+      font-family: inherit;
+    }
+
+    .studio-btn:hover {
+      background: #334155;
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .studio-btn.btn-primary {
+      background: linear-gradient(135deg, #e11d48, #be123c);
+      color: #ffffff;
+      border: 1px solid #f43f5e;
+      box-shadow: 0 4px 15px rgba(225, 29, 72, 0.4);
+    }
+
+    .studio-btn.btn-primary:hover {
+      background: linear-gradient(135deg, #f43f5e, #e11d48);
+      box-shadow: 0 6px 20px rgba(225, 29, 72, 0.6);
+    }
+
+    .studio-btn.btn-gold {
+      background: linear-gradient(135deg, #d97706, #b45309);
+      color: #ffffff;
+      border: 1px solid #f59e0b;
+    }
+
+    .theme-selector {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(30, 41, 59, 0.7);
+      padding: 4px 10px;
+      border-radius: 20px;
+      border: 1px solid #334155;
+    }
+
+    .theme-selector span {
+      font-size: 12px;
+      font-weight: 600;
+      color: #94a3b8;
+    }
+
+    .theme-dot {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .theme-dot:hover {
+      transform: scale(1.15);
+    }
+
+    .theme-dot.active {
+      border-color: #ffffff;
+      transform: scale(1.15);
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    .scale-group {
+      display: flex;
+      background: #1e293b;
+      border-radius: 8px;
+      border: 1px solid #334155;
+      overflow: hidden;
+    }
+
+    .scale-btn {
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      padding: 6px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .scale-btn.active, .scale-btn:hover {
+      background: #3b82f6;
+      color: #ffffff;
+    }
+
+    .status-text {
+      font-size: 12px;
+      color: #64748b;
+      margin-left: 6px;
+    }
+
+    /* =========================================================
+       POSTER WORKSPACE & WRAPPER
+       ========================================================= */
+    .poster-viewport {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .poster-scale-container {
+      transform: scale(var(--preview-scale, 0.65));
+      transform-origin: top center;
+      transition: transform 0.2s ease-out;
+    }
+
+    /* CANVAS 1200 x 1500 (Ratio 4:5) */
+    #poster-canvas {
+      width: 1200px;
+      height: 1500px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: 0 25px 70px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(255, 255, 255, 0.1);
+      user-select: none;
+    }
+
+    /* EDITABLE FOCUS STYLES */
+    [contenteditable="true"] {
+      outline: 2px dashed #f59e0b !important;
+      outline-offset: 4px;
+      background: rgba(245, 158, 11, 0.1) !important;
+      cursor: text !important;
+      border-radius: 4px;
+    }
+
+    /* =========================================================
+       THEMES DEFINITIONS
+       ========================================================= */
+    /* THEME 1: RUBY PASSION & GOLD (MẶC ĐỊNH - ĐẶC TRƯNG RUMBA) */
+    .theme-ruby {
+      background: radial-gradient(circle at 50% 20%, #700b1b 0%, #3e040e 45%, #180105 100%);
+      --accent-gold: #f59e0b;
+      --accent-gold-light: #fef08a;
+      --accent-highlight: #ff2a55;
+      --card-bg: rgba(45, 6, 14, 0.72);
+      --card-border: rgba(245, 158, 11, 0.35);
+      --card-border-glow: rgba(245, 158, 11, 0.2);
+      --text-main: #ffffff;
+      --text-sub: #fecdd3;
+      --footer-bg: rgba(20, 2, 5, 0.94);
+    }
+
+    /* THEME 2: MIDNIGHT NAVY & CHAMPAGNE GOLD (DẠ VŨ HUYỀN BÍ) */
+    .theme-navy {
+      background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 45%, #020617 100%);
+      --accent-gold: #fbbf24;
+      --accent-gold-light: #fef9c3;
+      --accent-highlight: #38bdf8;
+      --card-bg: rgba(15, 23, 42, 0.78);
+      --card-border: rgba(251, 191, 36, 0.35);
+      --card-border-glow: rgba(56, 189, 248, 0.25);
+      --text-main: #ffffff;
+      --text-sub: #cbd5e1;
+      --footer-bg: rgba(2, 6, 23, 0.95);
+    }
+
+    /* THEME 3: OBSIDIAN LUXURY & EMERALD */
+    .theme-emerald {
+      background: radial-gradient(circle at 50% 20%, #064e3b 0%, #022c22 45%, #01140e 100%);
+      --accent-gold: #f59e0b;
+      --accent-gold-light: #fef08a;
+      --accent-highlight: #34d399;
+      --card-bg: rgba(6, 44, 34, 0.75);
+      --card-border: rgba(52, 211, 153, 0.4);
+      --card-border-glow: rgba(245, 158, 11, 0.2);
+      --text-main: #ffffff;
+      --text-sub: #a7f3d0;
+      --footer-bg: rgba(1, 20, 14, 0.95);
+    }
+
+    /* THEME 4: NOIR & GOLD DANCE CLUB */
+    .theme-noir {
+      background: radial-gradient(circle at 50% 20%, #262626 0%, #171717 50%, #0a0a0a 100%);
+      --accent-gold: #fbbf24;
+      --accent-gold-light: #fef08a;
+      --accent-highlight: #e11d48;
+      --card-bg: rgba(23, 23, 23, 0.85);
+      --card-border: rgba(251, 191, 36, 0.45);
+      --card-border-glow: rgba(251, 191, 36, 0.25);
+      --text-main: #ffffff;
+      --text-sub: #e5e5e5;
+      --footer-bg: rgba(10, 10, 10, 0.96);
+    }
+
+    /* =========================================================
+       DECORATIVE BACKGROUND ELEMENTS
+       ========================================================= */
+    .decor-glow-top {
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 400px;
+      background: radial-gradient(ellipse at center, rgba(245, 158, 11, 0.25) 0%, rgba(225, 29, 72, 0.15) 50%, transparent 75%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .decor-glow-center {
+      position: absolute;
+      top: 360px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 750px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, rgba(244, 63, 94, 0.1) 45%, transparent 70%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .decor-stars-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0.75;
+    }
+
+    /* BORDER FRAME LUXURY */
+    .poster-inner-frame {
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      pointer-events: none;
+      z-index: 5;
+      box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .frame-corner {
+      position: absolute;
+      width: 28px;
+      height: 28px;
+      border-color: #fbbf24;
+      border-style: solid;
+    }
+    .corner-tl { top: -2px; left: -2px; border-width: 3px 0 0 3px; }
+    .corner-tr { top: -2px; right: -2px; border-width: 3px 3px 0 0; }
+    .corner-bl { bottom: -2px; left: -2px; border-width: 0 0 3px 3px; }
+    .corner-br { bottom: -2px; right: -2px; border-width: 0 3px 3px 0; }
+
+    /* =========================================================
+       POSTER CONTENT LAYOUT
+       ========================================================= */
+    .poster-content {
+      position: relative;
+      z-index: 10;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 44px 50px 36px 50px;
+    }
+
+    /* 1. TOP HEADER & BRANDING */
+    .header-branding {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+      padding-bottom: 18px;
+    }
+
+    .brand-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand-logo-img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fbbf24;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+      background: #ffffff;
+    }
+
+    .brand-texts {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .agency-name {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #fbbf24;
+      text-transform: uppercase;
+    }
+
+    .facility-name {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: 0.8px;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .brand-sub {
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-sub);
+      letter-spacing: 0.5px;
+    }
+
+    .header-badge {
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(225, 29, 72, 0.35));
+      border: 1px solid rgba(251, 191, 36, 0.6);
+      padding: 8px 18px;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .header-badge-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fbbf24;
+      box-shadow: 0 0 8px #fbbf24;
+      animation: pulseDot 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+
+    .header-badge span {
+      font-size: 12.5px;
+      font-weight: 800;
+      color: #fef08a;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* 2. HERO TITLE SECTION */
+    .hero-title-section {
+      text-align: center;
+      margin-top: 18px;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .announcement-ribbon {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(90deg, transparent, #be123c, #9f1239, transparent);
+      padding: 6px 36px;
+      border-top: 1px solid rgba(251, 191, 36, 0.5);
+      border-bottom: 1px solid rgba(251, 191, 36, 0.5);
+      margin-bottom: 14px;
+    }
+
+    .announcement-ribbon span {
+      font-size: 14.5px;
+      font-weight: 800;
+      letter-spacing: 2.5px;
+      color: #fef08a;
+      text-transform: uppercase;
+    }
+
+    .main-course-category {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      text-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    /* TÊN LỚP CHÍNH KHÔNG DÙNG GRADIENT TEXT ĐỂ TƯƠNG THÍCH HTML2CANVAS */
+    .main-course-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 68px;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      color: #fffbeb;
+      text-transform: uppercase;
+      line-height: 1.1;
+      margin-bottom: 12px;
+      text-shadow: 
+        0 2px 4px rgba(0,0,0,0.8),
+        0 4px 15px rgba(245, 158, 11, 0.7),
+        0 8px 30px rgba(225, 29, 72, 0.6);
+    }
+
+    .main-course-subtitle {
+      font-size: 17.5px;
+      font-weight: 500;
+      color: var(--text-sub);
+      max-width: 820px;
+      margin: 0 auto;
+      line-height: 1.5;
+      font-style: italic;
+    }
+
+    /* 3. CENTER ARTWORK & INSTRUCTOR HIGHLIGHT */
+    .center-visual-row {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: center;
+      margin: 14px 0 20px 0;
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 20px 24px;
+      position: relative;
+    }
+
+    /* CẶP ĐÔI KHIÊU VŨ VECTOR SILHOUETTE */
+    .dance-art-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      height: 310px;
+      overflow: hidden;
+      border-radius: 16px;
+      background: radial-gradient(circle at center, rgba(225, 29, 72, 0.2) 0%, rgba(0, 0, 0, 0.4) 75%);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+    }
+
+    .dance-svg-element {
+      height: 290px;
+      filter: drop-shadow(0 0 20px rgba(251, 191, 36, 0.6)) drop-shadow(0 0 35px rgba(244, 63, 94, 0.4));
+    }
+
+    .art-badge-overlay {
+      position: absolute;
+      bottom: 14px;
+      left: 18px;
+      background: rgba(15, 23, 42, 0.88);
+      border: 1px solid rgba(251, 191, 36, 0.5);
+      padding: 6px 14px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      backdrop-filter: blur(8px);
+    }
+
+    .art-badge-overlay span {
+      font-size: 12px;
+      font-weight: 700;
+      color: #fef08a;
+      letter-spacing: 0.5px;
+    }
+
+    /* THẺ GIẢNG VIÊN VŨ SƯ TRẦN TÚ */
+    .instructor-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 24px 20px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .instructor-badge-top {
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #fbbf24;
+      text-transform: uppercase;
+      background: rgba(245, 158, 11, 0.15);
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      margin-bottom: 12px;
+    }
+
+    .instructor-avatar-wrap {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #fbbf24;
+      box-shadow: 0 0 20px rgba(245, 158, 11, 0.5);
+      background: radial-gradient(circle, #3e040e, #1a0105);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      position: relative;
+    }
+
+    .instructor-avatar-wrap svg {
+      width: 58px;
+      height: 58px;
+      fill: #fbbf24;
+    }
+
+    .instructor-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 26px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+    }
+
+    .instructor-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #fbbf24;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+    }
+
+    .instructor-desc {
+      font-size: 12.5px;
+      line-height: 1.5;
+      color: var(--text-sub);
+      border-top: 1px dashed rgba(255, 255, 255, 0.15);
+      padding-top: 10px;
+    }
+
+    /* 4. KEY COURSE DETAILS (4 PILLARS GRID) */
+    .course-pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .pillar-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      padding: 18px 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      transition: border-color 0.2s;
+    }
+
+    .pillar-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .pillar-icon-box {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fbbf24;
+      flex-shrink: 0;
+    }
+
+    .pillar-label {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: #fbbf24;
+      text-transform: uppercase;
+    }
+
+    .pillar-value {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 20px;
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .pillar-card.highlight-card {
+      background: linear-gradient(145deg, rgba(225, 29, 72, 0.4), rgba(45, 6, 14, 0.9));
+      border: 1.5px solid #f43f5e;
+      box-shadow: 0 10px 25px rgba(225, 29, 72, 0.35);
+    }
+
+    .pillar-card.highlight-card .pillar-value {
+      color: #fef08a;
+      font-size: 24px;
+    }
+
+    .pillar-sub {
+      font-size: 12px;
+      color: var(--text-sub);
+      line-height: 1.35;
+    }
+
+    /* 5. BENEFITS ROW */
+    .benefits-strip {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 14px 20px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+
+    .benefit-check {
+      color: #10b981;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .benefit-text {
+      font-size: 13px;
+      color: #f1f5f9;
+      line-height: 1.4;
+    }
+
+    .benefit-text strong {
+      color: #fbbf24;
+      font-weight: 700;
+    }
+
+    /* 6. FOOTER & ENROLLMENT CTA */
+    .poster-footer {
+      background: var(--footer-bg);
+      border: 1.5px solid rgba(245, 158, 11, 0.45);
+      border-radius: 18px;
+      padding: 20px 28px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cta-header-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 2px;
+    }
+
+    .cta-badge {
+      background: #be123c;
+      color: #ffffff;
+      font-size: 11.5px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      border: 1px solid #f43f5e;
+    }
+
+    .cta-heading {
+      font-size: 14px;
+      font-weight: 800;
+      color: #fbbf24;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hotline-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hotline-main-number {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 38px;
+      font-weight: 900;
+      color: #fef08a;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .hotline-contact-name {
+      font-size: 20px;
+      font-weight: 800;
+      color: #ffffff;
+      background: rgba(245, 158, 11, 0.25);
+      padding: 4px 14px;
+      border-radius: 8px;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+
+    .footer-info-details {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 13.5px;
+      color: #cbd5e1;
+      margin-top: 4px;
+    }
+
+    .footer-info-details strong {
+      color: #ffffff;
+    }
+
+    .footer-right-qr {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 12px 18px;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .qr-img-box {
+      width: 92px;
+      height: 92px;
+      background: #ffffff;
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .qr-text-side {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .qr-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: #fbbf24;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .qr-desc {
+      font-size: 11.5px;
+      color: #94a3b8;
+      line-height: 1.35;
+      max-width: 140px;
+    }
+
+    /* TOAST NOTIFICATION */
+    #toast {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: rgba(15, 23, 42, 0.95);
+      color: #fef08a;
+      border: 1px solid #fbbf24;
+      padding: 12px 28px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 700;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+      z-index: 9999;
+      pointer-events: none;
+    }
+
+    #toast.show {
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* PRINT FRIENDLY */
+    @media print {
+      .studio-toolbar, #toast {
+        display: none !important;
+      }
+      body {
+        background: transparent !important;
+        padding: 0 !important;
+      }
+      .poster-scale-container {
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- =========================================================
+       TOP CONTROL TOOLBAR
+       ========================================================= -->
+  <header class="studio-toolbar">
+    <div class="toolbar-left">
+      <div class="studio-title">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+        POSTER STUDIO — RUMBA 2026
+      </div>
+      
+      <!-- THEME SELECTOR -->
+      <div class="theme-selector">
+        <span>Giao diện:</span>
+        <div class="theme-dot active" style="background: #9f1239;" onclick="setTheme('theme-ruby')" title="Ruby Passion & Gold (Mặc định)"></div>
+        <div class="theme-dot" style="background: #1e3a8a;" onclick="setTheme('theme-navy')" title="Midnight Navy & Champagne"></div>
+        <div class="theme-dot" style="background: #065f46;" onclick="setTheme('theme-emerald')" title="Emerald Glow"></div>
+        <div class="theme-dot" style="background: #262626;" onclick="setTheme('theme-noir')" title="Obsidian Noir & Gold"></div>
+      </div>
+    </div>
+
+    <div class="toolbar-center">
+      <div class="scale-group">
+        <button type="button" class="scale-btn" onclick="setScale(0.5, this)">50%</button>
+        <button type="button" class="scale-btn active" id="btn-fit-screen" onclick="fitScreen(this)">Vừa màn hình</button>
+        <button type="button" class="scale-btn" onclick="setScale(0.85, this)">85%</button>
+        <button type="button" class="scale-btn" onclick="setScale(1.0, this)">100%</button>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <button type="button" class="studio-btn" id="btn-edit-toggle" onclick="toggleLiveEdit()">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg>
+        SỬA TRỰC TIẾP
+      </button>
+
+      <button type="button" class="studio-btn" onclick="resetDefaultData()" title="Khôi phục nội dung gốc ban đầu">
+        ↺ Bản gốc
+      </button>
+
+      <button type="button" class="studio-btn btn-primary" onclick="downloadPoster()">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+        XUẤT ẢNH PNG 2K (NÉT CAO)
+      </button>
+
+      <span class="status-text" id="save-status-indicator">Đã sẵn sàng</span>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       POSTER MAIN VIEWPORT
+       ========================================================= -->
+  <main class="poster-viewport">
+    <div class="poster-scale-container" id="scale-wrapper">
+      
+      <!-- POSTER CANVAS (1200 x 1500) -->
+      <div id="poster-canvas" class="theme-ruby">
+        
+        <!-- DECORATIVE BACKGROUND LIGHTS -->
+        <div class="decor-glow-top"></div>
+        <div class="decor-glow-center"></div>
+
+        <!-- DECORATIVE STARS & SPARKS SVG -->
+        <svg class="decor-stars-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500">
+          <g fill="#fef08a" opacity="0.6">
+            <!-- Sparkles -->
+            <polygon points="180,180 183,195 198,198 183,201 180,216 177,201 162,198 177,195" />
+            <polygon points="1020,160 1022,172 1034,174 1022,176 1020,188 1018,176 1006,174 1018,172" />
+            <polygon points="120,480 122,492 134,494 122,496 120,508 118,496 106,494 118,492" />
+            <polygon points="1080,520 1083,535 1098,538 1083,541 1080,556 1077,541 1062,538 1077,535" />
+            <polygon points="240,780 242,790 252,792 242,794 240,804 238,794 228,792 238,790" />
+            <polygon points="980,820 982,832 994,834 982,836 980,848 978,836 966,834 978,832" />
+            <circle cx="150" cy="340" r="2.5" opacity="0.5" />
+            <circle cx="1050" cy="380" r="3" opacity="0.6" />
+            <circle cx="80" cy="650" r="2" opacity="0.4" />
+            <circle cx="1120" cy="720" r="3" opacity="0.5" />
+            <circle cx="180" cy="950" r="2.5" opacity="0.6" />
+            <circle cx="1040" cy="1020" r="2" opacity="0.4" />
+          </g>
+        </svg>
+
+        <!-- LUXURY FRAME BORDER -->
+        <div class="poster-inner-frame">
+          <div class="frame-corner corner-tl"></div>
+          <div class="frame-corner corner-tr"></div>
+          <div class="frame-corner corner-bl"></div>
+          <div class="frame-corner corner-br"></div>
+        </div>
+
+        <!-- POSTER CONTENT -->
+        <div class="poster-content">
+
+          <!-- 1. HEADER: BRANDING & FACILITY -->
+          <div class="header-branding">
+            <div class="brand-left">
+              <img src="Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg" alt="Logo CVHLĐ TP.HCM" class="brand-logo-img">
+              <div class="brand-texts">
+                <div class="agency-name">CUNG VĂN HÓA LAO ĐỘNG TP. HỒ CHÍ MINH</div>
+                <div class="facility-name">CƠ SỞ BÌNH TRƯNG</div>
+                <div class="brand-sub">Trung tâm Văn hóa — Thể thao — Đào tạo Kỹ năng & Nghệ thuật</div>
+              </div>
+            </div>
+            
+            <div class="header-badge">
+              <div class="header-badge-dot"></div>
+              <span>QUÝ 4 / 2026</span>
+            </div>
+          </div>
+
+          <!-- 2. HERO TITLE SECTION -->
+          <div class="hero-title-section">
+            <div class="announcement-ribbon">
+              <span>🎉 CHIÊU SINH KHÓA MỚI — KHAI GIẢNG 13/10/2026 🎉</span>
+            </div>
+            
+            <div class="main-course-category">LỚP KHIÊU VŨ CHUYÊN ĐỀ</div>
+            <div class="main-course-title">RUMBA CƠ BẢN</div>
+            <p class="main-course-subtitle">
+              "Vũ điệu tình yêu quyến rũ — Đánh thức nét duyên dáng, giải phóng hình thể, tự tin trên từng bước nhảy và thư giãn trọn vẹn sau giờ làm việc."
+            </p>
+          </div>
+
+          <!-- 3. CENTER ARTWORK & INSTRUCTOR HIGHLIGHT -->
+          <div class="center-visual-row">
+            
+            <!-- DANCE ARTWORK SILHOUETTE VECTOR -->
+            <div class="dance-art-box">
+              <svg class="dance-svg-element" viewBox="0 0 500 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Glowing Aura -->
+                <circle cx="250" cy="180" r="140" fill="url(#danceGlow)" opacity="0.35" />
+                <defs>
+                  <radialGradient id="danceGlow" cx="0.5" cy="0.5" r="0.5">
+                    <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.8" />
+                    <stop offset="60%" stop-color="#e11d48" stop-opacity="0.3" />
+                    <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+                  </radialGradient>
+                  
+                  <linearGradient id="goldDress" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#fef08a" />
+                    <stop offset="50%" stop-color="#fbbf24" />
+                    <stop offset="100%" stop-color="#b45309" />
+                  </linearGradient>
+
+                  <linearGradient id="manSuit" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ffffff" />
+                    <stop offset="60%" stop-color="#cbd5e1" />
+                    <stop offset="100%" stop-color="#94a3b8" />
+                  </linearGradient>
+                </defs>
+
+                <!-- Dynamic Wave Lights -->
+                <path d="M 50,300 C 150,220 350,340 450,260" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,6" opacity="0.6"/>
+                <path d="M 80,100 C 220,50 320,180 440,110" stroke="#fbbf24" stroke-width="1.5" opacity="0.4"/>
+
+                <!-- Musical notes floating -->
+                <g fill="#fbbf24" opacity="0.8">
+                  <path d="M 80,140 q 5,-15 15,-5 v 20 a 5,5 0 1,1 -5,-5 v -10 z" />
+                  <path d="M 420,180 q 6,-18 18,-6 v 24 a 6,6 0 1,1 -6,-6 v -12 z" />
+                  <path d="M 380,80 q 4,-12 12,-4 v 16 a 4,4 0 1,1 -4,-4 v -8 z" opacity="0.5" />
+                </g>
+
+                <!-- DANCE COUPLE SILHOUETTE (LATIN / RUMBA) -->
+                <!-- Male Figure (Leader) -->
+                <g fill="url(#manSuit)" filter="drop-shadow(0px 4px 10px rgba(0,0,0,0.7))">
+                  <!-- Head -->
+                  <circle cx="195" cy="85" r="16" />
+                  <!-- Neck & Torso -->
+                  <path d="M 183,101 L 207,101 L 215,150 L 195,185 L 180,150 Z" />
+                  <!-- Left Arm holding lady's waist -->
+                  <path d="M 183,105 C 160,115 155,145 185,160 C 205,170 230,165 240,165 L 242,156 C 220,156 200,150 190,140 C 175,125 185,112 188,105 Z" />
+                  <!-- Right Arm raised leading lady's hand -->
+                  <path d="M 207,105 C 225,95 245,85 260,95 C 270,102 278,118 285,115 L 288,124 C 275,128 262,112 255,108 C 242,100 225,110 212,115 Z" />
+                  <!-- Left Leg -->
+                  <path d="M 180,185 L 170,260 L 165,310 L 178,310 L 188,260 L 195,185 Z" />
+                  <!-- Right Leg (Back leg supporting) -->
+                  <path d="M 195,185 L 215,245 L 230,305 L 218,308 L 202,250 L 190,185 Z" />
+                </g>
+
+                <!-- Female Figure (Follower in Flowing Rumba Gown) -->
+                <g fill="url(#goldDress)" filter="drop-shadow(0px 4px 14px rgba(245, 158, 11, 0.7))">
+                  <!-- Head with bun/flower -->
+                  <circle cx="282" cy="100" r="14" />
+                  <ellipse cx="295" cy="95" rx="6" ry="5" fill="#f43f5e" />
+                  <!-- Slender Back & Torso arched back in Rumba dip -->
+                  <path d="M 273,114 C 265,125 258,145 265,165 C 270,178 280,185 285,190 L 295,185 C 290,175 280,165 278,145 C 276,130 285,120 286,114 Z" />
+                  <!-- Left Arm connected to partner -->
+                  <path d="M 273,116 C 260,118 245,135 240,155 L 248,157 C 252,142 262,130 275,124 Z" />
+                  <!-- Right Arm extended gracefully overhead -->
+                  <path d="M 286,114 C 300,105 320,85 335,70 C 342,62 355,55 365,60 C 370,64 366,74 358,80 C 342,92 325,115 310,128 L 302,122 C 315,110 330,90 345,78 C 348,76 350,72 345,72 C 335,72 318,92 300,110 Z" />
+                  <!-- Spectacular Flowing Rumba Skirt -->
+                  <path d="M 270,175 C 255,200 230,225 220,265 C 210,305 240,325 280,325 C 330,325 360,295 385,270 C 410,245 425,210 395,200 C 365,190 340,210 320,205 C 300,200 285,180 270,175 Z" opacity="0.95" />
+                  <!-- Slender extended leg through split skirt -->
+                  <path d="M 285,190 C 295,225 310,265 325,310 L 315,312 C 300,270 285,230 278,195 Z" fill="#fef08a" />
+                  <!-- High Heel -->
+                  <polygon points="325,310 335,315 328,322 322,318" fill="#f43f5e" />
+                </g>
+              </svg>
+
+              <div class="art-badge-overlay">
+                <svg width="15" height="15" fill="#fbbf24" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                <span>VŨ ĐIỆU CỦA TÌNH YÊU & SỰ DUYÊN DÁNG</span>
+              </div>
+            </div>
+
+            <!-- INSTRUCTOR SPOTLIGHT -->
+            <div class="instructor-card">
+              <div class="instructor-badge-top">GIẢNG VIÊN TRỰC TIẾP</div>
+              
+              <div class="instructor-avatar-wrap">
+                <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 105 5 5 5 0 00-5-5zm0 12c-5.33 0-8 2.67-8 6v2h16v-2c0-3.33-2.67-6-8-6z"></path></svg>
+              </div>
+
+              <div class="instructor-name">VŨ SƯ TRẦN TÚ</div>
+              <div class="instructor-title">Kiện Tướng & Huấn Luyện Viên Khiêu Vũ</div>
+              
+              <p class="instructor-desc">
+                Với bề dày kinh nghiệm và phong cách sư phạm tận tâm, Thầy Trần Tú sẽ trực tiếp dẫn dắt, uốn nắn từng bước chân, tư thế và chuyển động hông chuẩn mực cho người mới bắt đầu.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- 4. KEY COURSE DETAILS (4 PILLARS GRID) -->
+          <div class="course-pillars-grid">
+            
+            <!-- LỊCH HỌC -->
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                </div>
+                <span class="pillar-label">LỊCH HỌC CỐ ĐỊNH</span>
+              </div>
+              <div class="pillar-value">THỨ 3 & THỨ 5</div>
+              <div class="pillar-sub">Đều đặn 2 buổi / tuần</div>
+            </div>
+
+            <!-- GIỜ HỌC -->
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <span class="pillar-label">KHUNG GIỜ TẬP</span>
+              </div>
+              <div class="pillar-value">17:30 – 19:00</div>
+              <div class="pillar-sub">90 phút / buổi (Giờ tan sở lý tưởng)</div>
+            </div>
+
+            <!-- HỌC PHÍ -->
+            <div class="pillar-card highlight-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box" style="background: rgba(254, 240, 138, 0.2); border-color: #fef08a; color: #fef08a;">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+                </div>
+                <span class="pillar-label" style="color: #fef08a;">MỨC HỌC PHÍ</span>
+              </div>
+              <div class="pillar-value">600.000 đ</div>
+              <div class="pillar-sub" style="color: #ffffff;">Khóa 8 buổi (Trợ giá Công Đoàn)</div>
+            </div>
+
+            <!-- ĐỊA ĐIỂM -->
+            <div class="pillar-card">
+              <div class="pillar-header">
+                <div class="pillar-icon-box">
+                  <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <span class="pillar-label">PHÒNG TẬP CHUẨN</span>
+              </div>
+              <div class="pillar-value">SÀN GỖ & GƯƠNG</div>
+              <div class="pillar-sub">Máy lạnh mát mẻ, âm thanh chuẩn</div>
+            </div>
+
+          </div>
+
+          <!-- 5. BENEFITS STRIP -->
+          <div class="benefits-strip">
+            <div class="benefit-item">
+              <svg class="benefit-check" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+              <div class="benefit-text"><strong>Không cần bạn nhảy:</strong> Được ghép đôi thực hành văn minh, thân thiện.</div>
+            </div>
+
+            <div class="benefit-item">
+              <svg class="benefit-check" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+              <div class="benefit-text"><strong>Dành cho người mới:</strong> Hướng dẫn từ nhịp đếm và bước chân đầu tiên.</div>
+            </div>
+
+            <div class="benefit-item">
+              <svg class="benefit-check" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+              <div class="benefit-text"><strong>Chỉnh dáng vóc dáng:</strong> Giữ lưng thẳng, eo thon, bước đi uyển chuyển.</div>
+            </div>
+
+            <div class="benefit-item">
+              <svg class="benefit-check" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path></svg>
+              <div class="benefit-text"><strong>Bãi xe thuận tiện:</strong> Có bãi giữ xe máy & đỗ ô tô an ninh, có bảo vệ.</div>
+            </div>
+          </div>
+
+          <!-- 6. FOOTER: ENROLLMENT CALL TO ACTION -->
+          <footer class="poster-footer">
+            <div class="footer-left">
+              <div class="cta-header-line">
+                <span class="cta-badge">GHI DANH HÔM NAY</span>
+                <span class="cta-heading">TƯ VẤN &amp; XẾP LỚP TRỰC TIẾP (HOTLINE / ZALO)</span>
+              </div>
+              
+              <div class="hotline-row">
+                <div class="hotline-main-number">
+                  <svg width="34" height="34" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"></path></svg>
+                  0904 450 057
+                </div>
+                <div class="hotline-contact-name">(Chị Trang Phụ Trách)</div>
+              </div>
+
+              <div class="footer-info-details">
+                <div>📍 <strong>Địa chỉ tập luyện:</strong> Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh</div>
+                <div>🌐 <strong>Tra cứu thông tin:</strong> cungvanhoalaodong.com | <strong>Fanpage:</strong> Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP</div>
+              </div>
+            </div>
+
+            <div class="footer-right-qr">
+              <div class="qr-img-box">
+                <!-- QR Code Zalo Chị Trang -->
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQAQMAAAC6caSPAAAABlBMVEX///8AAABVwtN+AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABX0lEQVR4nO3YwbKDMAiF4eTJfXNzbwsngNZFt+Vnxpoqn7szQcf4vo6V63XFfr3mOv+PXCcE8jMk7r+aDfrN6b9neQQE0pooXoqYwpbI3A+BQCCbZJxiBYFAPkbM6enNEAikEFXEzKO1Eoy4QSCNSa7ENLopXioIpDF5Km99boBAGpKImEY5X8fwVg8IpDm5hEsDXB3c4gyBtCUKVjTvsGlTmmllmxQE0pQcG5T2NewTwdo4QgaBtCW5TSsPW8RqpRUE8ivkWJGUyw6jN5j6HjMgkO4kgmWrd93DNVPEIJCmxO6kcO1rBYyhEQ4CaUxSQ4G7XWtjEEhbcq20IWkLsn/rAUAgjcixcpV4BTz3A2yEg0Daknu8DG8SEatfFSCQluQWL0UsBjiNcxAIpJAds3jhie3o+lUBAmlOtPaQ6UVnQiCQwyNlsfoYsTgPCKQ7yWURc6L22JrsCgTSlnxff8oyrmtfZK5kAAAAAElFTkSuQmCC" alt="QR Code Zalo 0904450057">
+              </div>
+              <div class="qr-text-side">
+                <div class="qr-title">QUÉT MÃ ZALO</div>
+                <div class="qr-desc">Kết nối Chị Trang để giữ chỗ &amp; nhận tư vấn chi tiết</div>
+              </div>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast">🎉 Đã tải ảnh Poster PNG nét cao 2K về máy!</div>
+
+  <!-- =========================================================
+       STUDIO INTERACTIVE JAVASCRIPT
+       ========================================================= -->
+  <script>
+    const INITIAL_CANVAS_HTML = document.getElementById('poster-canvas').innerHTML;
+
+    // 1. THEME SWITCHER
+    function setTheme(themeName) {
+      const canvas = document.getElementById('poster-canvas');
+      canvas.className = themeName;
+      document.querySelectorAll('.theme-dot').forEach(dot => dot.classList.remove('active'));
+      const activeDot = Array.from(document.querySelectorAll('.theme-dot')).find(d => d.getAttribute('onclick') && d.getAttribute('onclick').includes(themeName));
+      if (activeDot) activeDot.classList.add('active');
+      saveToStorage(true);
+      showToast(`Đã chuyển sang giao diện ${getThemeLabel(themeName)}`);
+    }
+
+    function getThemeLabel(theme) {
+      if (theme === 'theme-ruby') return 'Ruby Passion & Gold';
+      if (theme === 'theme-navy') return 'Midnight Navy & Champagne';
+      if (theme === 'theme-emerald') return 'Emerald Glow';
+      if (theme === 'theme-noir') return 'Obsidian Noir & Gold';
+      return theme;
+    }
+
+    // 2. SCALE PREVIEW
+    function setScale(scaleVal, btnEl) {
+      document.documentElement.style.setProperty('--preview-scale', scaleVal);
+      document.querySelectorAll('.scale-btn').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+    }
+
+    function fitScreen(btnEl) {
+      const winWidth = window.innerWidth - 60;
+      const targetScale = Math.min(1.0, Math.max(0.35, winWidth / 1260));
+      document.documentElement.style.setProperty('--preview-scale', targetScale);
+      document.querySelectorAll('.scale-btn').forEach(btn => btn.classList.remove('active'));
+      const fitBtn = btnEl || document.getElementById('btn-fit-screen');
+      if (fitBtn) fitBtn.classList.add('active');
+    }
+
+    // 3. LIVE EDIT TOGGLE
+    let isEditing = false;
+    function toggleLiveEdit() {
+      isEditing = !isEditing;
+      const btn = document.getElementById('btn-edit-toggle');
+      applyEditableState(isEditing);
+
+      if (isEditing) {
+        btn.style.background = '#f59e0b';
+        btn.style.color = '#0f172a';
+        btn.innerHTML = '✏️ ĐANG BẬT SỬA (BẤM ĐỂ LƯU)';
+        showToast('Chế độ sửa trực tiếp đã BẬT. Hãy nhấp vào chữ để sửa!');
+      } else {
+        btn.style.background = '';
+        btn.style.color = '';
+        btn.innerHTML = '<svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg> SỬA TRỰC TIẾP';
+        saveToStorage(false);
+      }
+    }
+
+    function applyEditableState(editable) {
+      const editableElements = document.querySelectorAll(
+        '.agency-name, .facility-name, .brand-sub, .announcement-ribbon span, .main-course-category, .main-course-title, .main-course-subtitle, .art-badge-overlay span, .instructor-badge-top, .instructor-name, .instructor-title, .instructor-desc, .pillar-label, .pillar-value, .pillar-sub, .benefit-text, .cta-heading, .hotline-main-number, .hotline-contact-name, .footer-info-details div, .qr-title, .qr-desc'
+      );
+      editableElements.forEach(el => {
+        el.setAttribute('contenteditable', editable ? 'true' : 'false');
+      });
+    }
+
+    // 4. STORAGE PERSISTENCE
+    function updateStatus(text) {
+      const el = document.getElementById('save-status-indicator');
+      if (el) el.innerText = text;
+    }
+
+    function saveToStorage(isSilent = false) {
+      const canvas = document.getElementById('poster-canvas');
+      applyEditableState(false);
+      const cleanHtml = canvas.innerHTML;
+      if (isEditing) applyEditableState(true);
+
+      let curTheme = 'theme-ruby';
+      ['theme-ruby', 'theme-navy', 'theme-emerald', 'theme-noir'].forEach(t => {
+        if (canvas.classList.contains(t)) curTheme = t;
+      });
+
+      const now = new Date();
+      const timeStr = now.toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit' });
+
+      try {
+        localStorage.setItem('CVHLD_RUMBA_HTML', cleanHtml);
+        localStorage.setItem('CVHLD_RUMBA_THEME', curTheme);
+        updateStatus(`✓ Đã lưu (${timeStr})`);
+        if (!isSilent) showToast(`💾 Đã lưu thay đổi vào trình duyệt!`);
+      } catch (e) {
+        console.warn('Lỗi lưu localStorage:', e);
+      }
+    }
+
+    function restoreFromStorage() {
+      try {
+        const savedHtml = localStorage.getItem('CVHLD_RUMBA_HTML');
+        const savedTheme = localStorage.getItem('CVHLD_RUMBA_THEME');
+        if (savedHtml) {
+          const canvas = document.getElementById('poster-canvas');
+          canvas.innerHTML = savedHtml;
+          if (savedTheme) {
+            canvas.className = savedTheme;
+            document.querySelectorAll('.theme-dot').forEach(d => {
+              d.classList.remove('active');
+              if (d.getAttribute('onclick') && d.getAttribute('onclick').includes(savedTheme)) d.classList.add('active');
+            });
+          }
+          updateStatus('✓ Đã nạp bản lưu');
+        }
+      } catch (e) {
+        console.warn('Lỗi đọc localStorage:', e);
+      }
+    }
+
+    function resetDefaultData() {
+      if (confirm('Khôi phục lại nội dung ban đầu của Poster Khiêu Vũ Rumba?')) {
+        try {
+          localStorage.removeItem('CVHLD_RUMBA_HTML');
+          localStorage.removeItem('CVHLD_RUMBA_THEME');
+        } catch (e) {}
+        const canvas = document.getElementById('poster-canvas');
+        canvas.innerHTML = INITIAL_CANVAS_HTML;
+        canvas.className = 'theme-ruby';
+        isEditing = false;
+        const btn = document.getElementById('btn-edit-toggle');
+        if (btn) {
+          btn.style.background = '';
+          btn.style.color = '';
+          btn.innerHTML = '<svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"></path></svg> SỬA TRỰC TIẾP';
+        }
+        document.querySelectorAll('.theme-dot').forEach(d => d.classList.remove('active'));
+        const rubyDot = document.querySelector('.theme-dot[style*="9f1239"]');
+        if (rubyDot) rubyDot.classList.add('active');
+        updateStatus('Bản gốc mặc định');
+        showToast('Đã khôi phục dữ liệu gốc!');
+      }
+    }
+
+    // 5. TOAST NOTIFICATION
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.innerText = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 3500);
+    }
+
+    // 6. DOWNLOAD POSTER PNG 2K
+    async function downloadPoster() {
+      saveToStorage(true);
+
+      if (typeof html2canvas === 'undefined') {
+        showToast('Đang kết nối thư viện tạo ảnh...');
+        try {
+          await new Promise((resolve, reject) => {
+            const s = document.createElement('script');
+            s.src = 'https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js';
+            s.onload = resolve;
+            s.onerror = () => reject(new Error('CDN failed'));
+            document.head.appendChild(s);
+          });
+        } catch (err) {
+          alert('Không thể tải thư viện xuất ảnh: ' + err.message);
+          return;
+        }
+      }
+
+      const canvasEl = document.getElementById('poster-canvas');
+      showToast('Đang kết xuất ảnh 2K (2400 x 3000px)... Xin chờ 2-3 giây!');
+
+      applyEditableState(false);
+      const curScale = getComputedStyle(document.documentElement).getPropertyValue('--preview-scale');
+      document.documentElement.style.setProperty('--preview-scale', '1');
+
+      try {
+        const rendered = await html2canvas(canvasEl, {
+          scale: 2, // 2x resolution = 2400 x 3000 px (300 DPI equivalent)
+          useCORS: true,
+          allowTaint: true,
+          backgroundColor: null,
+          logging: false
+        });
+
+        const link = document.createElement('a');
+        link.download = 'Poster-Khai-Giang-Khieu-Vu-Rumba-Co-Ban-CVHLD-Binh-Trung.png';
+        link.href = rendered.toDataURL('image/png');
+        link.click();
+
+        showToast('🎉 Đã tải ảnh Poster PNG 2K thành công!');
+      } catch (err) {
+        console.error('Lỗi khi xuất ảnh:', err);
+        alert('Lỗi tạo ảnh: ' + err.message);
+      } finally {
+        document.documentElement.style.setProperty('--preview-scale', curScale);
+        if (isEditing) applyEditableState(true);
+      }
+    }
+
+    // AUTO-INIT
+    window.addEventListener('load', () => {
+      restoreFromStorage();
+      fitScreen();
+
+      // Listen for typing to auto-save
+      const canvas = document.getElementById('poster-canvas');
+      let timer = null;
+      canvas.addEventListener('input', () => {
+        clearTimeout(timer);
+        updateStatus('Đang sửa...');
+        timer = setTimeout(() => saveToStorage(true), 1200);
+      });
+    });
+
+    window.addEventListener('resize', () => {
+      const fitBtn = document.getElementById('btn-fit-screen');
+      if (fitBtn && fitBtn.classList.contains('active')) {
+        fitScreen();
+      }
+    });
+  </script>
+</body>
+</html>

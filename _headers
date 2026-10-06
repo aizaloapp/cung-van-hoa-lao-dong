@@ -21,6 +21,9 @@
 /assets/*
   Cache-Control: public, max-age=2592000, immutable
 
+/logos/*
+  Cache-Control: public, max-age=2592000, immutable
+
 /css/*
   Cache-Control: public, max-age=0, must-revalidate
 
@@ -47,6 +50,12 @@
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
 
+# OpenAPI Specification (RFC 9727 / OpenAPI 3.1)
+/openapi.json
+  Content-Type: application/vnd.oai.openapi+json;version=3.1.0; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
 # WorkOS Agent Authentication Standard
 /.well-known/auth.md
   Content-Type: text/markdown; charset=utf-8
@@ -62,6 +71,21 @@
   Content-Type: text/markdown; charset=utf-8
   Access-Control-Allow-Origin: *
   Cache-Control: public, max-age=3600
+
+/llms-full.txt
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+/.well-known/agent-instructions.md
+  Content-Type: text/markdown; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
 
 # Protocols & Cards (JSON)
 /.well-known/agent-card.json

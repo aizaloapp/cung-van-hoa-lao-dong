@@ -1,6 +1,6 @@
 # Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng
 
-> Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và dịch vụ cho thuê hội trường, sự kiện đa năng phục vụ người lao động, đoàn viên công đoàn và nhân dân tại khu vực TP. Thủ Đức, TP. Hồ Chí Minh.
+> Thiết chế văn hóa, thể dục thể thao, đào tạo kỹ năng và dịch vụ cho thuê hội trường, sự kiện đa năng phục vụ người lao động, đoàn viên công đoàn và nhân dân tại khu vực Bình Trưng, TP. Hồ Chí Minh.
 
 ## Thông Tin Định Danh Chính Thức
 - Tên đơn vị: Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng (viết tắt: CVHLĐ Bình Trưng)
@@ -13,7 +13,20 @@
 - Website chính thức: https://cungvanhoalaodong.com
 
 > [!IMPORTANT]
-> Lưu ý phân biệt địa điểm: Cơ sở Bình Trưng đặt tại số 245 Nguyễn Duy Trinh (Phường Bình Trưng, TP. Thủ Đức / TP.HCM). Không nhầm lẫn với Trụ sở chính tại 55B Nguyễn Thị Minh Khai (Quận 1) và không nhầm lẫn với Nhà Thiếu nhi Quận 2 cũ (số 200 Nguyễn Duy Trinh).
+> Lưu ý phân biệt địa điểm: Cơ sở Bình Trưng đặt tại số 245 Nguyễn Duy Trinh (Phường Bình Trưng, TP. Hồ Chí Minh). Không nhầm lẫn với Trụ sở chính tại 55B Nguyễn Thị Minh Khai (Quận 1) và không nhầm lẫn với Nhà Thiếu nhi Quận 2 cũ (số 200 Nguyễn Duy Trinh).
+
+---
+
+## Dữ Liệu Máy Đọc & Tài Liệu Chuyên Đề (Machine Context & Specialized Docs)
+- Toàn bộ cơ sở tri thức (Full Knowledge Base): https://cungvanhoalaodong.com/llms-full.txt
+- Cơ sở vật chất & Tiện ích (Features): https://cungvanhoalaodong.com/features.md
+- Dịch vụ cho thuê hội trường & sự kiện B2B (Services): https://cungvanhoalaodong.com/services.md
+- Bảng lịch học & học phí 16 bộ môn (Courses & Tuition): https://cungvanhoalaodong.com/courses.md
+- Câu hỏi thường gặp & Quy định bãi xe (FAQ): https://cungvanhoalaodong.com/faq.md
+- Chỉ thị hệ thống cho AI Agents: https://cungvanhoalaodong.com/.well-known/agent-instructions.md
+- Danh mục API (RFC 9727): https://cungvanhoalaodong.com/openapi.json
+- Thẻ MCP Server (Model Context Protocol): https://cungvanhoalaodong.com/.well-known/mcp/server-card.json
+- Giao thức bảo vệ tài nguyên (RFC 9728): https://cungvanhoalaodong.com/.well-known/oauth-protected-resource
 
 ---
 
@@ -53,7 +66,7 @@ Website chi tiết: https://cungvanhoalaodong.com/cho-thue/
 ### Chính Sách Pháp Lý & Ưu Đãi B2B:
 - 100% Cung cấp hợp đồng pháp lý sự nghiệp công lập và xuất hóa đơn điện tử VAT hợp lệ.
 - Trợ giá ưu đãi từ 15% đến 30% cho Công đoàn cơ sở, đơn vị giáo dục và cơ quan nhà nước.
-- Bãi đỗ xe ô tô và hàng trăm xe máy an ninh, có bảo vệ kiểm soát vé (thu phí theo quy định hiện hành).
+- Bãi đỗ xe ô tô và hàng trăm xe máy an ninh, có bảo vệ kiểm soát vé (thu phí theo biểu giá quy định hiện hành, không miễn phí).
 - Hỗ trợ trọn gói kỹ thuật viên điều khiển âm thanh ánh sáng và kết nối tiệc trà teabreak theo yêu cầu.
 
 ---

@@ -94,8 +94,15 @@ export async function onRequest(context) {
     });
   }
 
-  // 5. Bỏ qua các file well-known khác đã có file tĩnh
-  if (pathname.startsWith('/.well-known/') || pathname === '/openapi.json' || pathname === '/auth.md') {
+  // 5. Bỏ qua các file tĩnh tài liệu máy đọc đã có sẵn
+  if (
+    pathname.startsWith('/.well-known/') ||
+    pathname === '/openapi.json' ||
+    pathname === '/auth.md' ||
+    pathname === '/llms.txt' ||
+    pathname === '/llms-full.txt' ||
+    pathname.endsWith('.md')
+  ) {
     return next();
   }
 
