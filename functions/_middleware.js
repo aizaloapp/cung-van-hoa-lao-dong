@@ -129,7 +129,7 @@ export async function onRequest(context) {
             'Content-Type': 'text/markdown; charset=utf-8',
             'Vary': 'Accept',
             'x-markdown-tokens': String(estimatedTokens),
-            'Content-Signal': 'search=yes, ai-input=yes, ai-train=no, use=reference',
+            'Content-Signal': 'search=yes, ai-input=yes, ai-train=yes, use=reference',
             'Link': STANDARD_LINK_HEADER,
             'Access-Control-Allow-Origin': '*',
             'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400'
@@ -148,7 +148,7 @@ export async function onRequest(context) {
   if (contentType.includes('text/html')) {
     const newHeaders = new Headers(response.headers);
     newHeaders.set('Vary', 'Accept');
-    newHeaders.set('Content-Signal', 'search=yes, ai-input=yes, ai-train=no, use=reference');
+    newHeaders.set('Content-Signal', 'search=yes, ai-input=yes, ai-train=yes, use=reference');
     newHeaders.set('Link', STANDARD_LINK_HEADER);
 
     return new Response(response.body, {

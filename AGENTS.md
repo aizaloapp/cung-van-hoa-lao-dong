@@ -44,6 +44,11 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
      1. Khối hiển thị HTML: Phải kiểm tra sự tồn tại của thẻ `<span>{question}</span>` hoặc `<details>` bên trong vùng `<!-- FAQ Section -->`.
      2. Khối dữ liệu cấu trúc: Kiểm tra mảng `mainEntity` của `FAQPage` trong JSON-LD.
    - Đảm bảo tính nhất quán: Người dùng nhìn thấy gì trên màn hình thì Google Bot và AI đọc được đúng như vậy trong Schema.
+7. **Quy chuẩn Thẻ Xem Trước Mạng Xã Hội & Ảnh Thương Hiệu (Social Cards Guardrail):**
+   - Mọi trang web công khai (HTML) bắt buộc sở hữu trọn vẹn bộ thẻ 4x4 (5 thẻ Open Graph + 4 thẻ Twitter Card chuẩn `name="twitter:..."`) với URL tuyệt đối có `https://cungvanhoalaodong.com/...`.
+   - Tuyệt đối không dùng ảnh stock placeholder trôi nổi (`unsplash.com`, `pexels.com`,...).
+   - Nếu trang chưa có ảnh chụp riêng của bộ môn/dịch vụ, bắt buộc fallback về ảnh đại diện thương hiệu chính thức: `https://cungvanhoalaodong.com/og-image.jpg` (1200x630px, 1.91:1).
+   - Sau khi tạo hoặc chỉnh sửa trang HTML, Agent **bắt buộc chạy script kiểm thử** `python scripts/test_social_cards.py` và chỉ nghiệm thu khi đạt 100% tiêu chí (58/58 check points).
 
 ---
 

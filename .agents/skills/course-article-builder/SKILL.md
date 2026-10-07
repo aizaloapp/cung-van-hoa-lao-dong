@@ -19,6 +19,10 @@ description: Sinh trang bài viết chi tiết lớp học chuẩn SEO, GEO (AI 
    - Chỉ dùng dữ liệu từ `data/courses.json` và `CONTEXT.md`. Tuyệt đối không tự bịa đặt học phí, lịch học, giảng viên.
 3. **Giọng điệu (Tone of Voice):**
    - Kể chuyện (Storytelling), gần gũi, thấu hiểu phụ huynh và người lao động, truyền cảm hứng thể thao, không dùng lối hành văn hành chính.
+4. **Chuẩn hóa Thẻ Xem Trước (Rule 8 Social Cards):**
+   - Khóa cứng bộ thẻ 4x4 (5 thẻ Open Graph + 4 thẻ Twitter Card chuẩn `name="twitter:..."`) với URL tuyệt đối.
+   - Nếu chưa có ảnh môn học, bắt buộc fallback về `https://cungvanhoalaodong.com/og-image.jpg` (1200x630px).
+   - Sau khi xuất bản trang mới, chạy `python scripts/test_social_cards.py` để nghiệm thu 100% tiêu chí.
 
 ---
 

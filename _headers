@@ -6,7 +6,7 @@
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
-  Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+  Content-Signal: search=yes, ai-input=yes, ai-train=yes, use=reference
   Link: </llms.txt>; rel="alternate"; type="text/markdown", </llms.txt>; rel="describedby"; type="text/markdown", </.well-known/api-catalog>; rel="api-catalog", </.well-known/mcp/server-card.json>; rel="mcp-server-card", </.well-known/agent-card.json>; rel="agent-card", </.well-known/agent.json>; rel="agent", </.well-known/oauth-protected-resource>; rel="oauth-protected-resource", </auth.md>; rel="auth-metadata", </.well-known/auth.md>; rel="auth-metadata", </.well-known/http-message-signatures-directory>; rel="http-message-signatures-directory"
   Vary: Accept
 

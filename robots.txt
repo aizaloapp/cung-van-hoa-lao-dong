@@ -22,7 +22,7 @@ User-agent: Google-Extended
 Allow: /
 
 # Agent & AI Directives (RFC 9309 & Content-Signal)
-Content-Signal: search=yes, ai-input=yes, ai-train=no, use=reference
+Content-Signal: search=yes, ai-input=yes, ai-train=yes, use=reference
 
 # Sitemap & LLMs Discovery
 Sitemap: https://cungvanhoalaodong.com/sitemap.xml
