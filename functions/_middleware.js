@@ -9,7 +9,7 @@
  * 5. WorkOS Agent Auth Standard (/.well-known/auth.md)
  */
 
-const STANDARD_LINK_HEADER = '</llms.txt>; rel="alternate"; type="text/markdown", </llms.txt>; rel="describedby"; type="text/markdown", </.well-known/api-catalog>; rel="api-catalog", </.well-known/mcp/server-card.json>; rel="mcp-server-card", </.well-known/agent-card.json>; rel="agent-card", </.well-known/agent.json>; rel="agent", </.well-known/oauth-protected-resource>; rel="oauth-protected-resource", </auth.md>; rel="auth-metadata", </.well-known/auth.md>; rel="auth-metadata", </.well-known/http-message-signatures-directory>; rel="http-message-signatures-directory"';
+const STANDARD_LINK_HEADER = '</llms.txt>; rel="alternate"; type="text/markdown", </llms.txt>; rel="describedby"; type="text/markdown", </.well-known/api-catalog>; rel="api-catalog", </.well-known/mcp/server-card.json>; rel="mcp-server-card", </.well-known/agent-card.json>; rel="agent-card", </.well-known/agent.json>; rel="agent"';
 
 export async function onRequest(context) {
   const { request, env, next } = context;
