@@ -23,6 +23,8 @@ const rootDir = path.resolve(__dirname, '..');
 // 1. Locate service account key
 const possibleKeyPaths = [
   path.join(rootDir, 'google-indexing-key.json'),
+  'C:\\Users\\PC\\.gemini\\config\\credentials\\google-indexing-key.json',
+  'D:\\A-Du-An\\Zalo-Flow\\google-indexing-key.json',
   path.join(rootDir, 'service-account.json'),
   path.join(rootDir, 'service_account.json')
 ];
