@@ -49,6 +49,12 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
    - Tuyệt đối không dùng ảnh stock placeholder trôi nổi (`unsplash.com`, `pexels.com`,...).
    - Nếu trang chưa có ảnh chụp riêng của bộ môn/dịch vụ, bắt buộc fallback về ảnh đại diện thương hiệu chính thức: `https://cungvanhoalaodong.com/og-image.jpg` (1200x630px, 1.91:1).
    - Sau khi tạo hoặc chỉnh sửa trang HTML, Agent **bắt buộc chạy script kiểm thử** `python scripts/test_social_cards.py` và chỉ nghiệm thu khi đạt 100% tiêu chí (58/58 check points).
+8. **Quy chuẩn Lập chỉ mục Tự động (Google Indexing API & IndexNow Mandate):**
+   - Mỗi khi xuất bản hoặc cập nhật trang web mới (đặc biệt là các trang môn học `/lop-hoc/[slug]/` hay cập nhật `sitemap.xml`), sau bước deploy lên Cloudflare Pages (`npx wrangler pages deploy`), Agent **bắt buộc chạy lệnh bắn chỉ mục tức thì**:
+     - Google: `node scripts/google-index.mjs <URL>` (hoặc `node scripts/google-index.mjs --all` nếu cập nhật sitemap hàng loạt).
+     - Bing / ChatGPT Search / IndexNow: `node scripts/indexnow.mjs <URL>` (hoặc `node scripts/indexnow.mjs --all`).
+   - **Bảo mật Service Account:** Tệp chìa khóa `google-indexing-key.json` đặt tại thư mục gốc phải luôn được giữ trong `.gitignore` và `.wranglerignore`, tuyệt đối KHÔNG commit lên Git hay đẩy lên CDN.
+   - **Xác thực IndexNow:** Tệp `a0e5b1274f8c49d89326d18a39b4f7e2.txt` tại thư mục gốc luôn được duy trì để Bing Webmaster Tools và IndexNow Hub xác minh tên miền `cungvanhoalaodong.com`.
 
 ---
 

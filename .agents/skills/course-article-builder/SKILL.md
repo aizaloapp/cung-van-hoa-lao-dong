@@ -102,6 +102,13 @@ Thay thế chính xác các placeholder:
    - [ ] 5. Kiểm tra tất cả đường dẫn ảnh `src` không bị lỗi 404.
    - [ ] 6. Kiểm tra `sitemap.xml` đúng cú pháp XML.
    - [ ] 7. Kiểm tra thẻ lớp trên trang chủ xuất hiện nút dẫn tới bài viết mới.
+4. **Kích hoạt Lập chỉ mục Tức thì (Instant Indexing):**
+   - Sau khi deploy Cloudflare Pages (`npx wrangler pages deploy`), Agent bắt buộc chạy:
+     ```bash
+     node scripts/google-index.mjs https://cungvanhoalaodong.com/lop-hoc/[slug]/
+     node scripts/indexnow.mjs https://cungvanhoalaodong.com/lop-hoc/[slug]/
+     ```
+   - Nhằm thúc đẩy Google Bot và Bing Bot thu thập dữ liệu ngay lập tức thay vì chờ đợi crawl thụ động.
 
 ---
 
