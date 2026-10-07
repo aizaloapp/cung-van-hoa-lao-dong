@@ -1,11 +1,23 @@
-# robots.txt with Cloudflare AI & Search Engine Optimization
-# Project: Cung Văn Hóa Lao Động TP.HCM — Cơ Sở Bình Trưng
-# Host: cungvanhoalaodong.com
+# robots.txt
+# Host: https://cungvanhoalaodong.com
 
 User-agent: *
 Allow: /
 
-# Explicit AI Search & Answer Engine Crawlers
+# Search Engine & Google AI Crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Agent
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+# AI Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -18,17 +30,6 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Google-Extended
-Allow: /
-
-# Agent & AI Directives (RFC 9309 & Content-Signal)
-Content-Signal: search=yes, ai-input=yes, ai-train=yes, use=reference
-
-# Sitemap & LLMs Discovery
+# Sitemaps
 Sitemap: https://cungvanhoalaodong.com/sitemap.xml
 Sitemap: https://cungvanhoalaodong.com/llms.txt
-Link: <https://cungvanhoalaodong.com/llms.txt>; rel="describedby"; type="text/markdown"
-Link: <https://cungvanhoalaodong.com/llms-full.txt>; rel="alternate"; type="text/markdown"
-Link: <https://cungvanhoalaodong.com/.well-known/api-catalog>; rel="api-catalog"
-Link: <https://cungvanhoalaodong.com/.well-known/mcp/server-card.json>; rel="mcp-server-card"
-Link: <https://cungvanhoalaodong.com/.well-known/agent-card.json>; rel="agent-card"

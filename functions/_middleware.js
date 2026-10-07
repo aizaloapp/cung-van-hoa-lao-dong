@@ -106,8 +106,8 @@ export async function onRequest(context) {
     return next();
   }
 
-  // 6. Content Negotiation: Trả về Markdown nếu Agent yêu cầu text/markdown
-  if (accept.includes('text/markdown')) {
+  // 6. Content Negotiation: Trả về Markdown nếu Agent yêu cầu text/markdown và KHÔNG yêu cầu text/html
+  if (accept.includes('text/markdown') && !accept.includes('text/html')) {
     try {
       const targetUrl = new URL('/llms.txt', request.url);
       const fetchReq = new Request(targetUrl, {
