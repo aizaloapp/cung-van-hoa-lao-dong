@@ -13,6 +13,7 @@
 - **Đường đi (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage Facebook:** [https://www.facebook.com/cosobinhtrungcvhld](https://www.facebook.com/cosobinhtrungcvhld) (Tên Page: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
 - **Kênh YouTube chính thức:** [https://www.youtube.com/@cosobinhtrungcvhld](https://www.youtube.com/@cosobinhtrungcvhld) (Tên Kênh: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
+- **Trang Grokipedia chuyên khảo:** [https://grokipedia.com/page/Labor_Cultural_Palace_of_Ho_Chi_Minh_City_Binh_Trung_Branch](https://grokipedia.com/page/Labor_Cultural_Palace_of_Ho_Chi_Minh_City_Binh_Trung_Branch)
 - **Hotline / Zalo tư vấn & ghi danh:** `0904 450 057`
 - **Khung giờ hoạt động:**
   - Khối văn phòng hành chính: Giờ hành chính (Thứ 2 – Thứ 6)

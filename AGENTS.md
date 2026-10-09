@@ -26,6 +26,7 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
    - **Bản đồ chỉ đường (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
    - **Kênh Fanpage Facebook:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
    - **Kênh YouTube chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.youtube.com/@cosobinhtrungcvhld)
+   - **Trang Grokipedia chuyên khảo Cơ Sở Bình Trưng:** [Labor Cultural Palace of Ho Chi Minh City (Binh Trung Branch)](https://grokipedia.com/page/Labor_Cultural_Palace_of_Ho_Chi_Minh_City_Binh_Trung_Branch)
 2. **Chống nhầm lẫn địa điểm (Crucial):**
    - **KHÔNG nhầm lẫn** với Trụ sở chính Cung Văn Hóa Lao Động TP.HCM tại 55B Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1.
    - **KHÔNG nhầm lẫn** với Nhà Thiếu nhi Quận 2 cũ tại số 200 Nguyễn Duy Trinh (chuyên lứa tuổi thiếu nhi).
