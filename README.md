@@ -12,6 +12,7 @@ Chào mừng bạn đến với kho lưu trữ dự án số hóa và cổng th�
 - **Hotline / Zalo tư vấn & tuyển sinh:** `0904 450 057`
 - **Bản đồ chỉ đường (Google Maps):** [Chỉ đường tại đây](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
+- **Kênh YouTube chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.youtube.com/@cosobinhtrungcvhld)
 - **Trang Wikipedia tham chiếu:** [Cung Văn hóa Lao động Thành phố Hồ Chí Minh](https://vi.wikipedia.org/wiki/Cung_V%C4%83n_h%C3%B3a_Lao_%C4%91%E1%BB%99ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh)
 
 ---

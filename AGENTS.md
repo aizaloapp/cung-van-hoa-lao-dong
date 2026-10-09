@@ -25,6 +25,7 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
    - **Hotline / Zalo tư vấn & ghi danh:** `0904 450 057`.
    - **Bản đồ chỉ đường (Google Maps):** [https://share.google/bZitFiknyB9p9nH7L](https://share.google/bZitFiknyB9p9nH7L)
    - **Kênh Fanpage Facebook:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
+   - **Kênh YouTube chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.youtube.com/@cosobinhtrungcvhld)
 2. **Chống nhầm lẫn địa điểm (Crucial):**
    - **KHÔNG nhầm lẫn** với Trụ sở chính Cung Văn Hóa Lao Động TP.HCM tại 55B Nguyễn Thị Minh Khai, Phường Bến Thành, Quận 1.
    - **KHÔNG nhầm lẫn** với Nhà Thiếu nhi Quận 2 cũ tại số 200 Nguyễn Duy Trinh (chuyên lứa tuổi thiếu nhi).
