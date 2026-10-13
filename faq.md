@@ -30,3 +30,6 @@
 
 ### 8. Muốn đăng ký học thử hoặc tham quan cơ sở trước thì làm sao?
 **Trả lời:** Bạn có thể đến trực tiếp cơ sở vào bất kỳ ngày nào trong tuần từ 07:30 đến 21:30 để tham quan phòng tập, sân bãi và gặp gỡ các huấn luyện viên phụ trách bộ môn, hoặc gọi trước Hotline `0904 450 057` để được sắp xếp đón tiếp chu đáo.
+
+### 9. Tôi làm việc theo ca hoặc ngoài giờ hành chính thì có thể nhận tư vấn học phí và đăng ký lớp học được không?
+**Trả lời:** Hoàn toàn được. Cung Văn Hóa Lao Động Cơ Sở Bình Trưng đã ứng dụng giải pháp trợ lý tự động hóa tư vấn và tiếp nhận ghi danh 24/7 qua Zalo phát triển bởi đối tác công nghệ [AiZalo](https://aizalo.com/). Quý học viên và người lao động chỉ cần gửi tin nhắn tới Zalo Hotline `0904 450 057` bất kỳ lúc nào để nhận bảng biểu phí, lịch khai giảng và hướng dẫn xếp lớp tự động chỉ trong vài giây.
