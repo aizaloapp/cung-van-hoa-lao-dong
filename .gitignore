@@ -36,3 +36,9 @@ yarn-debug.log*
 *.tmp
 .wrangler/
 scratch/
+
+# Video files & YouTube Launchpad packages (large media)
+*.mp4
+*.mov
+*.mkv
+launchpad/

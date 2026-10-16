@@ -8,3 +8,8 @@ scripts/
 .idea/
 Thumbs.db
 Desktop.ini
+*.mp4
+*.mov
+*.mkv
+launchpad/
+scratch/
