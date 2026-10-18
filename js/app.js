@@ -29,22 +29,22 @@ document.addEventListener('DOMContentLoaded', () => {
   let searchQuery = '';
 
   const courseArticleMap = {
-    'nhay-hien-dai-thieu-nhi': 'lop-hoc/nhay-hien-dai-thieu-nhi/',
-    'yoga-tri-lieu': 'lop-hoc/yoga-tri-lieu/',
-    'ban-cung': 'lop-hoc/ban-cung/',
-    'boxing-kids-nguoi-lon': 'lop-hoc/boxing-kids-nguoi-lon/',
-    'yoga-song-khoe-1': 'lop-hoc/yoga-song-khoe-1/',
-    'lan-su-rong': 'lop-hoc/lan-su-rong/',
-    'mua-dan-vu': 'lop-hoc/mua-dan-vu/',
-    'yoga-song-khoe-2': 'lop-hoc/yoga-song-khoe-2/',
-    'taekwondo': 'lop-hoc/taekwondo/',
-    'yoga-an-do': 'lop-hoc/yoga-an-do/',
-    'dance-kids-ballet-kids': 'lop-hoc/dance-kids-ballet-kids/',
-    'bong-ro': 'lop-hoc/bong-ro/',
-    'patin': 'lop-hoc/patin/',
-    'cau-long': 'lop-hoc/cau-long/',
-    'bong-da': 'lop-hoc/bong-da/',
-    'dancesport-bachata-kizomba': 'lop-hoc/dancesport-bachata-kizomba/'
+    'nhay-hien-dai-thieu-nhi': '/lop-hoc/nhay-hien-dai-thieu-nhi/',
+    'yoga-tri-lieu': '/lop-hoc/yoga-tri-lieu/',
+    'ban-cung': '/lop-hoc/ban-cung/',
+    'boxing-kids-nguoi-lon': '/lop-hoc/boxing-kids-nguoi-lon/',
+    'yoga-song-khoe-1': '/lop-hoc/yoga-song-khoe-1/',
+    'lan-su-rong': '/lop-hoc/lan-su-rong/',
+    'mua-dan-vu': '/lop-hoc/mua-dan-vu/',
+    'yoga-song-khoe-2': '/lop-hoc/yoga-song-khoe-2/',
+    'taekwondo': '/lop-hoc/taekwondo/',
+    'yoga-an-do': '/lop-hoc/yoga-an-do/',
+    'dance-kids-ballet-kids': '/lop-hoc/dance-kids-ballet-kids/',
+    'bong-ro': '/lop-hoc/bong-ro/',
+    'patin': '/lop-hoc/patin/',
+    'cau-long': '/lop-hoc/cau-long/',
+    'bong-da': '/lop-hoc/bong-da/',
+    'dancesport-bachata-kizomba': '/lop-hoc/dancesport-bachata-kizomba/'
   };
 
   // Filter courses logic

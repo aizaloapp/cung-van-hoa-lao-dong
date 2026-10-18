@@ -14,6 +14,20 @@ const STANDARD_LINK_HEADER = '</llms.txt>; rel="alternate"; type="text/markdown"
 export async function onRequest(context) {
   const { request, env, next } = context;
   const url = new URL(request.url);
+
+  // 0. CANONICAL HOST REDIRECT: Chuyển hướng 301 từ www sang non-www (JEV-005)
+  if (url.hostname === 'www.cungvanhoalaodong.com') {
+    const canonicalUrl = `https://cungvanhoalaodong.com${url.pathname}${url.search}`;
+    return new Response(null, {
+      status: 301,
+      headers: {
+        'Location': canonicalUrl,
+        'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload',
+        'Cache-Control': 'public, max-age=31536000'
+      }
+    });
+  }
+
   const pathname = url.pathname.replace(/\/$/, '') || '/';
   const accept = request.headers.get('Accept') || '';
   const isHead = request.method === 'HEAD';
@@ -147,6 +161,7 @@ export async function onRequest(context) {
 
   if (contentType.includes('text/html')) {
     const newHeaders = new Headers(response.headers);
+    newHeaders.set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
     newHeaders.set('Vary', 'Accept');
     newHeaders.set('Content-Signal', 'search=yes, ai-input=yes, ai-train=yes, use=reference');
     newHeaders.set('Link', STANDARD_LINK_HEADER);
