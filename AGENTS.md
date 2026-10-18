@@ -57,6 +57,9 @@ Agent **tuyệt đối tuân thủ** các quy tắc dữ liệu sau trong mọi 
      - Bing / ChatGPT Search / IndexNow: `node scripts/indexnow.mjs <URL>` (hoặc `node scripts/indexnow.mjs --all`).
    - **Bảo mật Service Account:** Tệp chìa khóa `google-indexing-key.json` đặt tại thư mục gốc phải luôn được giữ trong `.gitignore` và `.wranglerignore`, tuyệt đối KHÔNG commit lên Git hay đẩy lên CDN.
    - **Xác thực IndexNow:** Tệp `a0e5b1274f8c49d89326d18a39b4f7e2.txt` tại thư mục gốc luôn được duy trì để Bing Webmaster Tools và IndexNow Hub xác minh tên miền `cungvanhoalaodong.com`.
+9. **Quy chuẩn Kiểm thử Kỹ thuật SEO/GEO & Deploy Cloudflare Pages (Jev-SEO Grade A Invariant):**
+   - Mọi liên kết nội bộ trên toàn trang phải dùng đường dẫn gốc tuyệt đối (`/`, `/cho-thue/`, `/lop-hoc/[slug]/`), mọi thẻ `<img>` phải có `width` và `height`, `<title>` $\le 65$ ký tự, `<meta name="description">` $\le 160$ ký tự. Sau khi sửa HTML hàng loạt, chạy `python scripts/fix_jev_seo_14.py` và `python scripts/test_social_cards.py` để xác nhận 0 lỗi.
+   - Khi deploy lên Cloudflare Pages, gọi trực tiếp binary cache của Wrangler và tạm thời di chuyển các tệp video gốc `.mp4` (> 25 MiB) trong thư mục dự án sang `$env:TEMP` trong khối `try ... finally` để tránh lỗi giới hạn kích thước tệp của Cloudflare Pages và lỗi tràn bộ nhớ `npx`.
 
 ---
 

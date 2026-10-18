@@ -142,3 +142,23 @@ Tuyệt đối không dùng toán tử bậc hai (`course.fee ? ... : ...`) đ�
 - Breadcrumb trên mobile phải giữ chữ "Trang chủ" kèm padding bấm thoải mái (`py-1 px-1.5`).
 - Bổ sung nút quay lại nhanh `‹ Tất cả lớp` ở góc phải breadcrumb để người dùng dễ khám phá các môn khác.
 
+---
+
+## 6. Quy Chuẩn Kỹ Thuật Jev-SEO (Grade A / 95+) & Nhúng Video Thực Tế
+
+1. **Bắt buộc Root-Relative Clean URLs (Chống lỗi 404 & 308 Redirect - `JEV-001`, `JEV-006`):**
+   - Mọi liên kết nội bộ và đường dẫn tài nguyên trong `lop-hoc/[slug]/index.html` bắt buộc dùng đường dẫn gốc tuyệt đối: `href="/"`, `href="/#lop-hoc"`, `href="/cho-thue/"`, `href="/lop-hoc/[slug]/"`, `src="/assets/..."`, `href="/css/custom.css"`.
+   - **Tuyệt đối cấm** dùng đường dẫn tương đối `../[slug]/` hoặc `../../index.html`.
+2. **Chống Orphan Pages (`JEV-003`):**
+   - Khi thêm lớp học mới, ngoài việc cập nhật `js/app.js`, bắt buộc thêm thẻ `<article>` tĩnh fallback vào trong `<div id="courses-grid">` và danh mục 16 lớp ở Footer của `index.html` + `cho-thue/index.html`, đồng thời liên kết chéo tối thiểu 5 lớp học liên quan ở cột phải.
+3. **Giới hạn Cứng Độ Dài Meta & Chống Ăn Thịt Từ Khóa (`JEV-007`, `JEV-011`):**
+   - `<title>`: Bắt buộc từ **15 đến 65 ký tự**.
+   - `<meta name="description">`: Bắt buộc từ **50 đến 160 ký tự** (tối ưu 140–158 ký tự).
+   - Các lớp cùng nhóm (như 4 lớp Yoga) phải phân biệt rõ đặc điểm định danh ngay trong Title & Description (Ca sáng / Ca tối / Trị liệu cổ vai gáy / Ấn Độ cổ truyền).
+4. **Đoạn Mở Đầu Trả Lời Trực Tiếp Sau `<h1>` (`JEV-012`):**
+   - Thẻ `<p>` đầu tiên ngay dưới `<h1>` phải gói gọn đầy đủ 5 yếu tố thực tế trong 2 câu (40–55 từ): **Tên lớp + Địa chỉ (Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh) + Tên Giảng viên + Lịch học/Học phí + Số Zalo đăng ký**.
+5. **Chống Nhảy Bố Cục Hình Ảnh & Phân Cấp Heading (`JEV-008`, `JEV-013`, `JEV-014`):**
+   - 100% thẻ `<img>` phải có thuộc tính `width` và `height` tường minh đúng kích thước thực tế; ảnh Hero đầu trang dùng `loading="eager" fetchpriority="high"`.
+   - Thứ tự thẻ tiêu đề phải liền mạch (`H1` -> `H2` -> `H3`), không nhảy cóc từ `H1` xuống `H3` hoặc `H2` xuống `H4`.
+6. **Chuẩn Nhúng Video Thực Tế (Lite YouTube Facade + `VideoObject` Schema):**
+   - Khi lớp học có video thực tế trên YouTube, sử dụng kiến trúc **Lite YouTube Facade** (hiển thị ảnh thumbnail `1280x720` tại `/assets/images/[slug]-video-thumb.jpg` kèm nút Play, chỉ khởi tạo `iframe` `youtube-nocookie.com` khi người dùng bấm), tích hợp thanh nút **Chuyển nhanh (Interactive Chapters)** và khai báo `@type: "VideoObject"` trong khối `@graph` JSON-LD của trang.
