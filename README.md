@@ -9,7 +9,7 @@ Chào mừng bạn đến với kho lưu trữ dự án số hóa và cổng th�
 - **Website chính thức:** [https://cungvanhoalaodong.com/](https://cungvanhoalaodong.com/)
 - **Danh sách 15 CLB & Lớp năng khiếu:** [https://cungvanhoalaodong.com/lop-hoc/](https://cungvanhoalaodong.com/lop-hoc/)
 - **Địa chỉ:** 245 Nguyễn Duy Trinh, P. Bình Trưng, TP. Hồ Chí Minh
-- **Hotline / Zalo tư vấn & tuyển sinh:** `0904 450 057`
+- **Hotline / Zalo tư vấn & tuyển sinh:** `0934 733 527`
 - **Bản đồ chỉ đường (Google Maps):** [Chỉ đường tại đây](https://share.google/bZitFiknyB9p9nH7L)
 - **Fanpage chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.facebook.com/cosobinhtrungcvhld)
 - **Kênh YouTube chính thức:** [Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP](https://www.youtube.com/@cosobinhtrungcvhld)
@@ -54,4 +54,4 @@ Chào mừng bạn đến với kho lưu trữ dự án số hóa và cổng th�
 - **Hệ thống 15 chuyên trang Lớp học / CLB:** Đầy đủ dữ liệu Schema JSON-LD, Open Graph, tối ưu SEO & GEO (AI Search).
 - **Tích hợp Wikipedia:** Cập nhật mục Cơ sở Bình Trưng vào [Wikipedia Cung Văn hóa Lao động TP.HCM](https://vi.wikipedia.org/wiki/Cung_V%C4%83n_h%C3%B3a_Lao_%C4%91%E1%BB%99ng_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh).
 - **Lập chỉ mục tự động:** Tích hợp bộ script Instant Indexing gửi Google Indexing API & IndexNow (Bing / ChatGPT Search) cho 100% URL sitemap.
-- **Kênh tiếp nhận tư vấn:** Kết nối Hotline/Zalo `0904 450 057` và Fanpage chính thức.
+- **Kênh tiếp nhận tư vấn:** Kết nối Hotline/Zalo `0934 733 527` và Fanpage chính thức.

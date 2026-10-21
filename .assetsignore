@@ -1,0 +1,15 @@
+.env*
+google-indexing-key.json
+*service-account*.json
+secrets.json
+scripts/
+.git/
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+*.mp4
+*.mov
+*.mkv
+launchpad/
+scratch/

@@ -2,7 +2,7 @@
 
 > **Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng**  
 > **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh  
-> **Hotline / Zalo tiếp nhận khảo sát:** `0904 450 057`  
+> **Hotline / Zalo tiếp nhận khảo sát:** `0934 733 527`  
 > **Trang đích dịch vụ:** [https://cungvanhoalaodong.com/cho-thue/](https://cungvanhoalaodong.com/cho-thue/)
 
 ---
@@ -59,7 +59,7 @@ Cơ sở Bình Trưng sở hữu tổ hợp không gian đa năng hiện đại 
 ---
 
 ## 3. Quy Trình Tiếp Nhận & Đặt Lịch
-1. **Liên hệ tư vấn:** Gọi điện hoặc nhắn tin Zalo qua Hotline `0904 450 057`.
+1. **Liên hệ tư vấn:** Gọi điện hoặc nhắn tin Zalo qua Hotline `0934 733 527`.
 2. **Khảo sát thực tế:** Chuyên viên đón tiếp và dẫn tham quan trực tiếp các không gian từ 07:30 đến 21:30 hàng ngày.
 3. **Báo giá & Lên phương án:** Gửi báo giá chi tiết, sơ đồ bố trí mặt bằng và các gói dịch vụ gia tăng (âm thanh, ánh sáng, teabreak).
 4. **Ký hợp đồng:** Hoàn tất hợp đồng pháp lý sự nghiệp công lập và xác nhận lịch giữ chỗ.

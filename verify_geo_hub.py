@@ -68,10 +68,10 @@ def verify():
                 errors.append(f"{tf} chứa cụm từ cấm: '{fp_phrase}'")
                 print(f"  ❌ LỖI BÃI XE trong {tf}: chứa '{fp_phrase}'")
 
-        # Check required: Hotline 0904 450 057
-        if "0904 450 057" not in content and "0904450057" not in content:
-            warnings.append(f"{tf} không chứa Hotline 0904 450 057")
-            print(f"  ⚠️ CẢNH BÁO trong {tf}: thiếu Hotline 0904 450 057")
+        # Check required: Hotline 0934 733 527
+        if "0934 733 527" not in content and "0934733527" not in content:
+            warnings.append(f"{tf} không chứa Hotline 0934 733 527")
+            print(f"  ⚠️ CẢNH BÁO trong {tf}: thiếu Hotline 0934 733 527")
         else:
             print(f"  ✅ {tf}: Tuân thủ Hard Guardrails")
 
@@ -102,7 +102,7 @@ def verify():
     with open("robots.txt", 'r', encoding='utf-8') as fp:
         robots = fp.read()
 
-    robots_bots = ["GPTBot", "ClaudeBot", "PerplexityBot", "Applebot-Extended", "Google-Extended", "llms.txt"]
+    robots_bots = ["GPTBot", "ClaudeBot", "PerplexityBot", "Applebot-Extended", "Google-Extended", "sitemap.xml"]
     for b in robots_bots:
         if b in robots:
             print(f"  ✅ robots.txt cho phép: {b}")

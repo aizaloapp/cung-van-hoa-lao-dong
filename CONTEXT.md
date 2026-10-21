@@ -14,7 +14,7 @@
 - **Fanpage Facebook:** [https://www.facebook.com/cosobinhtrungcvhld](https://www.facebook.com/cosobinhtrungcvhld) (Tên Page: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
 - **Kênh YouTube chính thức:** [https://www.youtube.com/@cosobinhtrungcvhld](https://www.youtube.com/@cosobinhtrungcvhld) (Tên Kênh: *Cơ Sở Bình Trưng - Cung Văn Hóa Lao Động TP*)
 - **Trang Grokipedia chuyên khảo:** [https://grokipedia.com/page/Labor_Cultural_Palace_of_Ho_Chi_Minh_City_Binh_Trung_Branch](https://grokipedia.com/page/Labor_Cultural_Palace_of_Ho_Chi_Minh_City_Binh_Trung_Branch)
-- **Hotline / Zalo tư vấn & ghi danh:** `0904 450 057`
+- **Hotline / Zalo tư vấn & ghi danh:** `0934 733 527`
 - **Khung giờ hoạt động:**
   - Khối văn phòng hành chính: Giờ hành chính (Thứ 2 – Thứ 6)
   - Cụm thể thao & sân bãi: Mở cửa liên tục từ **05:00 đến 22:00 / 23:00** hàng ngày
@@ -59,7 +59,7 @@ Công trình được đầu tư đồng bộ với tổng mức đầu tư gầ
 | 12 | **CLB Bóng rổ năng khiếu** | Thầy Nguyễn Ngọc Thịnh | 0896 699 089 | Thứ 3 & 5, Thứ 4 & 6, Thứ 7 & CN (16:30 – 19:00) | 500.000 đ/tháng | Sân bóng rổ ngoài trời |
 | 13 | **CLB Trượt patin kỹ năng** | Cô Hồ Kim Ân | 0906 345 894 | 18:00 – 20:00 (3 buổi/tuần) | 1.200.000 đ/khóa | Sân tập |
 | 14 | **CLB Cầu lông (6 Sân PVC)** | Đỗ Thanh Hòa | 0937 224 640 | 06:00 – 22:00 hàng ngày | Theo ca & gói tháng | Nhà tập luyện Cầu Lông |
-| 15 | **CLB Bóng đá phong trào** | Ban Thể thao | 0904 450 057 | Chiều & cuối tuần | Theo thỏa thuận | Khuôn viên thể thao |
+| 15 | **CLB Bóng đá phong trào** | Ban Thể thao | 0934 733 527 | Chiều & cuối tuần | Theo thỏa thuận | Khuôn viên thể thao |
 | 16 | **CLB Dancesport: Bachata & Kizomba** | Vũ sư Cường Ba | 0969 897 988 | Thứ 7 & Chủ Nhật (17:00 – 18:30) | 100.000 đ/tháng | Phòng chức năng 2 |
 
 ---
@@ -97,7 +97,7 @@ Dữ liệu JSON chuẩn: `data/rentals.json` | Trang đích chi tiết: `/cho-t
 5. **STD-05 — Studio Gương Sàn Gỗ & Phòng Đào Tạo Tiêu Âm (20 – 40 Người):** Lầu 1 & 2. Sàn gỗ chống trơn, gương 2 mặt full trần, gióng ba-lê inox; phòng đào tạo vách tiêu âm hiện đại; hệ thống quạt làm mát thông thoáng (phòng không trang bị máy lạnh và loa Bluetooth).
 6. **TT-06 — Tổ Hợp Thể Thao: 6 Sân Cầu Lông PVC, Sân Bóng Đá Mini & Bóng Rổ:** Lầu 4 & ngoài trời. Dàn đèn LED đêm, khán đài, chòi nghỉ sinh thái phục vụ giải thể thao nội bộ doanh nghiệp.
 
-*Chính sách:* Hợp đồng pháp lý chuẩn mực, xuất hóa đơn VAT điện tử, trợ giá 15% – 30% cho Công đoàn cơ sở, bãi đỗ xe ô tô & xe máy an ninh rộng rãi (thu phí giữ xe theo quy định). Hotline: `0904 450 057`.
+*Chính sách:* Hợp đồng pháp lý chuẩn mực, xuất hóa đơn VAT điện tử, trợ giá 15% – 30% cho Công đoàn cơ sở, bãi đỗ xe ô tô & xe máy an ninh rộng rãi (thu phí giữ xe theo quy định). Hotline: `0934 733 527`.
 
 ---
 

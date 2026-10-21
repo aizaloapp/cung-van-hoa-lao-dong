@@ -77,7 +77,7 @@
 
   // Sao chép số điện thoại Hotline vào Clipboard kèm phản hồi trực quan
   window.copyRentalHotline = function () {
-    const phone = '0904450057';
+    const phone = '0934733527';
     navigator.clipboard.writeText(phone).then(() => {
       const copyBtnText = document.getElementById('copy-hotline-btn-text');
       const copyBtnIcon = document.getElementById('copy-hotline-btn-icon');

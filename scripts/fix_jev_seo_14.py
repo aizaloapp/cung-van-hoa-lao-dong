@@ -25,7 +25,7 @@ COURSE_SEO_META = {
     },
     "bong-da": {
         "title": "CLB Bóng Đá & Đặt Sân Giao Hữu | CVHLĐ Cơ Sở Bình Trưng",
-        "description": "CLB Bóng Đá & đặt sân cỏ nhân tạo giao hữu tại 245 Nguyễn Duy Trinh, P. Bình Trưng, TP.HCM. Ưu đãi hội thao Công đoàn & doanh nghiệp. Zalo: 0904 450 057."
+        "description": "CLB Bóng Đá & đặt sân cỏ nhân tạo giao hữu tại 245 Nguyễn Duy Trinh, P. Bình Trưng, TP.HCM. Ưu đãi hội thao Công đoàn & doanh nghiệp. Zalo: 0934 733 527."
     },
     "bong-ro": {
         "title": "CLB Bóng Rổ Năng Khiếu & Phong Trào | 245 Nguyễn Duy Trinh",
@@ -157,7 +157,7 @@ def add_img_dimensions(html: str, html_file: Path) -> str:
 
 
 def format_phone_display(phone: str) -> str:
-    digits = re.sub(r"\D", "", phone or "0904450057")
+    digits = re.sub(r"\D", "", phone or "0934733527")
     if len(digits) == 10:
         return f"{digits[:4]} {digits[4:7]} {digits[7:]}"
     return phone
@@ -181,7 +181,7 @@ def build_direct_answer_lead(course: dict) -> str:
         f"trực tiếp hướng dẫn, dành cho {target.lower()}. "
         f"Lớp học diễn ra vào khung giờ <strong>{schedule}</strong> ({freq}, {dur}) tại <strong>{loc}</strong> "
         f"với mức học phí an sinh <strong>{fee_fmt}</strong>; học viên đăng ký tư vấn và xếp lớp trực tiếp qua "
-        f"Zalo/SĐT <strong>{phone_disp}</strong> hoặc Hotline cơ sở <strong>0904 450 057</strong>."
+        f"Zalo/SĐT <strong>{phone_disp}</strong> hoặc Hotline cơ sở <strong>0934 733 527</strong>."
     )
 
 
@@ -258,7 +258,7 @@ def process_index_html():
 
     # 1. Title & Meta Description (JEV-007, JEV-011)
     new_title = "Cung Văn Hóa Lao Động Cơ Sở Bình Trưng | 245 Nguyễn Duy Trinh"
-    new_desc = "Cung Văn Hóa Lao Động TP.HCM Cơ Sở Bình Trưng (245 Nguyễn Duy Trinh). Chiêu sinh 16 lớp Cầu lông, Bắn cung, Boxing, Yoga, Võ thuật. Zalo: 0904 450 057."
+    new_desc = "Cung Văn Hóa Lao Động TP.HCM Cơ Sở Bình Trưng (245 Nguyễn Duy Trinh). Chiêu sinh 16 lớp Cầu lông, Bắn cung, Boxing, Yoga, Võ thuật. Zalo: 0934 733 527."
     assert 15 <= len(new_title) <= 65, f"index title len={len(new_title)}"
     assert 50 <= len(new_desc) <= 160, f"index desc len={len(new_desc)}"
 
@@ -379,7 +379,7 @@ def process_cho_thue_html():
 
     # 1. Title & Meta Description (JEV-007, JEV-011)
     new_title = "Cho Thuê Hội Trường 500 Chỗ & Sân Sự Kiện | CVHLĐ Bình Trưng"
-    new_desc = "Cho thuê hội trường 250-500 chỗ, phòng họp VIP, sảnh triển lãm, studio và 6 sân cầu lông tại 245 Nguyễn Duy Trinh, P. Bình Trưng. Hotline: 0904 450 057."
+    new_desc = "Cho thuê hội trường 250-500 chỗ, phòng họp VIP, sảnh triển lãm, studio và 6 sân cầu lông tại 245 Nguyễn Duy Trinh, P. Bình Trưng. Hotline: 0934 733 527."
     assert 15 <= len(new_title) <= 65
     assert 50 <= len(new_desc) <= 160
 
@@ -533,7 +533,7 @@ def process_404_html():
         return
     html = path.read_text(encoding="utf-8")
     new_title = "404 — Không Tìm Thấy Trang | CVHLĐ Cơ Sở Bình Trưng"
-    new_desc = "Trang không tìm thấy (Lỗi 404) — Cung Văn Hóa Lao Động TP.HCM Cơ Sở Bình Trưng tại 245 Nguyễn Duy Trinh, Phường Bình Trưng. Hotline: 0904 450 057."
+    new_desc = "Trang không tìm thấy (Lỗi 404) — Cung Văn Hóa Lao Động TP.HCM Cơ Sở Bình Trưng tại 245 Nguyễn Duy Trinh, Phường Bình Trưng. Hotline: 0934 733 527."
     html = re.sub(r"<title>.*?</title>", f"<title>{new_title}</title>", html, count=1, flags=re.S)
     html = re.sub(r'<meta\s+name="description"\s+content="[^"]*">', f'<meta name="description" content="{new_desc}">', html, count=1)
     html = html.replace('href="Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg"', 'href="/Cung-Van-Hoa-Lao-Dong-Co-So-Binh-Trung/logo.jpg"')

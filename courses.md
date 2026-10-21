@@ -2,7 +2,7 @@
 
 > **Cung Văn Hóa Lao Động TP. Hồ Chí Minh — Cơ Sở Bình Trưng**  
 > **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh  
-> **Hotline / Zalo ghi danh:** `0904 450 057`  
+> **Hotline / Zalo ghi danh:** `0934 733 527`  
 > **Website:** [https://cungvanhoalaodong.com](https://cungvanhoalaodong.com)
 
 ---
@@ -25,13 +25,13 @@
 | 12 | **CLB Bóng Rổ Năng Khiếu** | Thầy Nguyễn Ngọc Thịnh | 0896 699 089 | T3&5, T4&6, T7&CN (16:30 – 19:00) | 500.000 đ/tháng | Sân bóng rổ ngoài trời |
 | 13 | **CLB Trượt Patin Kỹ Năng** | Cô Hồ Kim Ân | 0906 345 894 | 18:00 – 20:00 (3 buổi/tuần) | 1.200.000 đ/khóa | Sân tập chuyên dụng |
 | 14 | **CLB Cầu Lông Phong Trào & Thi Đấu** | Thầy Đỗ Thanh Hòa | 0937 224 640 | 06:00 – 22:00 hàng ngày | Gói tháng & ca linh hoạt | Nhà tập luyện 6 sân PVC |
-| 15 | **CLB Bóng Đá Phong Trào** | Ban Thể thao CVHLĐ | 0904 450 057 | Các buổi chiều & cuối tuần | Thỏa thuận & ưu đãi | Sân bóng đá mini ngoài trời |
+| 15 | **CLB Bóng Đá Phong Trào** | Ban Thể thao CVHLĐ | 0934 733 527 | Các buổi chiều & cuối tuần | Thỏa thuận & ưu đãi | Sân bóng đá mini ngoài trời |
 | 16 | **CLB Dancesport: Bachata & Kizomba** | Vũ sư Cường Ba | 0969 897 988 | Thứ 7 & Chủ Nhật (17:00 – 18:30) | 100.000 đ/tháng | Phòng chức năng 2 |
 
 ---
 
 ## 2. Hướng Dẫn Đăng Ký & Ghi Danh
 - **Đăng ký trực tiếp:** Tại bàn tiếp nhận thông tin Tầng trệt, Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh.
-- **Tư vấn trực tuyến:** Gọi Hotline hoặc nhắn tin Zalo: `0904 450 057`.
+- **Tư vấn trực tuyến:** Gọi Hotline hoặc nhắn tin Zalo: `0934 733 527`.
 - **Học thử & Trải nghiệm:** Nhiều bộ môn hỗ trợ buổi học thử hoặc giao lưu trải nghiệm trước khi đăng ký chính thức.
 - **Chính sách ưu đãi:** Giảm học phí cho đoàn viên công đoàn, con em công nhân lao động và các gia đình chính sách tại địa phương.

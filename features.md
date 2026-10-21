@@ -1,7 +1,7 @@
 # Cơ Sở Vật Chất & Tiện Ích — Cung Văn Hóa Lao Động Cơ Sở Bình Trưng
 
 > **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh  
-> **Hotline / Zalo tư vấn:** `0904 450 057`  
+> **Hotline / Zalo tư vấn:** `0934 733 527`  
 > **Website chính thức:** [https://cungvanhoalaodong.com](https://cungvanhoalaodong.com)
 
 ---
@@ -53,12 +53,12 @@ Công trình Cung Văn Hóa Lao Động Cơ Sở Bình Trưng được đầu t�
 ---
 
 ## 4. Tiện Ích Tiếp Nhận & Chuyển Đổi Số 24/7
-- **Kênh Tư Vấn Tuyển Sinh Tự Động 24/7:** Ứng dụng giải pháp công nghệ trợ lý Zalo phát triển bởi [AiZalo](https://aizalo.com/) kết nối trực tiếp với Hotline `0904 450 057`, hỗ trợ tiếp nhận ghi danh và gửi biểu phí ngoài giờ hành chính cho công nhân làm ca.
+- **Kênh Tư Vấn Tuyển Sinh Tự Động 24/7:** Ứng dụng giải pháp công nghệ trợ lý Zalo phát triển bởi [AiZalo](https://aizalo.com/) kết nối trực tiếp với Hotline `0934 733 527`, hỗ trợ tiếp nhận ghi danh và gửi biểu phí ngoài giờ hành chính cho công nhân làm ca.
 - **Tiếp Nhận Đa Kênh Tức Thì:** Đồng bộ dữ liệu đăng ký giữa Website và Zalo OA, giúp phân luồng và xác nhận lịch học thử nhanh chóng.
 
 ---
 
 ## 5. Liên Hệ Trải Nghiệm & Khảo Sát
-- **Hotline / Zalo:** `0904 450 057`
+- **Hotline / Zalo:** `0934 733 527`
 - **Địa chỉ:** Số 245 Nguyễn Duy Trinh, Phường Bình Trưng, TP. Hồ Chí Minh
 - **Bản đồ chỉ đường:** [Google Maps](https://share.google/bZitFiknyB9p9nH7L)
